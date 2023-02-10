@@ -13,20 +13,20 @@ function SearchRetractors() {
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      const selectedRetractor = Retractors.find(r => r.id === parseInt(input1));
-      setRetractor(selectedRetractor);
+      const selectedRetractor = Retractors.find(r => (r.id === parseInt(input1) || r.name === input1));
+      setRetractor(selectedRetractor || {});
     };
 
     const handleSubmit2 = (e) => {
         e.preventDefault();
-        const selectedRetractor = Retractors.find(r => r.id === parseInt(input2) );
-        setRetractor2(selectedRetractor);
+        const selectedRetractor = Retractors.find(r => (r.id === parseInt(input2) || r.name === input2));
+        setRetractor2(selectedRetractor || {});
       };
 
     const handleSubmit3 = (e) => {
         e.preventDefault();
-        const selectedRetractor = Retractors.find(r => r.id === parseInt(input3) );
-        setRetractor3(selectedRetractor);
+        const selectedRetractor = Retractors.find(r => (r.id === parseInt(input3) || r.name === input3));
+        setRetractor3(selectedRetractor || {} );
       };
 
     const clearInputs = () => {
@@ -68,7 +68,7 @@ function SearchRetractors() {
                     <tr >{retractor.RCAT}</tr>
                     <tr >{retractor.base}</tr>
                     <tr >{retractor.pole}</tr>
-                    <tr >{retractor.hardware3}</tr>
+                    <tr >{retractor.banner}</tr>
                     <tr >{retractor.production}</tr>
                 </tbody>
 
@@ -90,7 +90,7 @@ function SearchRetractors() {
                     <tr className={retractor2.RCAT === retractor.RCAT ? '' : 'highlight'}>{retractor2.RCAT}</tr>
                     <tr className={retractor2.base === retractor.base ? '' : 'highlight'}>{retractor2.base}</tr>
                     <tr className={retractor2.pole === retractor.pole ? '' : 'highlight'}>{retractor2.pole}</tr>
-                    <tr className={retractor2.hardware3 === retractor.hardware3 ? '' : 'highlight'}>{retractor2.hardware3}</tr>
+                    <tr className={retractor2.banner === retractor.banner ? '' : 'highlight'}>{retractor2.banner}</tr>
                     <tr className={retractor2.production === retractor.production ? '' : 'highlight'}>{retractor2.production}</tr>
                 </tbody>
             </table>
@@ -109,7 +109,7 @@ function SearchRetractors() {
                     <tr className={retractor3.RCAT === retractor.RCAT ? '' : 'highlight'}>{retractor3.RCAT}</tr>
                     <tr className={retractor3.base === retractor.base ? '' : 'highlight'}>{retractor3.base}</tr>
                     <tr className={retractor3.pole === retractor.pole ? '' : 'highlight'}>{retractor3.pole}</tr>
-                    <tr className={retractor3.hardware3 === retractor.hardware3 ? '' : 'highlight'}>{retractor3.hardware3}</tr>
+                    <tr className={retractor3.banner === retractor.banner ? '' : 'highlight'}>{retractor3.banner}</tr>
                     <tr className={retractor3.production === retractor.production ? '' : 'highlight'}>{retractor3.production}</tr>
                 </tbody>
             </table>
