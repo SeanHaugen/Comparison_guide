@@ -1,14 +1,8 @@
 import tents from "../../Data/Tents"
-import { useState } from "react";
+
 
 
 function ShowTent({tent, tent2, tent3}) {
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleIsOpen = () => {
-        setIsOpen(!isOpen)
-    }
 
 
     return (
