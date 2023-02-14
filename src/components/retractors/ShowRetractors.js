@@ -1,65 +1,81 @@
 import Retractors from '../../Data/Retractors'
 
+
 function ShowRetractors({retractor, retractor2, retractor3}) {
 
 
     return (
-        <>
+        <div className="comparison-container table-container">
         {Object.keys(Retractors).length > 0 && (
-            <table className="product-section table is-striped ">
+            <table className=" table product-section table is-striped is-fullwidth is-bordered  ">
                 <thead>
-                    <tr>{retractor.name}</tr>
-                    <tr>{retractor.id}</tr>
+                    <tr>
+                        <th scope="col">Description</th>
+                        <th scope="col">Main input</th>
+                        <th scope="col">Comparison input</th>
+                        <th scope="col">Comparison input</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr>{retractor.size}</tr>
-                    <tr>{retractor.media}</tr>
-                    <tr>{retractor.RCAT}</tr>
-                    <tr>{retractor.base}</tr>
-                    <tr>{retractor.pole}</tr>
-                    <tr>{retractor.banner}</tr>
-                    <tr>{retractor.production}</tr>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td>{retractor.name}</td>
+                        <td>{retractor2.name}</td>
+                        <td>{retractor3.name}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Item Number</th>
+                        <td>{retractor.id}</td>
+                        <td>{retractor2.id}</td>
+                        <td>{retractor3.id}</td>
+                    </tr>
+                    <br />
+                    <tr>
+                        <th  scope="row">Size</th>
+                        <td>{retractor.size}</td>
+                        <td className={retractor2.size === retractor.size || retractor2.size === undefined ? '' : 'highlight'}  >{retractor2.size}</td>
+                        <td className={retractor3.size === retractor.size || retractor3.size === undefined ? '' : 'highlight'}  >{retractor3.size}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Media</th>
+                        <td>{retractor.media}</td>
+                        <td className={retractor2.media === retractor.media || retractor2.media === undefined  ? '' : 'highlight'}>{retractor2.media}</td>
+                        <td className={retractor3.media === retractor.media || retractor3.media === undefined ? '' : 'highlight'}>{retractor3.media}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">RCAT</th>
+                        <td>{retractor.RCAT}</td>
+                        <td className={retractor2.RCAT === retractor.RCAT || retractor2.RCAT === undefined  ? '' : 'highlight'}>{retractor2.RCAT}</td>
+                        <td className={retractor3.RCAT === retractor.RCAT || retractor3.RCAT === undefined ? '' : 'highlight'}>{retractor3.RCAT}</td>
+                    </tr>
+                    <tr>
+                        <th scope="base">Base</th>
+                        <td>{retractor.base}</td>
+                        <td className={retractor2.base === retractor.base || retractor2.base === undefined  ? '' : 'highlight'}>{retractor2.base}</td>
+                        <td className={retractor3.base === retractor.base || retractor3.base === undefined ? '' : 'highlight'}>{retractor3.base}</td>
+                    </tr>
+                    <tr>
+                        <th scope="pole">Pole</th>
+                        <td>{retractor.pole}</td>
+                        <td className={retractor2.pole === retractor.pole || retractor2.pole === undefined ? '' : 'highlight'}>{retractor2.pole}</td>
+                        <td className={retractor3.pole === retractor.pole || retractor3.pole === undefined ? '' : 'highlight'}>{retractor3.pole}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Banner</th>
+                        <td>{retractor.banner}</td>
+                        <td className={retractor2.banner === retractor.banner || retractor2.banner === undefined ? '' : 'highlight'}>{retractor2.banner}</td>
+                        <td className={retractor3.banner === retractor.banner || retractor3.banner === undefined ? '' : 'highlight'}>{retractor3.banner}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Production Time</th>
+                        <td>{retractor.production}</td>
+                        <td className={retractor2.production === retractor.production || retractor2.production === undefined ? '' : 'highlight'}>{retractor2.production}</td>
+                        <td className={retractor3.production === retractor.production || retractor3.production === undefined ? '' : 'highlight'}>{retractor3.production}</td>
+                    </tr>
                 </tbody>
             </table >
         )}
-       <hr />
-            <div className="bottom-container table-container">
-            {Object.keys(Retractors).length > 0 && (
-                <table className="product-section table is-bordered is-narrow is-hoverable ">
-                    <thead>
-                        <tr>{retractor2.name}</tr>
-                        <tr>{retractor2.id}</tr>
-                    </thead>
-                    <tbody>
-                        <tr className={retractor2.size === retractor.size ? '' : 'highlight'}  >{retractor2.size}</tr>
-                        <tr className={retractor2.media === retractor.media ? '' : 'highlight'}>{retractor2.media}</tr>
-                        <tr className={retractor2.RCAT === retractor.RCAT ? '' : 'highlight'}>{retractor2.RCAT}</tr>
-                        <tr className={retractor2.base === retractor.base ? '' : 'highlight'}>{retractor2.base}</tr>
-                        <tr className={retractor2.pole === retractor.pole ? '' : 'highlight'}>{retractor2.pole}</tr>
-                        <tr className={retractor2.banner === retractor.banner ? '' : 'highlight'}>{retractor2.banner}</tr>
-                        <tr className={retractor2.production === retractor.production ? '' : 'highlight'}>{retractor2.production}</tr>
-                    </tbody>
-                </table>
-        )}
-            {Object.keys(Retractors).length > 0 && (
-                <table className="product-section table is-bordered is-narrow is-hoverable">
-                    <thead>
-                        <tr>{retractor3.name}</tr>
-                        <tr>{retractor3.id}</tr>
-                    </thead>
-                    <tbody>
-                        <tr className={retractor3.size === retractor.size ? '' : 'highlight'}  >{retractor3.size}</tr>
-                        <tr className={retractor3.media === retractor.media ? '' : 'highlight'}>{retractor3.media}</tr>
-                        <tr className={retractor3.RCAT === retractor.RCAT ? '' : 'highlight'}>{retractor3.RCAT}</tr>
-                        <tr className={retractor3.base === retractor.base ? '' : 'highlight'}>{retractor3.base}</tr>
-                        <tr className={retractor3.pole === retractor.pole ? '' : 'highlight'}>{retractor3.pole}</tr>
-                        <tr className={retractor3.banner === retractor.banner ? '' : 'highlight'}>{retractor3.banner}</tr>
-                        <tr className={retractor3.production === retractor.production ? '' : 'highlight'}>{retractor3.production}</tr>
-                    </tbody>
-                </table>
-        )}
         </div>
-        </>
 )}
 
 export default ShowRetractors

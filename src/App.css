@@ -1,91 +1,118 @@
+*,*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  size: 16px;
+}
+
 .highlight {
     background-color: yellow;
     width: fit-content;
     border-radius: 10px;
 }
 
+.comparison-guide {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1em;
+}
 
-  
+.comparison-guide form button {
+  width:max-content;
+  margin: 1em;
+}
+
+form {
+margin: 1em;
+}
+
+.submit {
+margin-bottom: 1em;
+}
+
+
+.dropdown-container .sidebar .item{
+  display: flex;
+
+}
+
+.navbar-item.active{
+  font-weight: bold;
+  color:#485fc7
+}
+
+
   /* Container for each product section */
-  .product-section {
+  /* .product-section {
     width: 48%;
     padding: 30px;
-    /* text-align: center; */
+    text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  }
+  } */
   
   /* Image container */
-  .product-section img {
+  /* .product-section img {
     width: 100%;
     margin-bottom: 20px;
-  }
+  } */
   
   /* Product title */
-  .product-section h3 {
+  /* .product-section h3 {
     font-size: 22px;
     margin-bottom: 20px;
-  }
+  } */
   
   /* Product description */
-  .product-section p {
+  /* .product-section p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
   }
-  
+   */
   /* Comparison table */
-  .comparison-table {
+  /* .comparison-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-  }
+  } */
   
   /* Comparison table headers */
-  .comparison-table th {
+  /* .comparison-table th {
     background-color: #ddd;
     font-weight: bold;
     padding: 10px;
     text-align: left;
-  }
+  } */
   
   /* Comparison table cells */
-  .comparison-table td {
+  /* .comparison-table td {
     padding: 10px;
-  }
+  } */
   
   /* Highlight cells with different values */
-  .comparison-table td.different {
+  /* .comparison-table td.different {
     background-color: #ffcccc;
-  }
+  } */
 
-  tr {
+  /* tr {
     margin: 5px;
-  }
+  } */
 
-  .dropdown-container .sidebar .item{
-    display: flex;
-
-  }
-
-  .navbar-item.active{
-    font-weight: bold;
-    color:#485fc7
-  }
- 
-
-  .item-list {
+  /* .item-list {
     display: flex;
     position:relative;
     left: 10em;
-  }
+  } */
   
-  .comparison-container {
+  /* .comparison-container {
     display: flex;
     flex-flow: row wrap;
-  }
-
+  } */
+/* 
   td tr {
     border: 1px solid black;
     width: 20em;
-  }
+  } */
+
+

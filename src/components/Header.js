@@ -5,8 +5,9 @@ import ItemList from './ItemList'
 function Header({setSelectedRoute, itemList}) {
 
     return (
-        <>
-        <h1 className='title'>Showdown Displays Product Comparison Guide</h1>
+        <div className='hero'>
+        
+        <h1 className='title hero-head'>Showdown Displays Product Comparison Guide</h1>
         <nav className='navbar' role="navigation" aria-label="main navigation">
             <div className='navbar-brand' >
                 <NavLink to='/About' className="navbar-item">About</NavLink>
@@ -16,7 +17,7 @@ function Header({setSelectedRoute, itemList}) {
                 <ItemList className={itemList} itemList={itemList} />
             </div>
         </nav>
-        </>
+        </div>
     )
 }
 

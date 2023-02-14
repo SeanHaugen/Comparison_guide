@@ -11,21 +11,20 @@ function ItemList({itemList}) {
     }
     return (
         <>
-        <div className="container"> 
-        <div className="side-bar dropdown is-active dropdown-container">
-            <div className="dropdown-menu dropdown-trigger">
-            <button className="button" onClick={handleIsOpen}>Open Item List</button>
+        <div className="dropdown is-hoverable">
+            <div className="dropdown-trigger">
+            <button className="button is-active is-info" aria-haspopup="true" aria-controls='dropdown-menu' onFocus={handleIsOpen}>Open Item List</button>
             {isOpen && (
-            <div className="sidebar">
+            <div className="dropdown-menu" role='menu'>
             <ul className="dropdown-content">
                 {itemList.map((item, index) => {
                     return(
-                        <div key={index} className="item ">
-                            <li className="dropdown-item">{item.name}{item.tent_name}</li>  
-                            <li className="dropdown-item">{item.id}{item.tent_id}</li>   
+                        <div key={index} className="dropdown-item">
+                            <li className="item">{item.name}{item.tent_name}</li>  
+                            <li className="item">{item.id}{item.tent_id}</li>  
+                            <hr className='dropdown-divider'/> 
                         </div>
-                    )
-                        
+                    )  
                     })}
             </ul>
             </div>
@@ -33,7 +32,6 @@ function ItemList({itemList}) {
             </div>
         </div>
             
-        </div>
         </>
     )
 }
