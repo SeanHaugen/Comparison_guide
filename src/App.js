@@ -1,23 +1,48 @@
-
-import React from "react";
-import SearchRetractors from "./components/retractors/SearchRtrc";
-import 'bulma/css/bulma.css';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom';
+//component imports
+import SearchBar from "./components/SearchBar";
+import ShowRetractors from "./components/retractors/ShowRetractors";
+import ShowTent from "./components/tents/ShowTents";
 import Header from "./components/Header";
 import About from "./components/About";
-
-import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom'
+//style imports
+import 'bulma/css/bulma.css';
+import './App.css';
+//data imports
+import Retractors from "./Data/Retractors";
+import tents from "./Data/Tents";
 
 function App() {
+
+    
+    const [item, setItem] = useState({});
+    const [item2, setItem2] = useState({});
+    const [item3, setItem3] = useState({});
+    const [itemList, setItemList] = useState({})
+    const [selectedRoute, setSelectedRoute] = useState("");
+
+    useEffect(() => {
+        if (selectedRoute === "retractors") {
+          setItemList(Retractors);
+        } else if (selectedRoute === "tents") {
+          setItemList(tents);
+        } else {
+          setItemList([{category: null}])
+        }
+      }, [selectedRoute]);
+
+
 
     return (
         <div className="container">
             <Router>
-                <Header />
-                
+                <Header setSelectedRoute={setSelectedRoute} itemList={itemList}/>
+                <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}   />
                 <Routes>
                     <Route path='/About' element={<About />} />
-                    <Route path='/RetractorCompare' element={<SearchRetractors />} />
+                    <Route path='/RetractorCompare' element={<ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />} />
+                    <Route path='/TentsCompare' element={<ShowTent tent={item} tent2={item2} tent3={item3} />} />
                 </Routes>
             </Router>
         </div>
