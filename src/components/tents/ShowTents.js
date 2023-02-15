@@ -61,7 +61,7 @@ function ShowTent({tent, tent2, tent3}) {
                         <th scope="row">Legs</th>
                         <td >{tent.legs}</td>
                         <td className={tent2.legs === tent.legs || tent2.legs === undefined  ? '' : 'highlight'}>{tent2.legs}</td>
-                        <td className={tent3.legs === tent.legs || tent3.legs === undefined? '' : 'highlight'}>{tent3.legs}</td>
+                        <td className={tent3.legs === tent.legs || tent3.legs === undefined  ? '' : 'highlight'}>{tent3.legs}</td>
                     </tr>
                     <tr>
                         <th scope="row">Feet</th>
@@ -84,7 +84,7 @@ function ShowTent({tent, tent2, tent3}) {
                     <tr>
                         <th scope="row">Weight</th>
                         <td >{tent.tent_weight}</td>
-                        <td className={tent2.tent_weight === tent.tent_weight || tent2.weight === undefined  ? '' : 'highlight'}>{tent2.tent_weight}</td>
+                        <td className={tent2.tent_weight === tent.tent_weight || tent2.tent_weight === undefined  ? '' : 'highlight'}>{tent2.tent_weight}</td>
                         <td className={tent3.tent_weight === tent.tent_weight  || tent3.tent_weight === undefined ? '' : 'highlight'}>{tent3.tent_weight}</td>
                     </tr>
                     <tr>
