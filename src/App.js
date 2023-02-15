@@ -14,7 +14,6 @@ import Retractors from "./Data/Retractors";
 import tents from "./Data/Tents";
 
 function App() {
-
     
     const [item, setItem] = useState({});
     const [item2, setItem2] = useState({});
@@ -33,20 +32,25 @@ function App() {
       }, [selectedRoute]);
 
 
-
     return (
-        <div className="container">
+        <div className="app-container">
             <Router>
-                <Header setSelectedRoute={setSelectedRoute} itemList={itemList}/>
-                <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}   />
+                <Header setSelectedRoute={setSelectedRoute} itemList={itemList} />
                 <Routes>
                     <Route path='/About' element={<About />} />
-                    <Route path='/RetractorCompare' element={<ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />} />
-                    <Route path='/TentsCompare' element={<ShowTent tent={item} tent2={item2} tent3={item3} />} />
+                    <Route path='/RetractorCompare' element={
+                    <>
+                      <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
+                      <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
+                    </>} />
+                    <Route path='/TentsCompare' element={
+                    <>
+                      <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
+                      <ShowTent tent={item} tent2={item2} tent3={item3} />
+                    </>} />
                 </Routes>
             </Router>
         </div>
-
     )
 }
 

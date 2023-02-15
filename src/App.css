@@ -5,6 +5,12 @@
   size: 16px;
 }
 
+.app-container {
+  margin-bottom: 10em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
 .highlight {
     background-color: yellow;
     width: fit-content;
@@ -31,15 +37,30 @@ margin-bottom: 1em;
 }
 
 
-.dropdown-container .sidebar .item{
+.dropdown-item .sidebar .item{
   display: flex;
 
+}
+
+.dropdown-content {
+  max-height: 15em;
+  min-height: fit-content;
+  overflow: scroll;
 }
 
 .navbar-item.active{
   font-weight: bold;
   color:#485fc7
 }
+
+.input {
+  margin: .2em;
+}
+
+.icon, span {
+  color: white;
+}
+
 
 
   /* Container for each product section */

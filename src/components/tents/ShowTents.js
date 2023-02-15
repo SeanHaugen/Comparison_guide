@@ -1,5 +1,6 @@
 import tents from "../../Data/Tents"
 function ShowTent({tent, tent2, tent3}) {
+
     return (
         <div className="comparison-container table-container">
         {Object.keys(tents).length > 0 && (
@@ -25,7 +26,9 @@ function ShowTent({tent, tent2, tent3}) {
                         <td>{tent2.id}</td>
                         <td>{tent3.id}</td>
                     </tr>
-                    <br />
+                </tbody>
+                <br />
+                <tbody>
                     <tr>
                         <th scope="row">Canopy</th>
                         <td >{tent.canopy}</td>

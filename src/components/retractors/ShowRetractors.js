@@ -29,7 +29,9 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                         <td>{retractor2.id}</td>
                         <td>{retractor3.id}</td>
                     </tr>
-                    <br />
+                </tbody>
+                <br />
+                <tbody> 
                     <tr>
                         <th  scope="row">Size</th>
                         <td>{retractor.size}</td>
