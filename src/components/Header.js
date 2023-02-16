@@ -13,7 +13,7 @@ function Header({setSelectedRoute, itemList}) {
                 <NavLink to='/About' className="navbar-item">About</NavLink>
                 <NavLink to='/RetractorCompare' className="navbar-item" onClick={() => setSelectedRoute('retractors')} >Compare Retractors</NavLink>
                 <NavLink to='/TentsCompare' className="navbar-item" onClick={() => setSelectedRoute('tents')}>Compare Tents</NavLink>
-                <NavLink to='/mediaCompare' className="navbar-item">Compare media</NavLink>
+                <NavLink to='/mediaCompare' className="navbar-item">Compare Media</NavLink>
                 <ItemList className="list-container" itemList={itemList} />
             </div>
         </nav>

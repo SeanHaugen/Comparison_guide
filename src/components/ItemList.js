@@ -1,21 +1,19 @@
 
 import React, { useState } from 'react' 
-// import ReactDropdown from 'react-dropdown';
-
-
 
 function ItemList({itemList}) {
 
-    const searchItemFromLocalStorage = localStorage.getItem('searchItem') || '';
-
+    //controls state for the dropdown list of item numbers
     const [isOpen, setIsOpen] = useState(false);
+    //state for allowing the user to search for the specific item from the dropdown menu
+    const searchItemFromLocalStorage = localStorage.getItem('searchItem') || '';
     const [searchItem, setSearchItem] = useState(searchItemFromLocalStorage)
 
-
+    //event handler for opening and closing the dropdown menu
     const handleIsOpen = () => {
         setIsOpen(!isOpen)
     }
-
+    //event handler for entering text into the inputs and assigning the value to search item with setSearchItem
     const handleSearch = (event) => {
         setSearchItem(event.target.value)
     }
@@ -31,7 +29,7 @@ function ItemList({itemList}) {
                     </span>
                 </button>
             </div>
-        
+            {/* The following is displayed when the dropdown is open */}
             {isOpen && (
             <div className="dropdown-menu" id="dropdown-menu5" role="menu" >
                 <input 
@@ -41,7 +39,7 @@ function ItemList({itemList}) {
                 value={searchItem}
                 className="input is-small is-rounded is-info"
                 />
-
+                {/* allows the user to filter the dropdown items with the searchbar as well as mapping the dropdown items */}
                 <ul className="dropdown-content ">
                     {itemList.filter(post => {
                         if (searchItem === '') {
@@ -64,7 +62,6 @@ function ItemList({itemList}) {
             </div>
             )}
         </div>
-            
     </>
     )
 }

@@ -15,12 +15,15 @@ import tents from "./Data/Tents";
 
 function App() {
     
+  //The three items here are to handle each of the inputs on the form
     const [item, setItem] = useState({});
     const [item2, setItem2] = useState({});
     const [item3, setItem3] = useState({});
+
+  //The selected Route state is assigned based on which route the user chooses from the menu utilizing the useEffect Hook. 
+  //The route chosen then assigns the corresponding item list
     const [itemList, setItemList] = useState({})
     const [selectedRoute, setSelectedRoute] = useState("");
-
     useEffect(() => {
         if (selectedRoute === "retractors") {
           setItemList(Retractors);
@@ -39,15 +42,19 @@ function App() {
                 <Routes>
                     <Route path='/About' element={<About />} />
                     <Route path='/RetractorCompare' element={
-                    <>
+                    <div>
                       <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
                       <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
-                    </>} />
+                    </div>
+                    }
+                     />
                     <Route path='/TentsCompare' element={
-                    <>
+                    <div>
                       <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
                       <ShowTent tent={item} tent2={item2} tent3={item3} />
-                    </>} />
+                    </div>
+                    }
+                     />
                 </Routes>
             </Router>
         </div>

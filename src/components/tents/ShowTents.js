@@ -8,9 +8,9 @@ function ShowTent({tent, tent2, tent3}) {
                 <thead>
                     <tr>
                         <th scope="col">Description</th>
-                        <th scope="col">Main input</th>
-                        <th scope="col">Comparison input</th>
-                        <th scope="col">Comparison input</th>
+                        <th scope="col">Primary input</th>
+                        <th scope="col">Comparative input A</th>
+                        <th scope="col">Comparative input B</th>
                     </tr>
                 </thead>
                 <tbody>
