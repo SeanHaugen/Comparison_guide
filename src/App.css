@@ -6,13 +6,13 @@
 }
 
 .app-container {
-  margin-bottom: 10em;
+  margin-bottom: 2em;
   margin-left: 3em;
   margin-right: 3em;
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: rgba(254, 254, 89, 0.714);
     width: fit-content;
     border-radius: 10px;
 }
@@ -61,79 +61,8 @@ margin-bottom: 1em;
   color: white;
 }
 
-
-
-  /* Container for each product section */
-  /* .product-section {
-    width: 48%;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  } */
-  
-  /* Image container */
-  /* .product-section img {
-    width: 100%;
-    margin-bottom: 20px;
-  } */
-  
-  /* Product title */
-  /* .product-section h3 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  } */
-  
-  /* Product description */
-  /* .product-section p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-   */
-  /* Comparison table */
-  /* .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  } */
-  
-  /* Comparison table headers */
-  /* .comparison-table th {
-    background-color: #ddd;
-    font-weight: bold;
-    padding: 10px;
-    text-align: left;
-  } */
-  
-  /* Comparison table cells */
-  /* .comparison-table td {
-    padding: 10px;
-  } */
-  
-  /* Highlight cells with different values */
-  /* .comparison-table td.different {
-    background-color: #ffcccc;
-  } */
-
-  /* tr {
-    margin: 5px;
-  } */
-
-  /* .item-list {
-    display: flex;
-    position:relative;
-    left: 10em;
-  } */
-  
-  /* .comparison-container {
-    display: flex;
-    flex-flow: row wrap;
-  } */
-/* 
-  td tr {
-    border: 1px solid black;
-    width: 20em;
-  } */
+.footer {
+  margin-top: 1em;
+}
 
 

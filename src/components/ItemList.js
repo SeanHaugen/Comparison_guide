@@ -20,7 +20,7 @@ function ItemList({itemList}) {
 
     return (
         <>
-        <div className="dropdown is-left is-active">
+        <div className="dropdown is-active">
             <div className="dropdown-trigger dropdown-container">
                 <button className="button is-info " aria-haspopup="true" aria-controls='dropdown-menu5' onClick={handleIsOpen}>
                     <div>Open Item list</div>

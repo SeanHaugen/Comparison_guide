@@ -4,8 +4,10 @@ import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom';
 import SearchBar from "./components/SearchBar";
 import ShowRetractors from "./components/retractors/ShowRetractors";
 import ShowTent from "./components/tents/ShowTents";
+import ShowMedia from "./components/media/ShowMedia";
 import Header from "./components/Header";
 import About from "./components/About";
+import Footer from "./components/Footer";
 //style imports
 import 'bulma/css/bulma.css';
 import './App.css';
@@ -55,8 +57,15 @@ function App() {
                     </div>
                     }
                      />
+                     <Route path='/mediaCompare' element={
+                    <div>
+                      <ShowMedia tent={item} tent2={item2} tent3={item3} />
+                    </div>
+                    }
+                     />
                 </Routes>
             </Router>
+            <Footer />
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from "react";
+import ItemList from "./ItemList";
 
 function SearchBar({itemList,  setItem, setItem2, setItem3}) {
 
@@ -36,12 +37,34 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
         <div className="comparison-guide box">
         <form onSubmit={handleFormSubmit}   >
             {/* form inputs */}
-            <input type="text" className="input is-primary is-focused" placeholder="Enter Item Number" value={input1} onChange={e => setInput1(e.target.value)} />
-            <input type="text" className="input is-info is-focused" placeholder="Enter Item Number to Compare" value={input2} onChange={e => setInput2(e.target.value)} />
-            <input type="text" className="input is-info is-focused" placeholder="Enter Item Number to Compare" value={input3} onChange={e => setInput3(e.target.value)} />
+            <input 
+                type="text" 
+                className="input is-primary is-focused" 
+                placeholder="Enter Item Number" 
+                value={input1} 
+                onChange={e => setInput1(e.target.value)} 
+                
+                />
+            <input 
+                type="text" 
+                className="input is-info is-focused" 
+                placeholder="Enter Item Number to Compare" 
+                value={input2} 
+                onChange={e => setInput2(e.target.value)}
+                
+                 />
+            <input 
+                type="text" 
+                className="input is-info is-focused" 
+                placeholder="Enter Item Number to Compare" 
+                value={input3} 
+                onChange={e => setInput3(e.target.value)} 
+                
+                />
             {/* form buttons */}
             <button type="submit" onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
             <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear Inputs</button>
+            <ItemList itemList={itemList} className="is-responsive"/>
         </form>
         </div>
     )
