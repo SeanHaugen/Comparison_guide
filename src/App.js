@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 import 'bulma/css/bulma.css';
 import './App.css';
 //data imports
-import Retractors from "./Data/Retractors";
+import allRetractors from "./Data/Retractors/all";
 import tents from "./Data/Tents";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
     const [selectedRoute, setSelectedRoute] = useState("");
     useEffect(() => {
         if (selectedRoute === "retractors") {
-          setItemList(Retractors);
+          setItemList(allRetractors);
         } else if (selectedRoute === "tents") {
           setItemList(tents);
         } else {

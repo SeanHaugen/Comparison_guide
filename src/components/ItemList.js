@@ -18,15 +18,34 @@ function ItemList({itemList}) {
         setSearchItem(event.target.value)
     }
 
+    const handleArrowUp = () => {
+        if (isOpen === false) {
+          return (                    
+            <span className="icon is-small">
+              <i className="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          );
+        } 
+    }
+    const handleArrowDown = () => {
+          
+        if (isOpen === true) {
+        return (
+            <span className="icon is-small">
+              <i className="fas fa-angle-up" aria-hidden="true"></i>
+            </span>
+          );
+        }
+      }
+
     return (
         <>
         <div className="dropdown is-active">
             <div className="dropdown-trigger dropdown-container">
                 <button className="button is-info " aria-haspopup="true" aria-controls='dropdown-menu5' onClick={handleIsOpen}>
-                    <div>Open Item list</div>
-                    <span className="icon is-small">
-                        <i className="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
+                    <div>Find Item</div>
+                    {handleArrowUp()}
+                    {handleArrowDown()}
                 </button>
             </div>
             {/* The following is displayed when the dropdown is open */}

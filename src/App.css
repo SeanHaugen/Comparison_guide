@@ -9,6 +9,7 @@
   margin-bottom: 2em;
   margin-left: 3em;
   margin-right: 3em;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .highlight {
@@ -66,3 +67,28 @@ margin-bottom: 1em;
 }
 
 
+.box {
+  width: 50%;
+  
+}
+
+img {
+  background-color: black;
+}
+
+.one {
+  background-color: #485fc7;
+}
+
+.copy-write {
+  display: flex;
+  margin: .5em;
+}
+
+.logo {
+  margin-left: 50%;
+}
+
+.title {
+  display: flex;
+}

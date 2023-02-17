@@ -1,4 +1,4 @@
-import Retractors from '../../Data/Retractors'
+import Retractors from '../../Data/Retractors/all'
 
 
 function ShowRetractors({retractor, retractor2, retractor3}) {
