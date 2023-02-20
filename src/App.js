@@ -8,12 +8,14 @@ import ShowMedia from "./components/media/ShowMedia";
 import Header from "./components/Header";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ItemTypeList from "./components/ItemTypes"
 //style imports
 import 'bulma/css/bulma.css';
 import './App.css';
 //data imports
 import allRetractors from "./Data/Retractors/all";
 import tents from "./Data/Tents";
+
 
 function App() {
     
@@ -40,16 +42,18 @@ function App() {
     return (
         <div className="app-container">
             <Router>
-                <Header setSelectedRoute={setSelectedRoute} itemList={itemList} />
+                <Header setSelectedRoute={setSelectedRoute} />
+                
                 <Routes>
                     <Route path='/About' element={<About />} />
                     <Route path='/RetractorCompare' element={
                     <div>
-                      <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
-                      <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
+                        
+                          <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
+                          <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
                     </div>
                     }
-                     />
+                    />
                     <Route path='/TentsCompare' element={
                     <div>
                       <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
@@ -65,7 +69,7 @@ function App() {
                      />
                 </Routes>
             </Router>
-            <Footer />
+          <Footer />
         </div>
     )
 }

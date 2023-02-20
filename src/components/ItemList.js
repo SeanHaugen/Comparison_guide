@@ -1,7 +1,7 @@
 
-import React, { useState } from 'react' 
+import React, { useState, useEffect, useRef } from 'react' 
 
-function ItemList({itemList}) {
+function ItemList({filteredItems}) {
 
     //controls state for the dropdown list of item numbers
     const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +9,32 @@ function ItemList({itemList}) {
     const searchItemFromLocalStorage = localStorage.getItem('searchItem') || '';
     const [searchItem, setSearchItem] = useState(searchItemFromLocalStorage)
 
+  // Use a ref to store a reference to the dropdown menu element
+  const dropdownRef = useRef(null);
+
+  // Close the dropdown if the user clicks outside of it
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, []);
+
     //event handler for opening and closing the dropdown menu
     const handleIsOpen = () => {
         setIsOpen(!isOpen)
     }
     //event handler for entering text into the inputs and assigning the value to search item with setSearchItem
     const handleSearch = (event) => {
-        setSearchItem(event.target.value)
+        const searchQuery = event.target.value.toLowerCase();
+        setSearchItem(searchQuery)
+        setIsOpen(true)
     }
 
     const handleArrowUp = () => {
@@ -28,7 +47,6 @@ function ItemList({itemList}) {
         } 
     }
     const handleArrowDown = () => {
-          
         if (isOpen === true) {
         return (
             <span className="icon is-small">
@@ -40,7 +58,14 @@ function ItemList({itemList}) {
 
     return (
         <>
-        <div className="dropdown is-active">
+        <div className="dropdown is-active" ref={dropdownRef}>
+        <input 
+            type="text"
+            placeholder="search"
+            onChange={handleSearch}
+            value={searchItem}
+            className="input is-small is-rounded is-info "
+            />            
             <div className="dropdown-trigger dropdown-container">
                 <button className="button is-info " aria-haspopup="true" aria-controls='dropdown-menu5' onClick={handleIsOpen}>
                     <div>Find Item</div>
@@ -51,16 +76,9 @@ function ItemList({itemList}) {
             {/* The following is displayed when the dropdown is open */}
             {isOpen && (
             <div className="dropdown-menu" id="dropdown-menu5" role="menu" >
-                <input 
-                type="text"
-                placeholder="search"
-                onChange={handleSearch}
-                value={searchItem}
-                className="input is-small is-rounded is-info"
-                />
                 {/* allows the user to filter the dropdown items with the searchbar as well as mapping the dropdown items */}
                 <ul className="dropdown-content ">
-                    {itemList.filter(post => {
+                    {filteredItems.filter(post => {
                         if (searchItem === '') {
                         return post;
                         } else if (post.name.toLowerCase().includes(searchItem.toLowerCase())) {

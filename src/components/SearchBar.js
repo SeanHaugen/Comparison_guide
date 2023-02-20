@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from "react";
-import ItemList from "./ItemList";
-
+// import ItemTypeList from "./ItemTypes";
+import ItemTypeList from "./ItemTypes";
 
 
 function SearchBar({itemList,  setItem, setItem2, setItem3}) {
@@ -39,11 +39,14 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
 
     return (
         <>
+        {/* <ItemTypeList itemList={itemList} /> */}
         <div className="comparison-guide box">
+        <ItemTypeList itemList={itemList} className="search-bar"/> 
+        
         <form onSubmit={handleFormSubmit}   >
             <div >
             {/* form inputs */}
-            <div>
+            <div className="field">
                 <input 
                 type="text button" 
                 className=" dropdown-trigger input is-primary is-focused" 
@@ -52,7 +55,7 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
                 onChange={e => setInput1(e.target.value)} 
                 />
             </div>
-            <div>
+            <div className="field">
                 <input 
                 type="text" 
                 className="dropdown-trigger input is-info is-focused" 
@@ -61,7 +64,7 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
                 onChange={e => setInput2(e.target.value)}
                  />
             </div>
-            <div >
+            <div className="field">
                 <input 
                 type="text" 
                 className="dropdown-trigger input is-info is-focused" 
@@ -73,8 +76,8 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
             </div>
             {/* form buttons */}
             <button type="submit" onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
-            <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear Inputs</button>
-            <ItemList itemList={itemList} className="is-responsive"/>
+            <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear</button>
+            {/* <ItemList itemList={itemList} className="is-responsive"/> */}
         </form>
         </div>
         

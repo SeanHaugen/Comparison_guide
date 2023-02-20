@@ -15,7 +15,9 @@ const allRetractors = [
     RCAT: "not rated",
     production: '1 business day',
     warranty: "6 month",
-    case: "not included"
+    case: "not included",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -30,7 +32,9 @@ const allRetractors = [
     RCAT: "not rated",
     production: '1 business day',
     warranty: "6 month",
-    case: "not included"
+    case: "not included",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -45,7 +49,9 @@ const allRetractors = [
     RCAT: "not rated",
     production: '1 business day',
     warranty: "6 month",
-    case: "not included"
+    case: "not included",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -59,7 +65,9 @@ const allRetractors = [
     weight: "5 lbs",
     RCAT: 25,
     production: '1 business day',
-    warranty: "60 day"
+    warranty: "60 day",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -76,6 +84,7 @@ const allRetractors = [
     warranty: "60 day"
     
 },
+//value
 {
     id: 262241,
     name: "31.5\" Value Retractor Kit",
@@ -87,7 +96,9 @@ const allRetractors = [
     weight: "7 lbs",
     RCAT: 50,
     production: '2 business days',
-    warranty: "6 months"
+    warranty: "6 months",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -101,7 +112,9 @@ const allRetractors = [
     weight: "6.35 lbs",
     RCAT: 50,
     production: '2 business days',
-    warranty: "6 months"
+    warranty: "6 months",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -115,7 +128,9 @@ const allRetractors = [
     weight: "7.25 lbs",
     RCAT: 50,
     production: '2 business days',
-    warranty: "6 months"
+    warranty: "6 months",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -129,7 +144,9 @@ const allRetractors = [
     weight: "6.5 lbs",
     RCAT: 50,
     production: '2 business days',
-    warranty: "6 months"
+    warranty: "6 months",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -143,7 +160,9 @@ const allRetractors = [
     weight: "7.6 lbs",
     RCAT: 50,
     production: '2 business days',
-    warranty: "6 months"
+    warranty: "6 months",
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -157,9 +176,12 @@ const allRetractors = [
     weight: "6.8 lbs",
     RCAT: 50,
     production: '2 business days',
-    warranty: "6 months"
+    warranty: "6 months",
+    category: 'good',
+    type: "Economy"
     
 },
+//Economy
 {
     id: 261381,
     name: "18\" Economy Tabletop Retractor Kit (opaque)",
@@ -171,6 +193,8 @@ const allRetractors = [
     weight: "5.4 lbs",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -184,6 +208,8 @@ const allRetractors = [
     weight: "5.4 lbs",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -197,6 +223,8 @@ const allRetractors = [
     weight: "5.4 lbs",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -210,6 +238,8 @@ const allRetractors = [
     weight: "5.5 lbs",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -223,6 +253,8 @@ const allRetractors = [
     weight: "5.5 lbs",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -236,6 +268,8 @@ const allRetractors = [
     weight: "5.5 lbs",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -249,6 +283,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -262,6 +298,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -275,6 +313,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -289,6 +329,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -302,6 +344,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
 },
 {
     id: 261364,
@@ -314,6 +358,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
 },
 {
     id: 261136,
@@ -326,6 +372,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
 
 },
 {
@@ -334,11 +382,13 @@ const allRetractors = [
     media: "Titan No-curl Opaque media",
     size: "32\"W x 83.5\"H x 15\"D ",
     weight: "7 lbs",
-    base: "Aluminum. Two swivel feet. Base available in black or silver",
+    base: "Aluminum. Two swivel feet. Available in black or silver",
     pole: "Shock cord pole",
     banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -347,11 +397,13 @@ const allRetractors = [
     media: "PVC Free silver backed media, 100% polyester",
     size: "34\"W x 83.5\"H x 15\"D ",
     weight: "7.25 lbs",
-    base: "Aluminum. Two swivel feet. Base available in black or silver",
+    base: "Aluminum. Two swivel feet. Available in black or silver",
     pole: "Shock cord pole",
     banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
 
 },
 {
@@ -360,11 +412,13 @@ const allRetractors = [
     media: "Titan No-curl Opaque media",
     size: "36\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
-    base: "Two swivel feet. Available in black or silver ",
+    base: "Aluminum. Two swivel feet. Available in black or silver ",
     pole: "Shock cord pole",
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -373,11 +427,13 @@ const allRetractors = [
     media: "Titan No-curl Opaque media",
     size: "36\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
-    base: "Two swivel feet.Available in black or silver ",
+    base: "Aluminum. Two swivel feet. Available in black or silver ",
     pole: "Shock cord pole",
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -391,6 +447,8 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
 {
@@ -404,53 +462,480 @@ const allRetractors = [
     banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
+    category: 'good',
+    type: "Economy"
     
 },
+
+//Economy Plus
 {
-    id: 262102,
-    name: "33.5\" Economy Plus Retractor",
+    id: 261012,
+    name: "31.5\" Economy Plus Retractor",
     media: "Titan No-curl hybrid media",
-    size: "adjustable from 58\" - 78.5\"",
-    base: "Heavy-duty Aluminum Base. Singled Footed design keeps the retractor stable while maintaining a low profile. ",
-    pole: "Flip-lever telescoping pole makes setup and adjustment simple.",
-    banner: "Banner attaches with Hook-and-loop fasteners for easy swap out.",
+    size: "32\"W x 83\" x 15\"D",
+    base: "Heavy-duty Aluminum Base. Singled Footed. ",
+    pole: "Flip-lever telescoping pole.",
+    banner: "Banner attaches with snap rail on top and Hook-and-loop fasteners on bottom. Adjustable from 58\"H - 78.5\"H ",
+    weight: "7lbs",
     RCAT: 150,
     production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+{
+    id: 261012,
+    name: "31.5\" Economy Plus Retractor (Opaque)",
+    media: "Titan No-curl Opaque media",
+    size: "32\"W x 83\"H x 15\"D",
+    base: "Heavy-duty Aluminum Base. Singled Footed. ",
+    pole: "Flip-lever telescoping pole.",
+    banner: "Banner attaches with snap rail on top and Hook-and-loop fasteners on bottom. Adjustable from 58\"H - 78.5\"H ",
+    weight: "7lbs",
+    RCAT: 150,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+{
+    id: 261012,
+    name: "31.5\" Economy Plus Retractor (Dry-Erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "32\"W x 83\"H x 15\"D",
+    base: "Heavy-duty Aluminum Base. Singled Footed. ",
+    pole: "Flip-lever telescoping pole.",
+    banner: "Banner attaches with snap rail on top and Hook-and-loop fasteners on bottom. Adjustable from 58\"H - 78.5\"H ",
+    weight: "7lbs",
+    RCAT: 150,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+//economy plus 33.5"
+{
+    id: 261002,
+    name: "33.5\" Economy Plus Retractor",
+    media: "Titan No-curl hybrid media",
+    size: "34\"W x 83\"H x 15\"D",
+    base: "Heavy-duty Aluminum Base. Singled Footed. ",
+    pole: "Flip-lever telescoping pole.",
+    weight: "7.5lbs",
+    banner: "Banner attaches with snap rail on top and Hook-and-loop fasteners on bottom. Adjustable from 58\"H - 78.5\"H",
+    RCAT: 150,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+{
+    id: 261002,
+    name: "33.5\" Economy Plus Retractor (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "34\"W x 83\"H x 15\"D",
+    base: "Heavy-duty Aluminum Base. Singled Footed. ",
+    pole: "Flip-lever telescoping pole.",
+    weight: "7.5lbs",
+    banner: "Banner attaches with snap rail on top and Hook-and-loop fasteners on bottom. Adjustable from 58\"H - 78.5\"H",
+    RCAT: 150,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+{
+    id: 261002,
+    name: "33.5\" Economy Plus Retractor (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "34\"W x 83\"H x 15\"D",
+    base: "Heavy-duty Aluminum Base. Singled Footed. ",
+    pole: "Flip-lever telescoping pole.",
+    weight: "7.5lbs",
+    banner: "Banner attaches with snap rail on top and Hook-and-loop fasteners on bottom. Adjustable from 58\"H - 78.5\"H",
+    RCAT: 150,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+
+
+//Stratus
+{
+    id: 262070,
+    name: "24\" Stratus Retractor",
+    media: "Titan No-curl hybrid media",
+    size: "25.25\"W x 81.62\"H x 7.12\"D",
+    base: "Aluminum Base with chrome end caps. Low center of gravity",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "8.75lbs",
+    //does banner also attach on top with snap rail??
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+{
+    id: 262150,
+    name: "24\" Stratus Retractor (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "25.25\"W x 81.63\"H x 7.12\"D",
+    base: "Aluminum Base with chrome end caps. Low center of gravity",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "8.75lbs",
+    //does banner also attach on top with snap rail??
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
+
+},
+{
+    id: 262206,
+    name: "24\" Stratus Retractor (dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "25.25\"W x 81.63\"H x 7.12\"D",
+    base: "Aluminum Base with chrome end caps. Low center of gravity",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "8.75lbs",
+    //does banner also attach on top with snap rail??
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: "Economy Plus"
 
 },
 {
     id: 262072,
     name: "31.5\" stratus Retractor Kit",
     media: "Titan No-curl hybrid media",
-    size: "adjustable from 64.375\" -  78.5\"",
+    size: "33\"W x 81.63\"H x 7.12\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
-    pole: "Shock cord pole with telescoping flip-lever.",
-    banner: "Banner attaches with Hook-and-loop fasteners for easy swap out.",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "11.25lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
     RCAT: 200,
-    production: '2 business days'
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
 
 },
 {
-    id: 262250,
-    name: "33.5\" Deluxe Pro Retractor",
-    media: "Titan No-curl Opaque media",
-    size: "adjustable from 61.5\" -  79.5\"",
+    id: 262072,
+    name: "31.5\" stratus Retractor Kit (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "33\"W x 81.63\"H x 7.12\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
-    pole: "Flip-lever telescoping pole",
-    banner: "Banner attaches with Hook-and-loop fasteners for easy swap out.",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "11.25lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
     RCAT: 200,
-    production: '1 business day'
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
 },
 {
+    id: 262072,
+    name: "31.5\" stratus Retractor Kit (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "33\"W x 81.62\"H x 7.12\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "11.25lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262072,
+    name: "33.5\" stratus Retractor Kit",
+    media: "Titan No-curl Hybrid media",
+    size: "34.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262074,
+    name: "33.5\" stratus Retractor Kit (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "34.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262208,
+    name: "33.5\" stratus Retractor Kit (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "34.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262076,
+    name: "36\" stratus Retractor Kit",
+    media: "Titan No-curl Hybrid media",
+    size: "37.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262153,
+    name: "36\" stratus Retractor Kit (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "37.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262209,
+    name: "36\" stratus Retractor Kit (Opaque)",
+    media: "Dry-erase media. Glossy surface",
+    size: "37.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262078,
+    name: "48\" stratus Retractor Kit",
+    media: "Titan No-curl Hybrid media",
+    size: "49.5\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262154,
+    name: "48\" stratus Retractor Kit (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "49.5\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+{
+    id: 262210,
+    name: "48\" stratus Retractor Kit (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "49.5\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 64.375\" to 78.5\"",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: 'stratus'
+
+},
+
+//Deluxe pro
+{
+    id: 262250,
+    name: "33.5\" Deluxe Pro Retractor (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "34.75\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '12.25lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+{
+    id: 262202,
+    name: "33.5\" Deluxe Pro Retractor (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "34.75\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '12.25lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+{
+    id: 262251,
+    name: "33.5\" Deluxe Pro Double Banner Retractor (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "34.75\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '16lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Double Banner. Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+
+{
+    id: 262203,
+    name: "33.5\" Deluxe Pro Double Banner Retractor (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "34.75\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '16lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Double Banner. Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+{
+    id: 262254,
+    name: "46.5\" Deluxe Pro Retractor (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "48.5\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '16.75lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+{
+    id: 262255,
+    name: "46.5\" Deluxe Pro Double Banner Retractor (Opaque)",
+    media: "Titan No-curl Opaque fabric",
+    size: "48\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '22.5lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Double Banner. Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+{
+    id: 262204,
+    name: "46.5\" Deluxe Pro Retractor (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "48.5\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '16lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+{
+    id: 262205,
+    name: "46.5\" Deluxe Pro Double Banner Retractor (Dry-erase)",
+    media: "Dry-erase media. Glossy surface",
+    size: "48.5\"W x 83.25\"H x 8.5\"D",
+    base: " Aluminum base. Durable for frequent use",
+    weight: '22.5lbs',
+    pole: "Flip-lever telescoping pole",
+    banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
+    RCAT: 200,
+    production: '1 business day',
+    category: 'better'
+},
+//best retractors
+{
     id: 261118,
-    name: "33.5\" Superb Retractor Kit",
+    name: "Superb Retractor Kit",
     media: "Titan No-curl hybrid media",
-    size: "adjustable from 31\" - 78\"",
-    base: "Durable construction makes this a long-lasting option. Low-profile aluminum base. Available in black or silver end caps",
-    pole: "Flip-lever telescoping pole makes setup and adjustment simple.",
-    banner: "Flip-open base allows for easy banner changes. Banner attaches to a leader on the roller using tape",
+    size: "33.5\"W x 80.5\"H x 7.75\"",
+    base: "Aluminum low profile flip-open base. Black or silver end caps",
+    pole: "Flip-lever telescoping pole.",
+    weight: "8lbs",
+    banner: " Banner attaches to a leader on the roller using tape. Adjustable from 31.5\" to 78\"",
     RCAT: 800,
     production: '1 business day',
+    category: 'best'
+},
+{
+    id: 261304,
+    name: "31.5\" Spotlight Retractor Kit",
+    media: "Flexible backlit film media",
+    size: "34\"W x 84\"H x 10.25\"",
+    base: "Aluminum. Light radiated from the base by low temp LED lights with on/off switch",
+    pole: "",
+    weight: "22lbs",
+    banner: "2 single sided banners. connector cord to link up to 3 retractors ",
+    RCAT: 800,
+    production: '1 business day',
+    category: 'best'
+},
+{
+    id: 261205,
+    name: "16\" MagnaLink Retractor kit",
+    media: "Titan No-curl fabric",
+    size: "34\"W x 84\"H x 10.25\"",
+    base: "Aluminum with magnetic end caps and top rail, to align multiple retractors",
+    pole: "",
+    weight: "lbs",
+    banner: "",
+    RCAT: 800,
+    production: '1 business day',
+    category: 'best'
 }
 
 
