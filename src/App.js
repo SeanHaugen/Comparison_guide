@@ -8,7 +8,7 @@ import ShowMedia from "./components/media/ShowMedia";
 import Header from "./components/Header";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import ItemTypeList from "./components/ItemTypes"
+
 //style imports
 import 'bulma/css/bulma.css';
 import './App.css';
