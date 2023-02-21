@@ -14,7 +14,7 @@ function ShowTent({tent, tent2, tent3}) {
                         <th scope="col">Comparative input B</th>
                     </tr>
                 </thead>
-                <tbody className="body">
+                <tbody className="table-body ">
                     <tr>
                         <th scope="row">Name</th>
                         <td>{tent.name}</td>

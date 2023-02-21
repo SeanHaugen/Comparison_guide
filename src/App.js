@@ -56,8 +56,7 @@ function App() {
                     }/>
                     <Route path='/TentsCompare' element={
                       <div>
-                        <h1 className="title">Under Construction</h1>
-                        {/* <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} /> */}
+                        <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
                         <ShowTent tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
