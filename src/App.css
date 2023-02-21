@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .app-container {
@@ -18,11 +19,7 @@
     border-radius: 5px;
 }
 
-/* .comparison-guide {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 1em;
-} */
+
 
 .comparison-guide form button {
   width:max-content;
@@ -57,6 +54,10 @@ margin-bottom: 1em;
 .dropdown-menu {
   display: flex;
   justify-content: flex-end;
+}
+
+.dropdown-item{
+  size: 5px;
 }
 
 .navbar-item.active{
@@ -113,14 +114,22 @@ img {
 
 .checkbox {
   width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  
 }
 
 .container {
   display: flex;
   flex-flow: row;
-
 }
 
 .checkbox-container {
   margin-bottom: 4em;
+}
+
+.table-body {
+  border-bottom: .75em double rgba(45, 45, 45, 0.697);
+  
+  
 }

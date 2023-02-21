@@ -1,3 +1,4 @@
+import { warning } from "@remix-run/router";
 import React, { useEffect, useState} from "react";
 // import ItemTypeList from "./ItemTypes";
 import ItemTypeList from "./ItemTypes";
@@ -5,15 +6,26 @@ import ItemTypeList from "./ItemTypes";
 
 function SearchBar({itemList,  setItem, setItem2, setItem3}) {
     
-
     //Assign state to each input
     const [input1, setInput1] = useState('');
     const [input2, setInput2] = useState('');
     const [input3, setInput3] = useState('');
+
+
+    //function for form validation requiring an input
+    const validateInput = (input) => {
+        if (input.trim() === '') {
+          return false;
+        } else {
+          return true;
+        }
+      }
+
     //handles the submission of each input line on the form
     const handleFormSubmit = (e) => {
       e.preventDefault();
-      //returns the first item to satisfy the testing function. function looks for id or name else it will return undefined
+      //returns the first item to satisfy the testing function. function looks for id or name else it will return undefined, using validate input to make input1 required
+      if(validateInput(input1)){
       const selectedItem = itemList.find(r => (r.id === parseInt(input1) || r.name === input1));
       const selectedItem2 = itemList.find(r => (r.id === parseInt(input2) || r.name === input2));
       const selectedItem3 = itemList.find(r => (r.id === parseInt(input3) || r.name === input3));
@@ -21,6 +33,9 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
       setItem(selectedItem || {});
       setItem2(selectedItem2 || {});
       setItem3(selectedItem3 || {} );
+      } else {
+        warning('enter primary input')
+      }
     };
     //Clears each input and table item
     const clearInputs = () => {
@@ -43,41 +58,34 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
         <div className="comparison-guide box">
         <ItemTypeList itemList={itemList} className="search-bar"/> 
         
-        <form onSubmit={handleFormSubmit}   >
-            <div >
+        <form onSubmit={handleFormSubmit} >
             {/* form inputs */}
-            <div className="field">
-                <input 
-                type="text button" 
-                className=" dropdown-trigger input is-primary is-focused" 
-                placeholder="Enter Item Number" 
-                value={input1} 
-                onChange={e => setInput1(e.target.value)} 
-                />
-            </div>
-            <div className="field">
-                <input 
-                type="text" 
-                className="dropdown-trigger input is-info is-focused" 
-                placeholder="Enter Item Number to Compare" 
-                value={input2} 
-                onChange={e => setInput2(e.target.value)}
-                 />
-            </div>
-            <div className="field">
-                <input 
-                type="text" 
-                className="dropdown-trigger input is-info is-focused" 
-                placeholder="Enter Item Number to Compare" 
-                value={input3} 
-                onChange={e => setInput3(e.target.value)} 
-                />
-            </div>
-            </div>
+            <input 
+            type="text"
+            className="dropdown-trigger input is-primary is-focused" 
+            placeholder="Enter Item Number" 
+            value={input1} 
+            onChange={e => setInput1(e.target.value)} 
+            required 
+            />
+            <input 
+            type="text" 
+            className="dropdown-trigger input is-info is-focused" 
+            placeholder="Enter Item Number to Compare" 
+            value={input2} 
+            onChange={e => setInput2(e.target.value)}                
+            />
+            <input 
+            type="text" 
+            className="dropdown-trigger input is-info is-focused" 
+            placeholder="Enter Item Number to Compare" 
+            value={input3} 
+            onChange={e => setInput3(e.target.value)}                 
+            />
             {/* form buttons */}
-            <button type="submit" onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
+            <button  onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
             <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear</button>
-            {/* <ItemList itemList={itemList} className="is-responsive"/> */}
+
         </form>
         </div>
         

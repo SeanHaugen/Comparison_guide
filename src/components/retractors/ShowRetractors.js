@@ -1,9 +1,8 @@
+import React from 'react'
 import Retractors from '../../Data/Retractors/all'
 
 
 function ShowRetractors({retractor, retractor2, retractor3}) {
-
-
     return (
         <div className="comparison-container table-container">
         {Object.keys(Retractors).length > 0 && (
@@ -16,7 +15,7 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                         <th scope="col">Comparative Input B</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className='table-body'>
                     <tr>
                         <th scope="row">Name</th>
                         <td>{retractor.name}</td>
@@ -30,7 +29,7 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                         <td>{retractor3.id}</td>
                     </tr>
                 </tbody>
-                <br />
+                
                 <tbody> 
                     <tr>
                         <th  scope="row">Size</th>

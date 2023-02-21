@@ -18,7 +18,7 @@ function ItemList({filteredItems}) {
       setIsOpen(false);
     }
   }
-
+//handles being able to click elsewhere on the page to close the dropdown menu.
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
@@ -81,7 +81,7 @@ function ItemList({filteredItems}) {
                     {filteredItems.filter(post => {
                         if (searchItem === '') {
                         return post;
-                        } else if (post.name.toLowerCase().includes(searchItem.toLowerCase())) {
+                        } else if (post.name.toLowerCase().includes(searchItem.toLowerCase()) || post.id.toString().includes(searchItem.toLocaleLowerCase())) {
                         return post;
                         } else {
                             return false

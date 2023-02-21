@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import ItemList from './ItemList'
 
 
@@ -21,11 +21,10 @@ function ItemTypeList({itemList}) {
         return passCategoryFilter
         })
  
-
+        
 
     return (
         <div className="checkbox-container search-bar">
-          <ItemList itemList={itemList} filteredItems={filteredItems}/>
           <strong>Filter by:</strong>
         <label className="checkbox">
             <input  type="checkbox" value="good" onChange={handleCategoryChange} />
@@ -37,7 +36,7 @@ function ItemTypeList({itemList}) {
             <input type="checkbox" value="best" onChange={handleCategoryChange} />
             Best
         </label>
-        
+        <ItemList itemList={itemList} filteredItems={filteredItems}/>
         <br />
         
         </div>

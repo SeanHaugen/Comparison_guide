@@ -1,3 +1,4 @@
+import React from "react";
 import tents from "../../Data/Tents"
 function ShowTent({tent, tent2, tent3}) {
 
@@ -5,7 +6,7 @@ function ShowTent({tent, tent2, tent3}) {
         <div className="comparison-container table-container">
         {Object.keys(tents).length > 0 && (
             <table className=" table product-section table is-striped is-bordered is-fullwidth">
-                <thead>
+                <thead >
                     <tr>
                         <th scope="col">Description</th>
                         <th scope="col">Primary input</th>
@@ -13,7 +14,7 @@ function ShowTent({tent, tent2, tent3}) {
                         <th scope="col">Comparative input B</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="body">
                     <tr>
                         <th scope="row">Name</th>
                         <td>{tent.name}</td>
@@ -27,7 +28,6 @@ function ShowTent({tent, tent2, tent3}) {
                         <td>{tent3.id}</td>
                     </tr>
                 </tbody>
-                <br />
                 <tbody>
                     <tr>
                         <th scope="row">Canopy</th>
