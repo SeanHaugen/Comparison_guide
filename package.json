@@ -2,7 +2,6 @@
   "name": "comparison_guide",
   "version": "0.1.0",
   "private": true,
-  "main": "main.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
@@ -20,6 +19,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -27,6 +27,17 @@
     "eject": "react-scripts eject",
     "package": "electron-packager . --platform=darwin --arch=x64"
   },
+  "main": "main.js",
+  "build": {
+  "appId": "your.app.id",
+  "files": [
+    "build/**/*",
+    "node_modules/**/*"
+  ],
+  "directories": {
+    "buildResources": "assets"
+  }
+},
   "eslintConfig": {
     "extends": [
       "react-app",

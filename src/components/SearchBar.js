@@ -21,6 +21,7 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
         }
       }
 
+
     //handles the submission of each input line on the form
     const handleFormSubmit = (e) => {
       e.preventDefault();

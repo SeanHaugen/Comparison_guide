@@ -56,6 +56,7 @@ function App() {
                     }/>
                     <Route path='/TentsCompare' element={
                       <div>
+                        <p className="warning">Only item numbers for the dye sub variety of tents are used here for each type of tent</p>
                         <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
                         <ShowTent tent={item} tent2={item2} tent3={item3} />
                       </div>

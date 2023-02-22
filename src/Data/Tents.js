@@ -36,7 +36,7 @@ const tents = [
 
 {
     category: 'better',
-    id: 240614,
+    id: 240619,
     name: "10ft Standard Tent Kit ",
     locations: "Location & Dye sub",
     canopy: "400 denier polyester. Weather-resistant",
@@ -52,8 +52,8 @@ const tents = [
 },
 {
     category: 'better',
-    id: 240624,
-    name: "10ft Deluxe Tent Kit, full color",
+    id: 240629,
+    name: "10ft Deluxe Tent Kit",
     locations: "Location & Dye sub",
     canopy: "400 denier polyester. Weather-resistant",
     colors: "Black, Blaze Orange, Cherry, Cobalt, Emerald, Lemon, Navy, white || Full color Dye Sublimation",
@@ -84,7 +84,7 @@ const tents = [
 },
 {
     category: 'best',
-    id: 240634,
+    id: 240639,
     name: "10ft Premium Tent Kit",
     locations: "Location & Dye sub",
     canopy: "400 denier polyester.Durable, Weather-resistant. Crank-up",
@@ -100,7 +100,7 @@ const tents = [
 },
 {
     category: 'best',
-    id: 241124,
+    id: 241129,
     name: "10ft Premium Gable Tent Kit",
     locations: "Location & Dye sub",
     canopy: "400 denier polyester.Durable, Weather-resistant. Three canopy cranks",
@@ -116,7 +116,7 @@ const tents = [
 },
 {
     category: 'best',
-    id: 240984,
+    id: 240989,
     name: "10ft Elite Tent Kit",
     locations: "Location & Dye sub",
     canopy: "400 denier polyester.Durable, Weather-resistant. ",

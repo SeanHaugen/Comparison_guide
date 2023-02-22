@@ -130,6 +130,47 @@ img {
 
 .table-body {
   border-bottom: .5em double rgba(45, 45, 45, 0.697);
-  
-  
+}
+
+.body::before {
+  content: open-quote;
+  font-family: serif;
+  font-weight: 900;
+  font-size: 15rem;
+  color: #FFCC00;
+  position: absolute;
+  z-index: -1;
+  top: -7rem;
+  left: -2.5rem;
+
+}
+
+.body::after {
+  content: no-close-quote;
+
+}
+
+.body {
+  position: relative;
+  isolation: isolate;
+}
+
+.card {
+  width: fit-content;
+  height: min-content;
+  position: relative;
+  left: 20%;
+}
+
+.img-card{
+  filter:invert(100%); 
+  transition: filter 500ms ease-in;
+}
+
+.card:hover{
+  filter: invert(0%);
+}
+
+.warning {
+  font-size: x-small;
 }
