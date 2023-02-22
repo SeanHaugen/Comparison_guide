@@ -1,5 +1,6 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import ninjaImage from '../images/image.png';
 
 // import RetractorTypeList from './retractors/RetractorsTypes'
 
@@ -9,7 +10,7 @@ function Header({setSelectedRoute, itemList}) {
     return (
         <div className='hero'>
         
-        <h1 className='title hero-head'>Showdown Displays Product Comparison Guide</h1>
+        <h1 className='title hero-head'>Showdown Displays Product Comparison Guide </h1>
         <nav className='navbar' role="navigation" aria-label="main navigation">
             <div className='navbar-brand' >
                 <NavLink to='/About' className="navbar-item">About</NavLink>

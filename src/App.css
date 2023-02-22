@@ -81,6 +81,13 @@ margin-bottom: 1em;
 .hero-head, .navbar-item {
   color:hsla(0, 3%, 87%, 0.876);
 }
+.logo {
+  width: 3em;
+  height: 3em;
+  position: relative;
+  right: 100px;
+  top: 10px;
+}
 
 .footer {
   margin-top: 1em;

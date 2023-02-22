@@ -33,7 +33,6 @@ const tents = [
     tent_production: '7 business days',
     warranty: "6 months"
 },
-
 {
     category: 'better',
     id: 240619,
