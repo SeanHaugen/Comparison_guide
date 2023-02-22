@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import ninjaImage from '../images/image.png';
 
 // import RetractorTypeList from './retractors/RetractorsTypes'
 
