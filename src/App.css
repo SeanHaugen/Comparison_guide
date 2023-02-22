@@ -73,6 +73,15 @@ margin-bottom: 1em;
   color: white;
 }
 
+.hero {
+  background-color: black;
+  margin-bottom: 2em;
+}
+
+.hero-head, .navbar-item {
+  color:hsla(0, 3%, 87%, 0.876);
+}
+
 .footer {
   margin-top: 1em;
   background-color: black;
