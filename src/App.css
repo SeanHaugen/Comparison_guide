@@ -75,6 +75,10 @@ margin-bottom: 1em;
 
 .footer {
   margin-top: 1em;
+  background-color: black;
+  color:hsl(0, 0%, 98%);
+  margin-top: 10rem;
+  height:min-content;
 }
 
 
@@ -174,3 +178,4 @@ img {
 .warning {
   font-size: x-small;
 }
+
