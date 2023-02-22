@@ -11,7 +11,7 @@ function About() {
             <p>Presently, the comparative guide is functional solely for exact item numbers. The "Find Item" dropdown menu and the search bar functionalities may be employed to locate both the name and corresponding item numbers for the specified product line. </p> */}
             <br />
             <div className=" card img-card">
-                <img className="card_img" src={compImg} alt='comparison image tutorial' />
+                <img className="card_img" src={compImg} alt='comparison tutorial' />
             </div>
             
         </div>
