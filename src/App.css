@@ -41,7 +41,7 @@ margin-bottom: 1em;
 }
 
 .dropdown-content {
-  max-height: 10em;
+  max-height: 20em;
   /* min-height: fit-content; */
   width: 20em;
   overflow: scroll;
