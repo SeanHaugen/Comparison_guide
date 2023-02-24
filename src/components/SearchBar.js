@@ -1,6 +1,5 @@
 import { warning } from "@remix-run/router";
 import React, { useEffect, useState} from "react";
-// import ItemTypeList from "./ItemTypes";
 import ItemTypeList from "./ItemTypes";
 
 
@@ -10,6 +9,8 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
     const [input1, setInput1] = useState('');
     const [input2, setInput2] = useState('');
     const [input3, setInput3] = useState('');
+
+    // const [selectItem, setSelectItem] = useState('')
 
 
     //function for form validation requiring an input
@@ -22,18 +23,19 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
       }
 
 
+
     //handles the submission of each input line on the form
     const handleFormSubmit = (e) => {
       e.preventDefault();
       //returns the first item to satisfy the testing function. function looks for id or name else it will return undefined, using validate input to make input1 required
       if(validateInput(input1)){
-      const selectedItem = itemList.find(r => (r.id === parseInt(input1) || r.name === input1));
-      const selectedItem2 = itemList.find(r => (r.id === parseInt(input2) || r.name === input2));
-      const selectedItem3 = itemList.find(r => (r.id === parseInt(input3) || r.name === input3));
-      //sets the item to the correct selected item input or will return an empty object
-      setItem(selectedItem || {});
-      setItem2(selectedItem2 || {});
-      setItem3(selectedItem3 || {} );
+        const selectedItem = itemList.find(r => (r.id === parseInt(input1) || r.name === input1));
+        const selectedItem2 = itemList.find(r => (r.id === parseInt(input2) || r.name === input2));
+        const selectedItem3 = itemList.find(r => (r.id === parseInt(input3) || r.name === input3));
+        //sets the item to the correct selected item input or will return an empty object
+        setItem(selectedItem || {});
+        setItem2(selectedItem2 || {});
+        setItem3(selectedItem3 || {} );
       } else {
         warning('enter primary input')
       }
@@ -52,12 +54,15 @@ function SearchBar({itemList,  setItem, setItem2, setItem3}) {
         // eslint-disable-next-line 
       }, [itemList]);
 
+    // const handleValue = () => {
+    //   setSelectItem(input1)
+    // }
+
 
     return (
         <>
-        {/* <ItemTypeList itemList={itemList} /> */}
         <div className="comparison-guide box">
-        <ItemTypeList itemList={itemList} className="search-bar"/> 
+        <ItemTypeList itemList={itemList} className="search-bar"  /> 
         
         <form onSubmit={handleFormSubmit} >
             {/* form inputs */}

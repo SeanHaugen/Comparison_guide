@@ -1,14 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-// import RetractorTypeList from './retractors/RetractorsTypes'
 
-
-
-function Header({setSelectedRoute, itemList}) {
+function Header({setSelectedRoute}) {
     return (
         <div className='hero'>
-        
         <h1 className='title hero-head'>Showdown Displays Product Comparison Guide </h1>
         <nav className='navbar' role="navigation" aria-label="main navigation">
             <div className='navbar-brand' >

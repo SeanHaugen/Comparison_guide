@@ -8,11 +8,9 @@ import ShowMedia from "./components/media/ShowMedia";
 import Header from "./components/Header";
 import About from "./components/About";
 import Footer from "./components/Footer";
-
 //style imports
 import 'bulma/css/bulma.css';
 import './App.css';
-
 //data imports
 import allRetractors from "./Data/Retractors/all";
 import tents from "./Data/Tents";
@@ -39,8 +37,6 @@ function App() {
         }
       }, [selectedRoute]);
       
-
-
     return (
         <div className="app-container">
             <Router>

@@ -19,8 +19,6 @@
     border-radius: 5px;
 }
 
-
-
 .comparison-guide form button {
   width:max-content;
   margin: 1em;
@@ -33,7 +31,6 @@ margin: 1em;
 .submit {
 margin-bottom: 1em;
 }
-
 
 .dropdown-item .sidebar .item{
   display: flex;
@@ -48,8 +45,6 @@ margin-bottom: 1em;
   display: flex;
   flex-flow: row wrap;
 }
-
-
 
 .dropdown-menu {
   display: flex;
@@ -79,7 +74,12 @@ margin-bottom: 1em;
 }
 
 .hero-head, .navbar-item {
-  color:hsla(0, 3%, 87%, 0.876);
+  color:hsla(0, 3%, 87%, 0.933);
+  margin-left: 2rem;
+}
+
+.hero-head {
+  margin-left: 2rem;
 }
 .logo {
   width: 3em;

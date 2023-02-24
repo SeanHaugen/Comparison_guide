@@ -1,13 +1,13 @@
 
 import React, { useState, useEffect, useRef } from 'react' 
 
-function ItemList({filteredItems}) {
+function ItemList({filteredItems,onSelectItem }) {
 
-    //controls state for the dropdown list of item numbers
-    const [isOpen, setIsOpen] = useState(false);
-    //state for allowing the user to search for the specific item from the dropdown menu
-    const searchItemFromLocalStorage = localStorage.getItem('searchItem') || '';
-    const [searchItem, setSearchItem] = useState(searchItemFromLocalStorage)
+  //controls state for the dropdown list of item numbers
+  const [isOpen, setIsOpen] = useState(false);
+  //state for allowing the user to search for the specific item from the dropdown menu
+  const searchItemFromLocalStorage = localStorage.getItem('searchItem') || '';
+  const [searchItem, setSearchItem] = useState(searchItemFromLocalStorage)
 
   // Use a ref to store a reference to the dropdown menu element
   const dropdownRef = useRef(null);
@@ -18,7 +18,7 @@ function ItemList({filteredItems}) {
       setIsOpen(false);
     }
   }
-//handles being able to click elsewhere on the page to close the dropdown menu.
+  //handles being able to click elsewhere on the page to close the dropdown menu.
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
@@ -37,6 +37,7 @@ function ItemList({filteredItems}) {
         setIsOpen(true)
     }
 
+    //Handles the arrow for dropdown menu, could probably make this its own component
     const handleArrowUp = () => {
         if (isOpen === false) {
           return (                    
@@ -67,10 +68,14 @@ function ItemList({filteredItems}) {
             className="input is-small is-rounded is-info "
             />            
             <div className="dropdown-trigger dropdown-container">
-                <button className="button is-info " aria-haspopup="true" aria-controls='dropdown-menu5' onClick={handleIsOpen}>
-                    <div>Find Item</div>
-                    {handleArrowUp()}
-                    {handleArrowDown()}
+                <button 
+                  className="button is-info " 
+                  aria-haspopup="true" 
+                  aria-controls='dropdown-menu5' 
+                  onClick={handleIsOpen}>
+                  <div>Find Item</div>
+                  {handleArrowUp()}
+                  {handleArrowDown()}
                 </button>
             </div>
             {/* The following is displayed when the dropdown is open */}
@@ -81,18 +86,19 @@ function ItemList({filteredItems}) {
                     {filteredItems.filter(post => {
                         if (searchItem === '') {
                         return post;
-                        } else if (post.name.toLowerCase().includes(searchItem.toLowerCase()) || post.id.toString().includes(searchItem.toLocaleLowerCase())) {
-                        return post;
+                        } else if (post.name.toLowerCase().includes(searchItem.toLowerCase()) || 
+                                  post.id.toString().includes(searchItem.toLocaleLowerCase())) {
+                          return post;
                         } else {
-                            return false
+                          return false
                         }
                     }).map((item, index) => {
                         return(
-                            <div key={index} className="dropdown-item">
+                            <ul key={index} className="dropdown-item"  >
                                 <li className="item">{item.name}</li>  
                                 <li className="item"><strong>{item.id}</strong></li>  
                                 <hr className='dropdown-divider'/> 
-                            </div>
+                            </ul>
                         )  
                         })}
                 </ul>
