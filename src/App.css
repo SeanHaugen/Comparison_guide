@@ -149,8 +149,8 @@ h1  {
   flex-flow: column wrap;
   align-self: center; 
   max-width:fit-content;
-  margin-top: 1em;
-  margin-bottom: -1em;
+  position: relative;
+  top: -1rem;
 }
 
 .search-bar .list {
@@ -159,7 +159,6 @@ h1  {
 }
 
 .checkbox {
-  width: max-content;
   display: flex;
   justify-content: flex-end;
   

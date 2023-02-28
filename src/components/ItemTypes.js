@@ -24,8 +24,8 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
  
   return (
       <div className="checkbox-container search-bar box">
-        <strong>Filter by:</strong>
         <label className="checkbox">
+        <strong>Filter by: </strong>
             <input  type="checkbox" value="good" onChange={handleCategoryChange} />
             Good
             <br />
