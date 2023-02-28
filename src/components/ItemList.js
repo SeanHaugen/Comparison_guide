@@ -59,7 +59,7 @@ function ItemList({filteredItems,}) {
 
     return (
         <>
-        <div className="dropdown is-active" ref={dropdownRef}>
+        <div className="dropdown is-active " ref={dropdownRef}>
         <input 
             type="text"
             placeholder="search"

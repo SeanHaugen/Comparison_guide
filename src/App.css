@@ -26,7 +26,6 @@
 
 .comparison-guide {
   position: relative;
-  /* left: 2rem; */
   display: flex;
   flex-flow: row wrap; 
   justify-content: center;
@@ -149,7 +148,14 @@ h1  {
   display: flex;
   flex-flow: column wrap;
   align-self: center; 
-  max-width: fit-content;
+  max-width:fit-content;
+  margin-top: 1em;
+  margin-bottom: -1em;
+}
+
+.search-bar .list {
+  display: flex;
+  justify-content: center;
 }
 
 .checkbox {
@@ -170,8 +176,8 @@ h1  {
 }
 
 .selection-box {
-  margin-left: 1em;
-  margin-bottom: 1em;
+  position: relative;
+
   max-width: 90%;
 }
 
@@ -224,3 +230,6 @@ h1  {
 .warning {
   font-size: x-small;
 }
+
+
+

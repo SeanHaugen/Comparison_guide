@@ -35,9 +35,9 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
             <input type="checkbox" value="best" onChange={handleCategoryChange} />
             Best
         </label>
-        <ItemList filteredItems={filteredItems}/>
+        <ItemList filteredItems={filteredItems} className="list"/>
         <br />
-        <CompareBar itemList={filteredItems} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
+        <CompareBar itemList={filteredItems} setItem={setItem} setItem2={setItem2} setItem3={setItem3} className="list"/>
       </div>
   )
 }
