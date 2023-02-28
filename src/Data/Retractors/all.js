@@ -3,6 +3,11 @@
 
 const allRetractors = [
 
+    {
+        id: [],
+        name: "Select a Retractor"
+    },
+
 {
     id: 210240,
     name: "Small Mini Promo Retractor Kit",
@@ -118,7 +123,7 @@ const allRetractors = [
     
 },
 {
-    id: 262243,
+    id: 262244,
     name: "33.5\" Value Retractor Kit",
     media: "Titan No-curl hybrid media",
     size: "35.75\"W x 81.87\"H x 15\"D",
@@ -150,7 +155,7 @@ const allRetractors = [
     
 },
 {
-    id: 262246,
+    id: 262245,
     name: "36\" Value Retractor Kit ",
     media: "Titan No-curl hybrid media",
     size: "38.5\"W x 81.87\"H x 15\"D",
@@ -194,7 +199,9 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
+
     
 },
 {
@@ -209,7 +216,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -224,7 +232,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -239,11 +248,12 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
-    id: 261130,
+    id: 261360,
     name: "24\" Economy Tabletop Retractor Kit (eco)",
     media: "PVC Free silver backed media, 100% polyester",
     size: "24.74\"W x 39\"H x 11\"D",
@@ -254,7 +264,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -269,7 +280,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -284,7 +296,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -299,7 +312,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -314,7 +328,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -326,11 +341,12 @@ const allRetractors = [
     weight: "7 lbs",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
     pole: "Shock cord pole",
-    banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
+    banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -341,11 +357,12 @@ const allRetractors = [
     weight: "7 lbs",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
     pole: "Shock cord pole",
-    banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
+    banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
 },
 {
     id: 261364,
@@ -355,11 +372,12 @@ const allRetractors = [
     weight: "7 lbs",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
     pole: "Shock cord pole",
-    banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
+    banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
 },
 {
     id: 261136,
@@ -369,11 +387,12 @@ const allRetractors = [
     weight: "7.25 lbs",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
     pole: "Shock cord pole",
-    banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
+    banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
 
 },
 {
@@ -384,11 +403,12 @@ const allRetractors = [
     weight: "7 lbs",
     base: "Aluminum. Two swivel feet. Available in black or silver",
     pole: "Shock cord pole",
-    banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
+    banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -399,11 +419,12 @@ const allRetractors = [
     weight: "7.25 lbs",
     base: "Aluminum. Two swivel feet. Available in black or silver",
     pole: "Shock cord pole",
-    banner: "Banner attaches with snap rail on top and banner tape on bottom. Not Changeable",
+    banner: "Banner attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
 
 },
 {
@@ -418,7 +439,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -433,7 +455,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -448,7 +471,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 {
@@ -463,7 +487,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy"
+    type: "Economy",
+    warranty: "1 year"
     
 },
 
@@ -480,11 +505,12 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
-    id: 261012,
+    id: 262180,
     name: "31.5\" Economy Plus Retractor (Opaque)",
     media: "Titan No-curl Opaque media",
     size: "32\"W x 83\"H x 15\"D",
@@ -495,11 +521,12 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
-    id: 261012,
+    id: 262191,
     name: "31.5\" Economy Plus Retractor (Dry-Erase)",
     media: "Dry-erase media. Glossy surface",
     size: "32\"W x 83\"H x 15\"D",
@@ -510,7 +537,8 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 //economy plus 33.5"
@@ -526,11 +554,12 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
-    id: 261002,
+    id: 262181,
     name: "33.5\" Economy Plus Retractor (Opaque)",
     media: "Titan No-curl Opaque fabric",
     size: "34\"W x 83\"H x 15\"D",
@@ -541,11 +570,12 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
-    id: 261002,
+    id: 262192,
     name: "33.5\" Economy Plus Retractor (Dry-erase)",
     media: "Dry-erase media. Glossy surface",
     size: "34\"W x 83\"H x 15\"D",
@@ -556,7 +586,8 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 
@@ -575,7 +606,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
@@ -591,7 +623,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
@@ -607,7 +640,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus"
+    type: "Economy Plus",
+    warranty: "2 years"
 
 },
 {
@@ -622,11 +656,12 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
-    id: 262072,
+    id: 262151,
     name: "31.5\" stratus Retractor Kit (Opaque)",
     media: "Titan No-curl Opaque fabric",
     size: "33\"W x 81.63\"H x 7.12\"D",
@@ -637,11 +672,12 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
-    id: 262072,
+    id: 262207,
     name: "31.5\" stratus Retractor Kit (Dry-erase)",
     media: "Dry-erase media. Glossy surface",
     size: "33\"W x 81.62\"H x 7.12\"D",
@@ -652,11 +688,12 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
-    id: 262072,
+    id: 262074,
     name: "33.5\" stratus Retractor Kit",
     media: "Titan No-curl Hybrid media",
     size: "34.25\"W x 81.63\"H x 7.13\"D",
@@ -667,11 +704,12 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
-    id: 262074,
+    id: 262152,
     name: "33.5\" stratus Retractor Kit (Opaque)",
     media: "Titan No-curl Opaque fabric",
     size: "34.25\"W x 81.63\"H x 7.13\"D",
@@ -682,7 +720,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -697,7 +736,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -712,7 +752,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -727,7 +768,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -742,7 +784,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -757,7 +800,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -772,7 +816,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 {
@@ -787,7 +832,8 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus'
+    type: 'stratus',
+    warranty: "2 years"
 
 },
 
@@ -803,7 +849,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 {
     id: 262202,
@@ -816,7 +863,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 {
     id: 262251,
@@ -829,7 +877,8 @@ const allRetractors = [
     banner: "Double Banner. Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 
 {
@@ -843,7 +892,8 @@ const allRetractors = [
     banner: "Double Banner. Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 {
     id: 262254,
@@ -856,7 +906,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 {
     id: 262255,
@@ -869,7 +920,8 @@ const allRetractors = [
     banner: "Double Banner. Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 {
     id: 262204,
@@ -882,7 +934,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 {
     id: 262205,
@@ -895,7 +948,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 61.5\" to 79.5\"",
     RCAT: 200,
     production: '1 business day',
-    category: 'better'
+    category: 'better',
+    warranty: "2 years"
 },
 //best retractors
 {
@@ -909,10 +963,11 @@ const allRetractors = [
     banner: " Banner attaches to a leader on the roller using tape. Adjustable from 31.5\" to 78\"",
     RCAT: 800,
     production: '1 business day',
-    category: 'best'
+    category: 'best',
+    warranty: "Lifetime"
 },
 {
-    id: 261205,
+    id: 261304,
     name: "31.5\" Spotlight Retractor Kit",
     media: "Flexible backlit film media",
     size: "34\"W x 84\"H x 10.25\"",
@@ -922,7 +977,8 @@ const allRetractors = [
     banner: "2 single sided banners. connector cord to link up to 3 retractors ",
     RCAT: 800,
     production: '1 business day',
-    category: 'best'
+    category: 'best',
+    warranty: "3 years"
 },
 {
     id: 261205,
@@ -935,10 +991,11 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 82.25\" to 90\".",
     RCAT: 800,
     production: '4 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "3 years"
 },
 {
-    id: 261205,
+    id: 261210,
     name: "33.5\" MagnaLink Retractor kit",
     media: "Titan No-curl hybrid media",
     size: "34.62\"W x 91.75\"H x 8.5\"D",
@@ -948,7 +1005,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 30\" to 90\".",
     RCAT: 800,
     production: '4 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "3 years"
 },
 {
     id: 261215,
@@ -961,7 +1019,8 @@ const allRetractors = [
     banner: "Banner attaches with Hook-and-loop fasteners. Adjustable from 30\" to 90\".",
     RCAT: 800,
     production: '4 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "3 years"
 },
 {
     id: 261340,
@@ -974,7 +1033,8 @@ const allRetractors = [
     banner: "Replaceable graphic cartridge",
     RCAT: 600,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261343,
@@ -987,7 +1047,8 @@ const allRetractors = [
     banner: "Replaceable graphic cartridge",
     RCAT: 600,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261346,
@@ -1000,7 +1061,8 @@ const allRetractors = [
     banner: "Replaceable graphic cartridge",
     RCAT: 600,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261230,
@@ -1013,7 +1075,8 @@ const allRetractors = [
     banner: "Replaceable graphic cartridge. Banner attaches to cartridge magnetically. Adjustable form 26\" to 90\" ",
     RCAT: 800,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "3 years"
 },
 {
     id: 263040,
@@ -1026,7 +1089,8 @@ const allRetractors = [
     banner: "Two banners",
     RCAT: 250,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261270,
@@ -1039,7 +1103,8 @@ const allRetractors = [
     banner: "Two banners. Adjustable from 37\" to 80.25\"",
     RCAT: 150,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261308,
@@ -1052,7 +1117,8 @@ const allRetractors = [
     banner: "",
     RCAT: "Does not exist",
     production: '',
-    category: 'best'
+    category: 'best',
+    warranty: "30 days"
 },
 {
     id: 262138,
@@ -1065,7 +1131,8 @@ const allRetractors = [
     banner: "Attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '4 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261080,
@@ -1078,7 +1145,8 @@ const allRetractors = [
     banner: "Attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 262139,
@@ -1091,7 +1159,8 @@ const allRetractors = [
     banner: "Attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '4 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261082,
@@ -1104,7 +1173,8 @@ const allRetractors = [
     banner: "Attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 262140,
@@ -1117,7 +1187,8 @@ const allRetractors = [
     banner: "Attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '4 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261018,
@@ -1130,7 +1201,8 @@ const allRetractors = [
     banner: "Attaches with snap rail on top and banner tape on bottom",
     RCAT: 100,
     production: '2 business days',
-    category: 'best'
+    category: 'best',
+    warranty: "2 years"
 },
 {
     id: 261280,
@@ -1143,10 +1215,11 @@ const allRetractors = [
     banner: "Two banners. Attach in middle in A-frame shape ",
     RCAT: 100,
     production: '2 business days',
-    category: ''
+    category: '',
+    warranty: "2 years"
 },
 {
-    id: 261280,
+    id: 261281,
     name: "4' Outdoor A-Frame Retractor Kit (Opaque)",
     media: "Titan No-curl Opaque fabric ",
     size: "50\"W x 43.5\"H x 29.37\"D",
@@ -1156,10 +1229,11 @@ const allRetractors = [
     banner: "Two banners. Attach in middle in A-frame shape",
     RCAT: 100,
     production: '2 business days',
-    category: ''
+    category: '',
+    warranty: "2 years"
 },
 {
-    id: 261280,
+    id: 261285,
     name: "5' Outdoor A-Frame Retractor Kit",
     media: "13oz scrim vinyl",
     size: "61.75\"W x 43.5\"H x 29.37\"D",
@@ -1169,7 +1243,8 @@ const allRetractors = [
     banner: "Two banners. Attach in middle in A-frame shape ",
     RCAT: 100,
     production: '2 business days',
-    category: ''
+    category: '',
+    warranty: "2 years"
 },
 
 

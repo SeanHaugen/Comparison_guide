@@ -24,6 +24,16 @@
   margin: 1em;
 }
 
+.comparison-guide {
+  position: relative;
+  /* left: 2rem; */
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: center;
+  align-content: center;
+}
+
+
 form {
 margin: 1em;
 }
@@ -55,11 +65,6 @@ margin-bottom: 1em;
   size: 5px;
 }
 
-.navbar-item.active{
-  font-weight: bold;
-  color:#485fc7
-}
-
 .input {
   margin: .2em;
 }
@@ -69,18 +74,30 @@ margin-bottom: 1em;
 }
 
 .hero {
-  background-color: black;
+  background-image: url(./images//IMG-7058\ \(1\).jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: rgb(92, 92, 92);
+  background-blend-mode: multiply;
   margin-bottom: 2em;
+  padding-top: 2rem;
 }
 
 .hero-head, .navbar-item {
-  color:hsla(0, 3%, 87%, 0.933);
+  /* color:hsla(0, 3%, 87%, 0.933); */
+  color: #FFCC00;
   margin-left: 2rem;
+}
+
+.navbar-item.active{
+  font-weight: bold;
+  color:#485fc7
 }
 
 .hero-head {
   margin-left: 2rem;
 }
+
 .logo {
   width: 3em;
   height: 3em;
@@ -99,7 +116,7 @@ margin-bottom: 1em;
 
 
 .box {
-  width: 50%;
+  width: 60%;
   margin-bottom: 1em;
 }
 
@@ -124,12 +141,15 @@ img {
   display: flex;
 }
 
+h1  {
+  margin-left: 2em;
+}
+
 .search-bar {
   display: flex;
   flex-flow: column wrap;
-  /* justify-content: center;  */
-  /* align-items: center; */
   align-self: center; 
+  max-width: fit-content;
 }
 
 .checkbox {
@@ -139,13 +159,20 @@ img {
   
 }
 
+.checkbox-container {
+  position: relative;
+  left: 2em;
+}
+
 .container {
   display: flex;
   flex-flow: row;
 }
 
-.checkbox-container {
-  margin-bottom: 4em;
+.selection-box {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  max-width: 90%;
 }
 
 .table-body {
@@ -178,8 +205,11 @@ img {
 .card {
   width: fit-content;
   height: min-content;
-  position: relative;
-  left: 20%;
+}
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .img-card{
@@ -194,4 +224,3 @@ img {
 .warning {
   font-size: x-small;
 }
-

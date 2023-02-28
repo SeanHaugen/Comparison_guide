@@ -68,10 +68,22 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                         <td className={retractor3.banner === retractor.banner || retractor3.banner === undefined ? '' : 'highlight'}>{retractor3.banner}</td>
                     </tr>
                     <tr>
+                        <th scope="row">Weight</th>
+                        <td>{retractor.weight}</td>
+                        <td className={retractor2.weight === retractor.weight || retractor2.weight === undefined ? '' : 'highlight'}>{retractor2.weight}</td>
+                        <td className={retractor3.weight === retractor.weight || retractor3.weight === undefined ? '' : 'highlight'}>{retractor3.weight}</td>
+                    </tr>
+                    <tr>
                         <th scope="row">Production Time</th>
                         <td>{retractor.production}</td>
                         <td className={retractor2.production === retractor.production || retractor2.production === undefined ? '' : 'highlight'}>{retractor2.production}</td>
                         <td className={retractor3.production === retractor.production || retractor3.production === undefined ? '' : 'highlight'}>{retractor3.production}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Warranty</th>
+                        <td>{retractor.warranty}</td>
+                        <td className={retractor2.warranty === retractor.warranty || retractor2.warranty === undefined ? '' : 'highlight'}>{retractor2.warranty}</td>
+                        <td className={retractor3.warranty === retractor.warranty || retractor3.warranty === undefined ? '' : 'highlight'}>{retractor3.warranty}</td>
                     </tr>
                 </tbody>
             </table >

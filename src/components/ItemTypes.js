@@ -1,8 +1,10 @@
 import React,{ useState } from "react";
 import ItemList from './ItemList'
+import CompareBar from "./ComparisonBar";
 
 
-function ItemTypeList({itemList, onSelectItem}) {
+
+function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
 
     const [categoryFilter, setCategoryFilter] = useState([]);
 
@@ -21,7 +23,7 @@ function ItemTypeList({itemList, onSelectItem}) {
         })
  
   return (
-      <div className="checkbox-container search-bar">
+      <div className="checkbox-container search-bar box">
         <strong>Filter by:</strong>
         <label className="checkbox">
             <input  type="checkbox" value="good" onChange={handleCategoryChange} />
@@ -33,8 +35,9 @@ function ItemTypeList({itemList, onSelectItem}) {
             <input type="checkbox" value="best" onChange={handleCategoryChange} />
             Best
         </label>
-        <ItemList filteredItems={filteredItems} onSelectItem={onSelectItem} />
+        <ItemList filteredItems={filteredItems}/>
         <br />
+        <CompareBar itemList={filteredItems} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
       </div>
   )
 }

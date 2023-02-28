@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom';
 //component imports
-import SearchBar from "./components/SearchBar";
+// import CompareBar from "./components/ComparisonBar";
 import ShowRetractors from "./components/retractors/ShowRetractors";
 import ShowTent from "./components/tents/ShowTents";
 import ShowMedia from "./components/media/ShowMedia";
 import Header from "./components/Header";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ItemTypeList from "./components/ItemTypes";
 //style imports
 import 'bulma/css/bulma.css';
 import './App.css';
@@ -46,19 +47,22 @@ function App() {
                     <Route path='/About' element={<About />} />
                     <Route path='/RetractorCompare' element={
                       <div>
-                        <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
+                        <h1 className=" title retractors">Retractors</h1>
+                        <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
                       </div>
                     }/>
                     <Route path='/TentsCompare' element={
-                      <div>
+                      <div >
+                        <h1 className="tents title">Tents</h1>
                         <p className="warning">For simplicity, only item numbers for the dye sub variety of tents are used for each type of tent</p>
-                        <SearchBar itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3} />
+                        <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         <ShowTent tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
                     <Route path='/mediaCompare' element={
                       <div>
+                        <h1 className="title media">Media</h1>
                         <ShowMedia tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>

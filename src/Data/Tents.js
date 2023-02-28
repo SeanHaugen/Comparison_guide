@@ -1,4 +1,9 @@
 const tents = [
+
+{
+    id: [],
+    name: "Select a tent"
+},
 {
     category: 'good',
     id: 241239,
@@ -14,7 +19,7 @@ const tents = [
     collapsible_dimensions: "",
     tent_weight: "41.5 lbs",
     tent_production: '7 business days',
-    warranty: "6 month"
+    tent_warranty: "6 month"
 },
 {
     category: 'good',
@@ -31,7 +36,7 @@ const tents = [
     collapsible_dimensions: "",
     tent_weight: "41.5 lbs",
     tent_production: '7 business days',
-    warranty: "6 months"
+    tent_warranty: "6 months"
 },
 {
     category: 'better',
