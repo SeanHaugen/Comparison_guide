@@ -23,9 +23,9 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
         })
  
   return (
-      <div className="checkbox-container search-bar box">
+      <div className="content-container search-bar box">
         <label className="checkbox">
-        <strong>Filter by: </strong>
+        
             <input  type="checkbox" value="good" onChange={handleCategoryChange} />
             Good
             <br />
@@ -37,7 +37,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
         </label>
         <ItemList filteredItems={filteredItems} className="list"/>
         <br />
-        <CompareBar itemList={filteredItems} setItem={setItem} setItem2={setItem2} setItem3={setItem3} className="list"/>
+        <CompareBar itemList={itemList} filteredItems={filteredItems} setItem={setItem} setItem2={setItem2} setItem3={setItem3} className="list"/>
       </div>
   )
 }

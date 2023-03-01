@@ -1,9 +1,9 @@
 import { warning } from "@remix-run/router";
 import React, { useState} from "react";
-// import ItemTypeList from "./ItemTypes";
+import ComparisonSelect from "./ComparisonSelect";
 
 
-function CompareBar({itemList,  setItem, setItem2, setItem3}) {
+function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     
   //Assign state to each input
   const [input1, setInput1] = useState('');
@@ -45,51 +45,15 @@ function CompareBar({itemList,  setItem, setItem2, setItem3}) {
       setItem3([]);
   };
 
-
-  
-    
-
-
-
     return (
         <>
         
-        <div className="comparison-guide">
+        <div className="comparison-guide section">
         <form onSubmit={handleFormSubmit} >
-        {/* <ItemTypeList itemList={itemList} className="search-bar"  /> */}
-        <div className="selection-box ">
-        <select onChange={e => setInput1(e.target.value)} className="select">
-              {itemList.map(item => (
-                <option key={item.id} value={item.id} >
-                  {item.name}
-                  {item.id}
-                </option>
-              ))}
-
-        </select>
-        <select onChange={e => setInput2(e.target.value)} className="select " >
-          {itemList.map(item => (
-            <option key={item.id} value={item.id} >
-              {item.name}
-              {item.id}
-            </option>
-          ))}
-
-        </select>
-        <select onChange={e => setInput3(e.target.value)} className="select " >
-          {itemList.map(item => (
-            <option key={item.id} value={item.id} >
-              {item.name}
-              {item.id}
-            </option>
-          ))}
-
-        </select>
-        <hr />
-        </div>
       
           {/* form inputs */}
-          <section className="section-box">
+          <div className="section-box">
+          <section>
             <input 
             type="text"
             className="dropdown-trigger input is-primary is-focused " 
@@ -100,34 +64,34 @@ function CompareBar({itemList,  setItem, setItem2, setItem3}) {
             required 
             />
           </section>
-          <section className="section-box">
+          <section>
             <input 
             type="text" 
             className="dropdown-trigger input is-info is-focused " 
-            placeholder="Enter Item Number to Compare" 
+            placeholder="Item Number" 
             value={input2} 
             onChange={e => setInput2(e.target.value)}                
             />
           </section>
-          <section className="section-box">
+          <section >
             <input 
             type="text" 
             className="dropdown-trigger input is-info is-focused" 
-            placeholder="Enter Item Number to Compare" 
+            placeholder="Item Number" 
             value={input3} 
             onChange={e => setInput3(e.target.value)}                 
             />
           </section>
-
-          {/* form buttons */}
-          <button  onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
-          <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear</button>
+          </div>
+          <ComparisonSelect itemList={filteredItems} setInput1={setInput1} setInput2={setInput2} setInput3={setInput3} />
+          <div className="button-container">
+            <button  onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
+            <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear</button>
+          </div>
 
         </form>
         </div>
-        
         </>
     )
 }
-
 export default CompareBar
