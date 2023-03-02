@@ -56,7 +56,9 @@ function App() {
                         <h1 className="tents title">Tents</h1>
                         <p className="warning">For simplicity, only item numbers for the dye sub variety of tents are used for each type of tent</p>
                         <br />
+                        <div className="container">
                         <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
+                        </div>
                         <ShowTent tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
