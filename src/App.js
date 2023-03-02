@@ -45,7 +45,9 @@ function App() {
                     <Route path='/RetractorCompare' element={
                       <div>
                         <h1 className=" title retractors">Retractors</h1>
+                        <div className="container">
                         <ItemTypeList  itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
+                        </div>
                         <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
                       </div>
                     }/>

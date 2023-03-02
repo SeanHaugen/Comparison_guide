@@ -48,12 +48,17 @@
   margin-left: 2rem;
 }
 
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  
+  align-items: center;
+}
 
 .box{
   margin-bottom: 1em;
   width:fit-content;
   position: relative;
-  left: 2em;
 }
 
 .section-box {
