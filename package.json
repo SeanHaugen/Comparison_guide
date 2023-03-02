@@ -12,6 +12,7 @@
     "bulma": "^0.9.4",
     "electron": "^16.0.5",
     "electron-packager": "^15.3.0",
+    "electron-is-dev": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
@@ -25,7 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "package": "electron-packager . --platform=darwin --arch=x64"
+    "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
+    "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
+    "electron:start": "wait-on tcp:3000 && electron ."
   },
   "main": "main.js",
   "build": {

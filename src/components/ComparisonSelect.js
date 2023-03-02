@@ -4,7 +4,7 @@ import React from "react"
 function ComparisonSelect({itemList, setInput1, setInput2, setInput3}) {
 
     return (
-        <>
+      <>
         <div className="section-box is-multiple ">
         <div className="select item is-primary">
         <select onChange={e => setInput1(e.target.value)} className="multiple">
@@ -14,7 +14,6 @@ function ComparisonSelect({itemList, setInput1, setInput2, setInput3}) {
                   {item.id}
                 </option>
               ))}
-
         </select>
         </div>
         <div className="select item is-info">
@@ -25,7 +24,6 @@ function ComparisonSelect({itemList, setInput1, setInput2, setInput3}) {
               {item.id}
             </option>
           ))}
-
         </select>
         </div>
         <div className="select item is-info">
@@ -42,7 +40,7 @@ function ComparisonSelect({itemList, setInput1, setInput2, setInput3}) {
         <hr />
         </div>
         
-        </>
+      </>
     )
 }
 

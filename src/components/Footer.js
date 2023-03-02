@@ -10,7 +10,6 @@ function Footer() {
                 <div className='copy-write'>
                     <p>2023 Showdown Displays</p>
                 </div>
-                
                 <img src={footerImg} alt='logo footer' />
             </div>
         </footer>

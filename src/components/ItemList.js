@@ -26,36 +26,12 @@ function ItemList({filteredItems,}) {
     }
   }, []);
 
-    //event handler for opening and closing the dropdown menu
-    // const handleIsOpen = () => {
-    //     setIsOpen(!isOpen)
-    // }
     //event handler for entering text into the inputs and assigning the value to search item with setSearchItem
     const handleSearch = (event) => {
         const searchQuery = event.target.value.toLowerCase();
         setSearchItem(searchQuery)
         setIsOpen(true)
     }
-
-    //Handles the arrow for dropdown menu, could probably make this its own component
-    // const handleArrowUp = () => {
-    //     if (isOpen === false) {
-    //       return (                    
-    //         <span className="icon is-small">
-    //           <i className="fas fa-angle-down" aria-hidden="true"></i>
-    //         </span>
-    //       );
-    //     } 
-    // }
-    // const handleArrowDown = () => {
-    //     if (isOpen === true) {
-    //     return (
-    //         <span className="icon is-small">
-    //           <i className="fas fa-angle-up" aria-hidden="true"></i>
-    //         </span>
-    //       );
-    //     }
-    //   }
 
     return (
         <>
@@ -67,17 +43,6 @@ function ItemList({filteredItems,}) {
             value={searchItem}
             className="input is-small is-rounded is-info search-bar "
             />            
-            <div className="dropdown-trigger dropdown-container">
-                {/* <button 
-                  className="button is-info " 
-                  aria-haspopup="true" 
-                  aria-controls='dropdown-menu5' 
-                  onClick={handleIsOpen}>
-                  <div>Find Item</div>
-                  {handleArrowUp()}
-                  {handleArrowDown()}
-                </button> */}
-            </div>
             {/* The following is displayed when the dropdown is open */}
             {isOpen && (
             <div className="dropdown-menu" id="dropdown-menu5" role="menu" >

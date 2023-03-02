@@ -25,7 +25,6 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
   return (
       <div className="content-container search-bar box">
         <label className="checkbox">
-        
             <input  type="checkbox" value="good" onChange={handleCategoryChange} />
             Good
             <br />

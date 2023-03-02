@@ -1,5 +1,6 @@
 import React from "react";
 import tents from "../../Data/Tents"
+
 function ShowTent({tent, tent2, tent3}) {
 
     return (
@@ -34,7 +35,6 @@ function ShowTent({tent, tent2, tent3}) {
                         <td >{tent.canopy}</td>
                         <td className={tent2.canopy === tent.canopy || tent2.canopy === undefined ? '' : 'highlight'}>{tent2.canopy}</td>
                         <td className={tent3.canopy === tent.canopy || tent3.canopy === undefined  ? '' : 'highlight'}>{tent3.canopy}</td>
-                        
                     </tr>
                     <tr>
                         <th scope="row">Imprint Method</th>
@@ -96,14 +96,6 @@ function ShowTent({tent, tent2, tent3}) {
                         <td className={tent2.tent_production === tent.tent_production || tent2.tent_production === undefined ? '' : 'highlight'}>{tent2.tent_production}</td>
                         <td className={tent3.tent_production === tent.tent_production || tent3.tent_production === undefined ? '' : 'highlight'}>{tent3.tent_production}</td>
                     </tr>
-                    {/* <tr>
-                        <th scope="row">Image</th>
-                        <td >
-                        <figure class="image is-128x128">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="tent" />
-                        </figure>
-                        </td>
-                    </tr> */}
                 </tbody>
             </table >
         )}
