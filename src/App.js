@@ -44,8 +44,9 @@ function App() {
                     <Route path='/About' element={<About />} />
                     <Route path='/RetractorCompare' element={
                       <div>
-                        <h1 className=" title retractors">Retractors</h1>
+                        
                         <div className="container">
+                        <h1 className=" title retractors">Retractors</h1>
                         <ItemTypeList  itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         </div>
                         <ShowRetractors retractor={item} retractor2={item2} retractor3={item3} />
@@ -53,10 +54,9 @@ function App() {
                     }/>
                     <Route path='/TentsCompare' element={
                       <div>
+                        <div className="container">
                         <h1 className="tents title">Tents</h1>
                         <p className="warning">For simplicity, only item numbers for the dye sub variety of tents are used for each type of tent</p>
-                        <br />
-                        <div className="container">
                         <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         </div>
                         <ShowTent tent={item} tent2={item2} tent3={item3} />
