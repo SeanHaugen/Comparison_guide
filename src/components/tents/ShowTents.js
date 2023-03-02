@@ -37,10 +37,10 @@ function ShowTent({tent, tent2, tent3}) {
                         
                     </tr>
                     <tr>
-                        <th scope="row">Colors</th>
-                        <td >{tent.colors}</td>
-                        <td className={tent2.colors === tent.colors || tent2.colors === undefined ? '' : 'highlight'}>{tent2.colors}</td>
-                        <td className={tent3.colors === tent.colors || tent3.colors === undefined? '' : 'highlight'}>{tent3.colors}</td>
+                        <th scope="row">Imprint Method</th>
+                        <td >{tent.tent_imprint_method }</td>
+                        <td className={tent2.tent_imprint_method === tent.tent_imprint_method || tent2.tent_imprint_method  === undefined ? '' : 'highlight'}>{tent2.tent_imprint_method }</td>
+                        <td className={tent3.colors === tent.tent_imprint_method  || tent3.tent_imprint_method  === undefined? '' : 'highlight'}>{tent3.tent_imprint_method }</td>
                     </tr>
                     <tr>
                         <th scope="row">Locations</th>
