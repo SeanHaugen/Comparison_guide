@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom';
 //component imports
-// import CompareBar from "./components/ComparisonBar";
 import ShowRetractors from "./components/retractors/ShowRetractors";
 import ShowTent from "./components/tents/ShowTents";
 import ShowMedia from "./components/media/ShowMedia";
@@ -16,9 +15,7 @@ import './App.css';
 import allRetractors from "./Data/Retractors/all";
 import tents from "./Data/Tents";
 
-
 function App() {
-    
   //The three items here are to handle each of the inputs on the form
     const [item, setItem] = useState({});
     const [item2, setItem2] = useState({});
@@ -53,7 +50,7 @@ function App() {
                       </div>
                     }/>
                     <Route path='/TentsCompare' element={
-                      <div >
+                      <div>
                         <h1 className="tents title">Tents</h1>
                         <p className="warning">For simplicity, only item numbers for the dye sub variety of tents are used for each type of tent</p>
                         <br />

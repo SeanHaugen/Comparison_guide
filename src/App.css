@@ -29,10 +29,7 @@
   padding-top: 2rem;
 }
 
-
-
 .hero-head, .navbar-item {
-  /* color:hsla(0, 3%, 87%, 0.933); */
   color: #FFCC00;
   margin: 1rem;
 }
@@ -92,14 +89,12 @@
 }
 
 .dropdown-content {
-  max-height: 10em;
+  max-height: 20em;
   max-width: 20em;
   overflow: scroll;
   display: flex;
   flex-flow: row wrap;
 } 
-
-
 
 .input {
   margin: .2em;
@@ -108,10 +103,6 @@
 .icon, span {
   color: white;
 }
-
-
-
-
 
 .footer {
   margin-top: 1em;
@@ -128,8 +119,6 @@
   right: 100px;
   top: 10px;
 }
-
-
 
 img {
   background-color: black;
