@@ -59,10 +59,15 @@
   align-items: center;
 }
 
+.tents, .warning, .retractors  {
+  font-family:'Tilt Neon',Arial, Helvetica, sans-serif;
+  position: relative;
+  /* right: 8em; */
+}
+
 .box{
   margin-bottom: 1em;
   width:fit-content;
-  position: relative;
 }
 
 .section-box {
@@ -146,9 +151,7 @@ img {
   margin-left: 50%;
 }
 
-h1  {
-  font-family:'Tilt Neon',Arial, Helvetica, sans-serif
-}
+
 
 .table-body {
   border-bottom: .5em double rgba(45, 45, 45, 0.697);
