@@ -17,7 +17,7 @@ const allRetractors = [
     warranty: "6 month",
     case: "not included",
     category: 'good',
-    type: "Economy"
+    type: "tableTop"
     
 },
 {
@@ -34,7 +34,7 @@ const allRetractors = [
     warranty: "6 month",
     case: "not included",
     category: 'good',
-    type: "Economy"
+    type: "tableTop"
     
 },
 {
@@ -51,7 +51,7 @@ const allRetractors = [
     warranty: "6 month",
     case: "not included",
     category: 'good',
-    type: "Economy"
+    type: "tableTop"
     
 },
 {
@@ -67,7 +67,7 @@ const allRetractors = [
     production: '1 business day',
     warranty: "60 day",
     category: 'good',
-    type: "Economy"
+    type: "31.5"
     
 },
 {
@@ -81,7 +81,9 @@ const allRetractors = [
     weight: "4.6 lbs",
     RCAT: 25,
     production: '1 business day',
-    warranty: "60 day"
+    warranty: "60 day",
+    type: "33.5"
+
     
 },
 //value
@@ -98,7 +100,7 @@ const allRetractors = [
     production: '2 business days',
     warranty: "6 month",
     category: 'good',
-    type: "Economy"
+    type: "31.5"
     
 },
 {
@@ -114,7 +116,7 @@ const allRetractors = [
     production: '2 business days',
     warranty: "6 month",
     category: 'good',
-    type: "Economy"
+    type: "31.5"
     
 },
 {
@@ -130,7 +132,7 @@ const allRetractors = [
     production: '2 business days',
     warranty: "6 month",
     category: 'good',
-    type: "Economy"
+    type: "33.5"
     
 },
 {
@@ -146,7 +148,7 @@ const allRetractors = [
     production: '2 business days',
     warranty: "6 month",
     category: 'good',
-    type: "Economy"
+    type: "33.5"
     
 },
 {
@@ -162,7 +164,7 @@ const allRetractors = [
     production: '2 business days',
     warranty: "6 month",
     category: 'good',
-    type: "Economy"
+    type: "36"
     
 },
 {
@@ -178,7 +180,7 @@ const allRetractors = [
     production: '2 business days',
     warranty: "6 month",
     category: 'good',
-    type: "Economy"
+    type: "36"
     
 },
 //Economy
@@ -194,7 +196,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
 
     
@@ -211,7 +213,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -227,7 +229,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -243,7 +245,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -259,7 +261,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -275,7 +277,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -291,7 +293,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -307,7 +309,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -323,7 +325,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "16-24",
     warranty: "1 year"
     
 },
@@ -340,8 +342,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
-    warranty: "1 year"
+    warranty: "1 year",
+    type: "31.5"
     
 },
 {
@@ -356,8 +358,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
-    warranty: "1 year"
+    warranty: "1 year",
+    type: "31.5"
 },
 {
     id: 261364,
@@ -371,8 +373,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
-    warranty: "1 year"
+    warranty: "1 year",
+    type: "31.5"
 },
 {
     id: 261136,
@@ -386,7 +388,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "33.5",
     warranty: "1 year"
 
 },
@@ -402,7 +404,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "33.5",
     warranty: "1 year"
     
 },
@@ -418,7 +420,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "33.5",
     warranty: "1 year"
 
 },
@@ -434,7 +436,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "36",
     warranty: "1 year"
     
 },
@@ -450,7 +452,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "36",
     warranty: "1 year"
     
 },
@@ -466,7 +468,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "48",
     warranty: "1 year"
     
 },
@@ -482,7 +484,7 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'good',
-    type: "Economy",
+    type: "48",
     warranty: "1 year"
     
 },
@@ -500,7 +502,7 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -516,7 +518,7 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -532,7 +534,7 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -549,7 +551,7 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "33.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -565,7 +567,7 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "33.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -581,7 +583,7 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "33.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -601,7 +603,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "16-24",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -618,7 +620,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "24",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -635,7 +637,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: "Economy Plus",
+    type: "16-24",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -651,7 +653,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -667,7 +669,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -683,7 +685,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -699,7 +701,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '33.5',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -715,7 +717,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: "33.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -731,7 +733,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: "33.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -747,7 +749,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '36-48',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -763,7 +765,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '36-48',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -779,7 +781,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '36-48',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -795,7 +797,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '36-48',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -811,7 +813,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '36-48',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -827,7 +829,7 @@ const allRetractors = [
     RCAT: 200,
     production: '2 business days',
     category: 'better',
-    type: 'stratus',
+    type: '36 - 48',
     warranty: "Hardware: 2 year, Graphic: 1 year"
 
 },
@@ -845,7 +847,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "33.5"
 },
 {
     id: 262202,
@@ -859,7 +862,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "33.5"
 },
 {
     id: 262251,
@@ -873,7 +877,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "33.5"
 },
 
 {
@@ -888,7 +893,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "33.5"
 },
 {
     id: 262254,
@@ -902,7 +908,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "36-48"
 },
 {
     id: 262255,
@@ -930,7 +937,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "36-48"
 },
 {
     id: 262205,
@@ -944,7 +952,8 @@ const allRetractors = [
     RCAT: 200,
     production: '1 business day',
     category: 'better',
-    warranty: "Hardware: 2 year, Graphic: 1 year"
+    warranty: "Hardware: 2 year, Graphic: 1 year",
+    type: "36-48"
 },
 //best retractors
 {
@@ -959,7 +968,8 @@ const allRetractors = [
     RCAT: 800,
     production: '1 business day',
     category: 'best',
-    warranty: "Lifetime"
+    warranty: "Lifetime",
+    type: "33.5"
 },
 {
     id: 261304,
@@ -973,7 +983,8 @@ const allRetractors = [
     RCAT: 800,
     production: '1 business day',
     category: 'best',
-    warranty: "3 years"
+    warranty: "3 years",
+    type: "31.5"
 },
 {
     id: 261205,
@@ -987,7 +998,8 @@ const allRetractors = [
     RCAT: 800,
     production: '4 business days',
     category: 'best',
-    warranty: "3 years"
+    warranty: "3 years",
+    type: "16-24"
 },
 {
     id: 261210,
@@ -1001,7 +1013,8 @@ const allRetractors = [
     RCAT: 800,
     production: '4 business days',
     category: 'best',
-    warranty: "3 years"
+    warranty: "3 years",
+    type: "33.5"
 },
 {
     id: 261215,
@@ -1015,7 +1028,8 @@ const allRetractors = [
     RCAT: 800,
     production: '4 business days',
     category: 'best',
-    warranty: "3 years"
+    warranty: "3 years",
+    type: 'specialty'
 },
 {
     id: 261340,
@@ -1029,7 +1043,8 @@ const allRetractors = [
     RCAT: 600,
     production: '2 business days',
     category: 'best',
-    warranty: "2 years"
+    warranty: "2 years",
+    type: "33.5"
 },
 {
     id: 261343,
@@ -1043,7 +1058,8 @@ const allRetractors = [
     RCAT: 600,
     production: '2 business days',
     category: 'best',
-    warranty: "2 years"
+    warranty: "2 years",
+    type: '36-48'
 },
 {
     id: 261346,
@@ -1057,7 +1073,8 @@ const allRetractors = [
     RCAT: 600,
     production: '2 business days',
     category: 'best',
-    warranty: "2 years"
+    warranty: "2 years",
+    type: '36-48'
 },
 {
     id: 261230,
@@ -1071,7 +1088,8 @@ const allRetractors = [
     RCAT: 800,
     production: '2 business days',
     category: 'best',
-    warranty: "Hardware: 3 years, Graphic: 1 year"
+    warranty: "Hardware: 3 years, Graphic: 1 year",
+    type: 'specialty'
 },
 {
     id: 263040,
@@ -1085,7 +1103,8 @@ const allRetractors = [
     RCAT: 250,
     production: '2 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 261270,
@@ -1099,7 +1118,8 @@ const allRetractors = [
     RCAT: 150,
     production: '2 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 261308,
@@ -1113,7 +1133,8 @@ const allRetractors = [
     RCAT: "Does not exist",
     production: '',
     category: 'best',
-    warranty: "30 days"
+    warranty: "30 days",
+    type: 'specialty'
 },
 {
     id: 262138,
@@ -1127,7 +1148,8 @@ const allRetractors = [
     RCAT: 100,
     production: '4 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 261080,
@@ -1141,7 +1163,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 262139,
@@ -1155,7 +1178,8 @@ const allRetractors = [
     RCAT: 100,
     production: '4 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 261082,
@@ -1169,7 +1193,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 262140,
@@ -1183,7 +1208,8 @@ const allRetractors = [
     RCAT: 100,
     production: '4 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 261018,
@@ -1197,7 +1223,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: 'best',
-    warranty: "1 year"
+    warranty: "1 year",
+    type: 'specialty'
 },
 {
     id: 261280,
@@ -1211,7 +1238,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: '',
-    warranty: "Hardware: 1 year, Graphic: 90 day outdoor / 1 year indoor"
+    warranty: "Hardware: 1 year, Graphic: 90 day outdoor / 1 year indoor",
+    type: 'specialty'
 },
 {
     id: 261281,
@@ -1225,7 +1253,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: '',
-    warranty: "Hardware: 1 year, Graphic: 90 day outdoor / 1 year indoor"
+    warranty: "Hardware: 1 year, Graphic: 90 day outdoor / 1 year indoor",
+    type: 'specialty'
 },
 {
     id: 261285,
@@ -1239,7 +1268,8 @@ const allRetractors = [
     RCAT: 100,
     production: '2 business days',
     category: '',
-    warranty: "Hardware: 1 year, Graphic: 90 day outdoor / 1 year indoor"
+    warranty: "Hardware: 1 year, Graphic: 90 day outdoor / 1 year indoor",
+    type: 'specialty'
 },
 
 

@@ -4,6 +4,7 @@ import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom';
 import ShowRetractors from "./components/retractors/ShowRetractors";
 import ShowTent from "./components/tents/ShowTents";
 import ShowMedia from "./components/media/ShowMedia";
+import ShowTableThrows from "./components/tableThrows/ShowTableThrows";
 import Header from "./components/Header";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ import './App.css';
 //data imports
 import allRetractors from "./Data/Retractors/all";
 import tents from "./Data/Tents";
+import tableThrows from "./Data/TableThrows/Throws";
 
 function App() {
   //The three items here are to handle each of the inputs on the form
@@ -30,6 +32,8 @@ function App() {
           setItemList(allRetractors);
         } else if (selectedRoute === "tents") {
           setItemList(tents);
+        } else if (selectedRoute === "tableThrows") {
+          setItemList(tableThrows);
         } else {
           setItemList([{category: null}])
         }
@@ -44,7 +48,6 @@ function App() {
                     <Route path='/About' element={<About />} />
                     <Route path='/RetractorCompare' element={
                       <div>
-                        
                         <div className="container">
                         <h1 className=" title retractors">Retractors</h1>
                         <ItemTypeList  itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
@@ -68,6 +71,13 @@ function App() {
                         <ShowMedia tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
+                    <Route path='/tableThrowCompare' element={
+                      <div>
+                        <h1 className="title tableThrows">Table Throws UnderConstruction</h1>
+                        <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
+                        <ShowTableThrows tableThrow={item} throw2={item2} throw3={item3} />
+                      </div>
+                    } />
                 </Routes>
             </Router>
           <Footer />

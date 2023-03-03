@@ -95,11 +95,18 @@
   /* border: 1px solid red; */
 }
 
-.checkbox {
+.checkbox-container-one {
   display: flex;
-  gap: .2rem;
+  justify-content: center;
+  margin-bottom: .2em;
+  gap: .2em;
   /* border: 1px solid brown; */
+}
 
+.checkbox-container-two {
+  display: flex;
+  margin: .2em;
+  gap: .2em;
 }
 
 .dropdown-content {
