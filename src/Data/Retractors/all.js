@@ -771,7 +771,7 @@ const allRetractors = [
 },
 {
     id: 262209,
-    name: "36\" stratus Retractor Kit (Opaque)",
+    name: "36\" stratus Retractor Kit (Dry-erase)",
     media: "Dry-erase media. Glossy surface",
     size: "37.25\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",

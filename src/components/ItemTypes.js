@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-import ItemList from './ItemList'
+// import ItemList from './ItemList'
 import CompareBar from "./ComparisonBar";
 import { useLocation } from "react-router-dom";
 
@@ -83,7 +83,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
             </div>
  
         </label>
-        <ItemList filteredItems={filteredItems} className="list"/>
+        {/* <ItemList filteredItems={filteredItems} className="list"/> */}
         <br />
         <CompareBar itemList={itemList} filteredItems={filteredItems} setItem={setItem} setItem2={setItem2} setItem3={setItem3} className="list"/>
       </div>

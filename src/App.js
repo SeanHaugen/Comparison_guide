@@ -73,7 +73,7 @@ function App() {
                     }/>
                     <Route path='/tableThrowCompare' element={
                       <div>
-                        <h1 className="title tableThrows">Table Throws UnderConstruction</h1>
+                        <h1 className="title tableThrows">Table Throws Under Construction</h1>
                         <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         <ShowTableThrows tableThrow={item} throw2={item2} throw3={item3} />
                       </div>

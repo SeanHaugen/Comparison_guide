@@ -47,7 +47,7 @@ function ItemList({filteredItems,}) {
             {isOpen && (
             <div className="dropdown-menu" id="dropdown-menu5" role="menu" >
                 {/* allows the user to filter the dropdown items with the searchbar as well as mapping the dropdown items */}
-                <ul className="dropdown-content " onChange={e => setSearchItem(e.target.value)} >
+                <select className="dropdown-content " onChange={e => setSearchItem(e.target.value)} >
                     {filteredItems.filter(post => {
                         if (searchItem === '') {
                         return post;
@@ -60,14 +60,13 @@ function ItemList({filteredItems,}) {
                         
                     }).map((item, index) => {
                         return(
-                            <ul key={index} className="dropdown-item"   >
-                                <li className="item">{item.name}</li>  
-                                <li className="item"><strong>{item.id}</strong></li>  
-                                <hr className='dropdown-divider'/> 
-                            </ul>
+                          <option key={item.id} value={item.id} >
+                          {item.name}
+                          {item.id}
+                        </option>
                         )  
                         })}
-                </ul>
+                </select>
             </div>
             )}
         </div>

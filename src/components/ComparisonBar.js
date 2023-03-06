@@ -1,6 +1,6 @@
 import { warning } from "@remix-run/router";
 import React, { useState} from "react";
-import ComparisonSelect from "./ComparisonSelect";
+// import ComparisonSelect from "./ComparisonSelect";
 
 
 function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
@@ -54,15 +54,23 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
           {/* form inputs */}
           <div className="section-box">
           <section>
-            <input 
+          <input 
             type="text"
-            className="dropdown-trigger input is-primary is-focused " 
             placeholder="Enter Item Number" 
+            className="dropdown-trigger input is-primary is-focused"
             value={input1} 
             onChange={e => setInput1(e.target.value)} 
-            
+            list="retractors"
             required 
+            name="retractors"
             />
+            <datalist id="retractors">
+              {filteredItems.map(item => (
+                <option key={item.id} value={item.id}>
+                  {item.name}
+                </option>
+              ))}
+            </datalist>
           </section>
           <section>
             <input 
@@ -70,8 +78,17 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             className="dropdown-trigger input is-info is-focused " 
             placeholder="Item Number" 
             value={input2} 
-            onChange={e => setInput2(e.target.value)}                
+            onChange={e => setInput2(e.target.value)} 
+            list="retractors"
+            name="retractors"               
             />
+            <datalist id="retractors">
+              {filteredItems.map(item => (
+                <option key={item.id} value={item.id}>
+                  {item.name}
+                </option>
+              ))}
+            </datalist>
           </section>
           <section >
             <input 
@@ -79,11 +96,20 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             className="dropdown-trigger input is-info is-focused" 
             placeholder="Item Number" 
             value={input3} 
-            onChange={e => setInput3(e.target.value)}                 
+            onChange={e => setInput3(e.target.value)}     
+            list="retractors"
+            name="retractors"            
             />
+            <datalist id="retractors">
+              {filteredItems.map(item => (
+                <option key={item.id} value={item.id}>
+                  {item.name}
+                </option>
+              ))}
+            </datalist>
           </section>
           </div>
-          <ComparisonSelect itemList={filteredItems} setInput1={setInput1} setInput2={setInput2} setInput3={setInput3} />
+          {/* <ComparisonSelect itemList={filteredItems} onChange={setInput1} /> */}
           <div className="button-container">
             <button  onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
             <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear</button>
