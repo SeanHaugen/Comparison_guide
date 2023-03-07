@@ -1,5 +1,5 @@
 import React from "react";
-import compImg from '../images/ComparisonImg.png';
+import compImg from '../images/compGuide.png';
 
 function About() {
 

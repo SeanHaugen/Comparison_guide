@@ -1,7 +1,5 @@
 import { warning } from "@remix-run/router";
 import React, { useState} from "react";
-// import ComparisonSelect from "./ComparisonSelect";
-
 
 function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     
@@ -109,7 +107,7 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             </datalist>
           </section>
           </div>
-          {/* <ComparisonSelect itemList={filteredItems} onChange={setInput1} /> */}
+
           <div className="button-container">
             <button  onClick={handleFormSubmit} className="button submit is-primary is-responsive">Compare</button>
             <button onClick={clearInputs} type="reset" className="button is-danger is-responsive">Clear</button>
