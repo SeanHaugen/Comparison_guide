@@ -23,6 +23,12 @@
   border-radius: 5px;
 }
 
+.highlight2 {
+  background-color: red;
+  width: min-content;
+  border-radius: 5px;
+}
+
 .hero {
   background-image: url(./images//IMG-7058\ \(1\).jpg);
   background-size: cover;
@@ -210,7 +216,7 @@ img {
 }
 
 .warning {
-  font-size: x-small;
+  font-size: small;
 }
 
 

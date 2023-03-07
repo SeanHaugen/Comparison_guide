@@ -89,7 +89,7 @@ const allRetractors = [
 //value
 {
     id: 262241,
-    name: "31.5\" Value Retractor Kit",
+    name: "31.5\" Value Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "33.87\"W x 81.87\"H x 15\"D",
     base: "Aluminum with plastic ends. Two swivel feet. Silver only",
@@ -121,7 +121,7 @@ const allRetractors = [
 },
 {
     id: 262244,
-    name: "33.5\" Value Retractor Kit",
+    name: "33.5\" Value Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "35.75\"W x 81.87\"H x 15\"D",
     base: "Aluminum with plastic ends. Two swivel feet. Silver only",
@@ -153,7 +153,7 @@ const allRetractors = [
 },
 {
     id: 262247,
-    name: "36\" Value Retractor Kit ",
+    name: "36\" Value Retractor Kit (hybrid) ",
     media: "Titan No-curl hybrid media",
     size: "38.5\"W x 81.87\"H x 15\"D",
     base: "Aluminum with plastic ends. Two swivel feet. Silver only",
@@ -187,7 +187,7 @@ const allRetractors = [
 {
     id: 261381,
     name: "18\" Economy Tabletop Retractor Kit (opaque)",
-    media: "Titan No-curl Opaque media",
+    media: "Titan No-curl Opaque fabric",
     size: "19\"W x 28\"H x 11\"D",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
     pole: "Shock cord pole",
@@ -219,7 +219,7 @@ const allRetractors = [
 },
 {
     id: 261380,
-    name: "18\" Economy Tabletop Retractor Kit",
+    name: "18\" Economy Tabletop Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "19\"W x 28\"H x 11\"D",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
@@ -235,7 +235,7 @@ const allRetractors = [
 },
 {
     id: 261130,
-    name: "24\" Economy Tabletop Retractor Kit",
+    name: "24\" Economy Tabletop Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "24.74\"W x 39\"H x 11\"D",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
@@ -283,7 +283,7 @@ const allRetractors = [
 },
 {
     id: 261132,
-    name: "24\" Economy Retractor",
+    name: "24\" Economy Retractor (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "24.75\"W x 83.5\"H x 11\"D ",
     weight: "6 lbs",
@@ -348,7 +348,7 @@ const allRetractors = [
 },
 {
     id: 261134,
-    name: "31.5\" Economy Retractor ",
+    name: "31.5\" Economy Retractor (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "32\"W x 83.5\"H x 15\"D ",
     weight: "7 lbs",
@@ -378,7 +378,7 @@ const allRetractors = [
 },
 {
     id: 261136,
-    name: "33.5\" Economy Retractor ",
+    name: "33.5\" Economy Retractor (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "34\"W x 83.5\"H x 15\"D ",
     weight: "7.25 lbs",
@@ -426,7 +426,7 @@ const allRetractors = [
 },
 {
     id: 261138,
-    name: "36\" Economy Retractor kit",
+    name: "36\" Economy Retractor kit (Opaque)",
     media: "Titan No-curl Opaque media",
     size: "36\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
@@ -458,7 +458,7 @@ const allRetractors = [
 },
 {
     id: 262165,
-    name: "48\" Economy Retractor kit (opaque)",
+    name: "48\" Economy Retractor kit (Opaque)",
     media: "Titan No-curl Opaque media",
     size: "48\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
@@ -474,7 +474,7 @@ const allRetractors = [
 },
 {
     id: 261140,
-    name: "48\" Economy Retractor kit ",
+    name: "48\" Economy Retractor kit (Opaque)",
     media: "Titan No-curl Opaque media",
     size: "48\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
@@ -492,7 +492,7 @@ const allRetractors = [
 //Economy Plus
 {
     id: 261012,
-    name: "31.5\" Economy Plus Retractor",
+    name: "31.5\" Economy Plus Retractor (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "32\"W x 83\" x 15\"D",
     base: "Heavy-duty Aluminum Base. Singled Footed. ",
@@ -541,8 +541,8 @@ const allRetractors = [
 //economy plus 33.5"
 {
     id: 261002,
-    name: "33.5\" Economy Plus Retractor",
-    media: "Titan No-curl hybrid media",
+    name: "33.5\" Economy Plus Retractor (hybrid)" ,
+    media: "Titan No-curl hybrid fabric",
     size: "34\"W x 83\"H x 15\"D",
     base: "Heavy-duty Aluminum Base. Singled Footed. ",
     pole: "Flip-lever telescoping pole.",
@@ -592,7 +592,7 @@ const allRetractors = [
 //Stratus
 {
     id: 262070,
-    name: "24\" Stratus Retractor",
+    name: "24\" Stratus Retractor (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "25.25\"W x 81.62\"H x 7.12\"D",
     base: "Aluminum Base with chrome end caps. Low center of gravity",
@@ -643,7 +643,7 @@ const allRetractors = [
 },
 {
     id: 262072,
-    name: "31.5\" stratus Retractor Kit",
+    name: "31.5\" stratus Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "33\"W x 81.63\"H x 7.12\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -691,7 +691,7 @@ const allRetractors = [
 },
 {
     id: 262074,
-    name: "33.5\" stratus Retractor Kit",
+    name: "33.5\" stratus Retractor Kit (hybrid)",
     media: "Titan No-curl Hybrid media",
     size: "34.25\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -739,7 +739,7 @@ const allRetractors = [
 },
 {
     id: 262076,
-    name: "36\" stratus Retractor Kit",
+    name: "36\" stratus Retractor Kit (hybrid)",
     media: "Titan No-curl Hybrid media",
     size: "37.25\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -787,7 +787,7 @@ const allRetractors = [
 },
 {
     id: 262078,
-    name: "48\" stratus Retractor Kit",
+    name: "48\" stratus Retractor Kit (hybrid)",
     media: "Titan No-curl Hybrid media",
     size: "49.5\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -958,7 +958,7 @@ const allRetractors = [
 //best retractors
 {
     id: 261118,
-    name: "Superb Retractor Kit",
+    name: "Superb Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
     size: "33.5\"W x 80.5\"H x 7.75\"",
     base: "Aluminum low profile flip-open base. Black or silver end caps",

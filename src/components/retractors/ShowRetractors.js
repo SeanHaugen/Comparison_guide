@@ -3,6 +3,11 @@ import Retractors from '../../Data/Retractors/all'
 
 
 function ShowRetractors({retractor, retractor2, retractor3}) {
+
+
+
+
+
     return (
         <div className="comparison-container table-container">
         {Object.keys(Retractors).length > 0 && (
@@ -35,7 +40,7 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                         <th  scope="row">Size</th>
                         <td>{retractor.size}</td>
                         <td className={retractor2.size === retractor.size || retractor2.size === undefined ? '' : 'highlight'}  >{retractor2.size}</td>
-                        <td className={retractor3.size === retractor.size || retractor3.size === undefined ? '' : 'highlight'}  >{retractor3.size}</td>
+                        <td className={(retractor3.size === retractor.size || retractor3.size === undefined ? '' : 'highlight') }  >{retractor3.size}</td>
                     </tr>
                     <tr>
                         <th scope="row">Media</th>

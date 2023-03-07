@@ -1,5 +1,5 @@
 import { warning } from "@remix-run/router";
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 
 function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     
@@ -42,6 +42,11 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
       setItem2([]);
       setItem3([]);
   };
+
+  useEffect(() => {
+    clearInputs()
+  }, [])
+
 
     return (
         <>
