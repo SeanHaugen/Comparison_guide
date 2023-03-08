@@ -1,5 +1,6 @@
 import { warning } from "@remix-run/router";
 import React, { useState, useEffect} from "react";
+import { useLocation } from "react-router-dom";
 
 function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     
@@ -43,9 +44,14 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
       setItem3([]);
   };
 
+  let location = useLocation
+
   useEffect(() => {
-    clearInputs()
-  }, [setItem, setItem2, setItem3])
+    clearInputs(
+
+    )
+
+  }, [location])
 
 
     return (
