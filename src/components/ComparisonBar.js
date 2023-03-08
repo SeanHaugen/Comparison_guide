@@ -47,9 +47,12 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
   let location = useLocation
 
   useEffect(() => {
-    clearInputs(
-
-    )
+    setInput1('');
+    setInput2('');
+    setInput3('');
+    setItem([]);
+    setItem2([]);
+    setItem3([]);
 
   }, [location])
 
