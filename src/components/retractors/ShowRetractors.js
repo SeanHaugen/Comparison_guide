@@ -6,8 +6,6 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
 
 
 
-
-
     return (
         <div className="comparison-container table-container">
         {Object.keys(Retractors).length > 0 && (
@@ -37,7 +35,7 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                 
                 <tbody> 
                     <tr>
-                        <th  scope="row">Size</th>
+                        <th  scope="row">Product Size</th>
                         <td>{retractor.size}</td>
                         <td className={retractor2.size === retractor.size || retractor2.size === undefined ? '' : 'highlight'}  >{retractor2.size}</td>
                         <td className={(retractor3.size === retractor.size || retractor3.size === undefined ? '' : 'highlight') }  >{retractor3.size}</td>
