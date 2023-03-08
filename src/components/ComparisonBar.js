@@ -45,7 +45,7 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
 
   useEffect(() => {
     clearInputs()
-  }, [])
+  }, [setItem, setItem2, setItem3])
 
 
     return (
@@ -119,6 +119,9 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
           </div>
 
         </form>
+        <div className="warning">
+            <p>* highlighted boxes represent the differences between inputs A/B and the primary input</p>
+          </div>
         </div>
         </>
     )

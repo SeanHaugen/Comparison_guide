@@ -18,15 +18,15 @@ function ShowTableThrows({tableThrow, throw2, throw3,}) {
                 <tbody className='table-body'>
                     <tr>
                         <th scope="row">Name</th>
-                        <td>{tableThrow.id}</td>
-                        <td>{throw2.id}</td>
-                        <td>{throw3.id}</td>
+                        <td><strong className='name-id'>{tableThrow.id}</strong></td>
+                        <td><strong className='name-id'>{throw2.id}</strong></td>
+                        <td><strong className='name-id'>{throw3.id}</strong></td>
                     </tr>
                     <tr>
                         <th scope="row">Item Numbers</th>
-                        <td>{tableThrow.item_numbers}</td>
-                        <td>{throw2.item_numbers}</td>
-                        <td>{throw3.item_numbers}</td>
+                        <td><strong className='name-id'>{tableThrow.item_numbers}</strong></td>
+                        <td><strong className='name-id'>{throw2.item_numbers}</strong></td>
+                        <td><strong className='name-id'>{throw3.item_numbers}</strong></td>
                     </tr>
                 </tbody>
                                       

@@ -21,15 +21,15 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                 <tbody className='table-body'>
                     <tr>
                         <th scope="row">Name</th>
-                        <td>{retractor.name}</td>
-                        <td>{retractor2.name}</td>
-                        <td>{retractor3.name}</td>
+                        <td><strong className='name-id'>{retractor.name}</strong></td>
+                        <td><strong className='name-id'>{retractor2.name}</strong></td>
+                        <td><strong className='name-id'>{retractor3.name}</strong></td>
                     </tr>
                     <tr>
                         <th scope="row">Item Number</th>
-                        <td>{retractor.id}</td>
-                        <td>{retractor2.id}</td>
-                        <td>{retractor3.id}</td>
+                        <td><strong className='name-id'>{retractor.id}</strong></td>
+                        <td><strong className='name-id'>{retractor2.id}</strong></td>
+                        <td><strong className='name-id'>{retractor3.id}</strong></td>
                     </tr>
                 </tbody>
                 
