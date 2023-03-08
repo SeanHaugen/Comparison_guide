@@ -54,7 +54,7 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     setItem2([]);
     setItem3([]);
 
-  }, [location])
+  }, [setItem, setItem2, setItem3])
 
 
     return (
