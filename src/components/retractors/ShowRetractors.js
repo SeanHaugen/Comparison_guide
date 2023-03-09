@@ -5,7 +5,6 @@ import Retractors from '../../Data/Retractors/all'
 function ShowRetractors({retractor, retractor2, retractor3}) {
 
 
-
     return (
         <div className="comparison-container table-container">
         {Object.keys(Retractors).length > 0 && (
@@ -35,7 +34,7 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                 
                 <tbody> 
                     <tr>
-                        <th  scope="row">Product Size</th>
+                        <th  scope="row">Product Dimensions</th>
                         <td>{retractor.size}</td>
                         <td className={retractor2.size === retractor.size || retractor2.size === undefined ? '' : 'highlight'}  >{retractor2.size}</td>
                         <td className={(retractor3.size === retractor.size || retractor3.size === undefined ? '' : 'highlight') }  >{retractor3.size}</td>
@@ -69,6 +68,12 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
                         <td>{retractor.banner}</td>
                         <td className={retractor2.banner === retractor.banner || retractor2.banner === undefined ? '' : 'highlight'}>{retractor2.banner}</td>
                         <td className={retractor3.banner === retractor.banner || retractor3.banner === undefined ? '' : 'highlight'}>{retractor3.banner}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">attachment method</th>
+                        <td>{retractor.attachment_method}</td>
+                        <td className={retractor2.attachment_method === retractor.attachment_method || retractor2.attachment_method === undefined ? '' : 'highlight'}>{retractor2.attachment_method}</td>
+                        <td className={retractor3.attachment_method === retractor.attachment_method || retractor3.attachment_method === undefined ? '' : 'highlight'}>{retractor3.attachment_method}</td>
                     </tr>
                     <tr>
                         <th scope="row">Weight</th>

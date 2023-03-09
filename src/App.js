@@ -41,8 +41,10 @@ function App() {
       
     return (
         <div className="app-container">
+          
             <Router>
                 <Header setSelectedRoute={setSelectedRoute} />
+                <p>Thank you for testing this tool and providing feedback. Please let me know any errors or typos with any of the items.</p>
                 <Routes>
                     <Route path="/" element={<About/>} />
                     <Route path='/About' element={<About />} />

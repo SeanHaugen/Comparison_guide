@@ -1,8 +1,10 @@
-
 import React from "react";
 import tableThrows from "../../Data/TableThrows/Throws";
 
 function ShowTableThrows({tableThrow, throw2, throw3,}) {
+
+
+
     return (
         <div className="comparison-container table-container">
         {Object.keys(tableThrows).length > 0 && (
