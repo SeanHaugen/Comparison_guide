@@ -45,7 +45,7 @@ function App() {
             <Router>
                 <Header setSelectedRoute={setSelectedRoute} />
 
-                <p>Thank you for testing this tool and providing feedback. Please let me know any errors or typos with any of the items. Please enjoy some funky jams while you compare</p>
+                <p>Thank you for testing this tool and providing feedback. Let me know any errors or typos with any of the items. Please enjoy some funky jams while you compare</p>
                 <iframe
                     className="box container"
                     width="560"
