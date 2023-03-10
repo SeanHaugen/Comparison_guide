@@ -44,7 +44,18 @@ function App() {
           
             <Router>
                 <Header setSelectedRoute={setSelectedRoute} />
-                <p>Thank you for testing this tool and providing feedback. Please let me know any errors or typos with any of the items.</p>
+
+                <p>Thank you for testing this tool and providing feedback. Please let me know any errors or typos with any of the items. Please enjoy some funky jams while you compare</p>
+                <iframe
+                    className="box container"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/_5lafJov-eU"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 <Routes>
                     <Route path="/" element={<About/>} />
                     <Route path='/About' element={<About />} />
@@ -74,7 +85,7 @@ function App() {
                       </div>
                     }/>
                     <Route path='/tableThrowCompare' element={
-                      <div>
+                      <div className="container">
                         <h1 className="title tableThrows">Table Throws Under Construction</h1>
                         <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         <ShowTableThrows tableThrow={item} throw2={item2} throw3={item3} />

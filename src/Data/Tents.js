@@ -120,7 +120,7 @@ const tents = [
     legs: "1.25\" x 1.25\" Square-shaped legs. plastic levers",
     feet: "Easy-glide Tent Feet",
     setup_dimensions: "118.5\" W x 151\" - 164.25\"H x 118.5\"D ",
-    collapsible_dimensions: "",
+    collapsible_dimensions: "Not on website. If you know let me know!",
     tent_weight: "49.6 lbs",
     tent_production: 'Dye Sub: 7 business days, Thermal: 4 business days',
     tent_warranty: "Hardware: Lifetime, Graphics: 1 year"

@@ -1,7 +1,36 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import tents from "../../Data/Tents"
+import highlight from "../Hooks/highlight";
 
 function ShowTent({tent, tent2, tent3}) {
+    const [showColumns, setShowColumns] = useState(true);
+    const [showColumn2, setShowColumn2] = useState(true);
+    const [showColumn3, setShowColumn3] = useState(true);
+
+    useEffect(() => {
+        if(!tent || Object.keys(tent).length === 0) {
+            setShowColumns(false);
+
+        } else {
+            setShowColumns(true)
+        }
+    }, [tent])
+  
+    useEffect(() => {
+      if (!tent2 || Object.keys(tent2).length === 0) {
+        setShowColumn2(false);
+      } else {
+        setShowColumn2(true);
+      }
+    }, [tent2]);
+  
+    useEffect(() => {
+      if (!tent3 || Object.keys(tent3).length === 0) {
+        setShowColumn3(false);
+      } else {
+        setShowColumn3(true);
+      }
+    }, [tent3]);
 
     return (
         <div className="comparison-container table-container">
@@ -9,92 +38,92 @@ function ShowTent({tent, tent2, tent3}) {
             <table className=" table product-section table is-striped is-bordered is-fullwidth">
                 <thead >
                     <tr>
-                        <th scope="col">Description</th>
-                        <th scope="col">Primary input</th>
-                        <th scope="col">Comparative input A</th>
-                        <th scope="col">Comparative input B</th>
+                        {showColumns && (<th scope="col">Description</th>)}
+                        {showColumns && (<th scope="col" className="primary-column">Primary</th>)}
+                        {showColumn2 && (<th scope="col">A</th>)}
+                        {showColumn3 && (<th scope="col">B</th>)}
                     </tr>
                 </thead>
                 <tbody className="table-body ">
                     <tr>
-                        <th scope="row">Name</th>
-                        <td>{tent.name}</td>
-                        <td>{tent2.name}</td>
-                        <td>{tent3.name}</td>
+                        {showColumns && (<th scope="row">Name</th>)}
+                        {showColumns && (<td>{tent.name}</td>)}
+                        {showColumn2 && (<td>{tent2.name}</td>)}
+                        {showColumn3 && (<td>{tent3.name}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Item Number</th>
-                        <td>{tent.id}</td>
-                        <td>{tent2.id}</td>
-                        <td>{tent3.id}</td>
+                        {showColumns && (<th scope="row">Item Number</th>)}
+                        {showColumns && (<td>{tent.id}</td>)}
+                        {showColumn2 && (<td>{tent2.id}</td>)}
+                        {showColumn3 && (<td>{tent3.id}</td>)}
                     </tr>
                 </tbody>
                 <tbody>
                     <tr>
-                        <th scope="row">Canopy</th>
-                        <td >{tent.canopy}</td>
-                        <td className={tent2.canopy === tent.canopy || tent2.canopy === undefined ? '' : 'highlight'}>{tent2.canopy}</td>
-                        <td className={tent3.canopy === tent.canopy || tent3.canopy === undefined  ? '' : 'highlight'}>{tent3.canopy}</td>
+                        {showColumns && (<th scope="row">Canopy</th>)}
+                        {showColumns && (<td >{tent.canopy}</td>)}
+                        {showColumn2 && (<td className={tent2.canopy === tent.canopy || tent2.canopy === undefined ? '' : 'highlight'}>{tent2.canopy}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.canopy, tent2.canopy, tent3.canopy)}>{tent3.canopy}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Imprint Method</th>
-                        <td >{tent.tent_imprint_method }</td>
-                        <td className={tent2.tent_imprint_method === tent.tent_imprint_method || tent2.tent_imprint_method  === undefined ? '' : 'highlight'}>{tent2.tent_imprint_method }</td>
-                        <td className={tent3.colors === tent.tent_imprint_method  || tent3.tent_imprint_method  === undefined? '' : 'highlight'}>{tent3.tent_imprint_method }</td>
+                        {showColumns && (<th scope="row">Imprint Method</th>)}
+                        {showColumns && (<td >{tent.tent_imprint_method }</td>)}
+                        {showColumn2 && (<td className={tent2.tent_imprint_method === tent.tent_imprint_method || tent2.tent_imprint_method  === undefined ? '' : 'highlight'}>{tent2.tent_imprint_method }</td>)}
+                        {showColumn3 && (<td className={highlight(tent.tent_imprint_method, tent2.tent_imprint_method, tent3.tent_imprint_method)}>{tent3.tent_imprint_method }</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Locations</th>
-                        <td >{tent.locations}</td>
-                        <td className={tent2.locations === tent.locations || tent2.locations === undefined ? '' : 'highlight'}  >{tent2.locations}</td>
-                        <td className={tent3.locations === tent.locations || tent3.locations === undefined ? '' : 'highlight'}  >{tent3.locations}</td>
+                        {showColumns && (<th scope="row">Locations</th>)}
+                        {showColumns && (<td >{tent.locations}</td>)}
+                        {showColumn2 && (<td className={tent2.locations === tent.locations || tent2.locations === undefined ? '' : 'highlight'}  >{tent2.locations}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.locations, tent2.locations, tent3.locations)}  >{tent3.locations}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Frame</th>
-                        <td >{tent.frame}</td>
-                        <td className={tent2.frame === tent.frame || tent2.frame === undefined  ?  '' : 'highlight'}>{tent2.frame}</td>
-                        <td className={tent3.frame === tent.frame || tent3.frame === undefined ? '' : 'highlight'}>{tent3.frame}</td>
+                        {showColumns && (<th scope="row">Frame</th>)}
+                        {showColumns && (<td >{tent.frame}</td>)}
+                        {showColumn2 && (<td className={tent2.frame === tent.frame || tent2.frame === undefined  ?  '' : 'highlight'}>{tent2.frame}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.frame, tent2.frame, tent3.frame)}>{tent3.frame}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Joints</th>
-                        <td >{tent.joints}</td>
-                        <td className={tent2.joints === tent.joints || tent2.joints === undefined ? '' : 'highlight'}>{tent2.joints}</td>
-                        <td className={tent3.joints === tent.joints || tent3.joints === undefined ? '' : 'highlight'}>{tent3.joints}</td>
+                        {showColumns && (<th scope="row">Joints</th>)}
+                        {showColumns && (<td >{tent.joints}</td>)}
+                        {showColumn2 && (<td className={tent2.joints === tent.joints || tent2.joints === undefined ? '' : 'highlight'}>{tent2.joints}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.joints, tent2.joints, tent3.joints)}>{tent3.joints}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Legs</th>
-                        <td >{tent.legs}</td>
-                        <td className={tent2.legs === tent.legs || tent2.legs === undefined  ? '' : 'highlight'}>{tent2.legs}</td>
-                        <td className={tent3.legs === tent.legs || tent3.legs === undefined  ? '' : 'highlight'}>{tent3.legs}</td>
+                        {showColumns && (<th scope="row">Legs</th>)}
+                        {showColumns && (<td >{tent.legs}</td>)}
+                        {showColumn2 && (<td className={tent2.legs === tent.legs || tent2.legs === undefined  ? '' : 'highlight'}>{tent2.legs}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.legs, tent2.legs, tent3.legs)}>{tent3.legs}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Feet</th>
-                        <td >{tent.feet}</td>
-                        <td className={tent2.feet === tent.feet || tent2.feet === undefined ? ''  : 'highlight'}>{tent2.feet}</td>
-                        <td className={tent3.feet === tent.feet || tent3.feet === undefined ? '' : 'highlight'}>{tent3.feet}</td>
+                        {showColumns && (<th scope="row">Feet</th>)}
+                        {showColumns && (<td >{tent.feet}</td>)}
+                        {showColumn2 && (<td className={tent2.feet === tent.feet || tent2.feet === undefined ? ''  : 'highlight'}>{tent2.feet}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.feet, tent2.feet, tent3.feet)}>{tent3.feet}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Setup Dimensions</th>
-                        <td >{tent.setup_dimensions}</td>
-                        <td className={tent2.setup_dimensions === tent.setup_dimensions || tent2.setup_dimensions === undefined ? ''  : 'highlight'}>{tent2.setup_dimensions}</td>
-                        <td className={tent3.setup_dimensions === tent.setup_dimensions || tent3.setup_dimensions === undefined ? '' : 'highlight'}>{tent3.setup_dimensions}</td>
+                        {showColumns && (<th scope="row">Setup Dimensions</th>)}
+                        {showColumns && (<td >{tent.setup_dimensions}</td>)}
+                        {showColumn2 && (<td className={tent2.setup_dimensions === tent.setup_dimensions || tent2.setup_dimensions === undefined ? ''  : 'highlight'}>{tent2.setup_dimensions}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.setup_dimensions, tent2.setup_dimensions, tent3.setup_dimensions)}>{tent3.setup_dimensions}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Collapsed Dimensions</th>
-                        <td >{tent.collapsible_dimensions}</td>
-                        <td className={tent2.collapsible_dimensions === tent.collapsible_dimensions || tent2.collapsible_dimensions === undefined ? ''  : 'highlight'}>{tent2.collapsible_dimensions}</td>
-                        <td className={tent3.collapsible_dimensions === tent.collapsible_dimensions || tent3.collapsible_dimensions === undefined ? '' : 'highlight'}>{tent3.collapsible_dimensions}</td>
+                        {showColumns && (<th scope="row">Collapsed Dimensions</th>)}
+                        {showColumns && (<td >{tent.collapsible_dimensions}</td>)}
+                        {showColumn2 && (<td className={tent2.collapsible_dimensions === tent.collapsible_dimensions || tent2.collapsible_dimensions === undefined ? ''  : 'highlight'}>{tent2.collapsible_dimensions}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.collapsible_dimensions, tent2.collapsible_dimensions, tent3.collapsible_dimensions)}>{tent3.collapsible_dimensions}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Weight</th>
-                        <td >{tent.tent_weight}</td>
-                        <td className={tent2.tent_weight === tent.tent_weight || tent2.tent_weight === undefined  ? '' : 'highlight'}>{tent2.tent_weight}</td>
-                        <td className={tent3.tent_weight === tent.tent_weight  || tent3.tent_weight === undefined ? '' : 'highlight'}>{tent3.tent_weight}</td>
+                        {showColumns && (<th scope="row">Weight</th>)}
+                        {showColumns && (<td >{tent.tent_weight}</td>)}
+                        {showColumn2 && (<td className={tent2.tent_weight === tent.tent_weight || tent2.tent_weight === undefined  ? '' : 'highlight'}>{tent2.tent_weight}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.tent_weight, tent2.tent_weight, tent3.tent_weight)}>{tent3.tent_weight}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Production time</th>
-                        <td >{tent.tent_production}</td>
-                        <td className={tent2.tent_production === tent.tent_production || tent2.tent_production === undefined ? '' : 'highlight'}>{tent2.tent_production}</td>
-                        <td className={tent3.tent_production === tent.tent_production || tent3.tent_production === undefined ? '' : 'highlight'}>{tent3.tent_production}</td>
+                        {showColumns && (<th scope="row">Production time</th>)}
+                        {showColumns && (<td >{tent.tent_production}</td>)}
+                        {showColumn2 && (<td className={tent2.tent_production === tent.tent_production || tent2.tent_production === undefined ? '' : 'highlight'}>{tent2.tent_production}</td>)}
+                        {showColumn3 && (<td className={highlight(tent.tent_production, tent2.tent_production, tent3.tent_production)}>{tent3.tent_production}</td>)}
                     </tr>
                 </tbody>
             </table >

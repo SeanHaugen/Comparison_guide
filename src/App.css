@@ -24,7 +24,7 @@
 }
 
 .highlight2 {
-  background-color: red;
+  background-color: rgba(0, 255, 183, 0.662);
   width: min-content;
   border-radius: 5px;
 }
@@ -99,6 +99,7 @@
 .section {
   margin-top: -3em; 
   /* border: 1px solid red; */
+
 }
 
 .checkbox-container-one {
@@ -199,6 +200,9 @@ img {
 .card {
   width: fit-content;
   height: min-content;
+  padding: 10px;
+  position: relative;
+  top: 10px;
 }
 .about {
   display: flex;
@@ -217,7 +221,10 @@ img {
 
 .warning {
   font-size: small;
+  display: flex;
+  flex-flow: column wrap;
 }
+
 
 .name-id {
   font-weight: bolder;
@@ -225,5 +232,6 @@ img {
 }
 
 
-
-
+th {
+  max-width: max-content;
+}

@@ -54,7 +54,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
  
   return (
       <div className="content-container  box">
-        <label className="checkbox">
+        <label className="checkbox ">
           <div className="checkbox-container-one">
           {(location.pathname === '/TentsCompare' || location.pathname === '/RetractorCompare') && (
             <>

@@ -1,91 +1,206 @@
-// let antiMicrobial = (num) => {
-//     let validId = [108263, 108264, 108265]
 
-//     for(let i = 0; i > validId.length; i++) {
-//         if (num === validId[i]) {
-//             return {
-//                 id: num,
-//                 name: "Anti Microbial",
-//                 item_numbers: validId,
-//                 print_options: "Dye Sub",
-//                 fit: 'drape',
-//                 size: "48\"/72\"/96\" x 29\" x 29.75\"",
-//                 flat_size: "86\" x 104\"/128\"",
-//                 material: 'Anti Microbial polyester',
-//                 finish: 'Hemmed',
-//                 care: 'Machine wash',
-//                 weight: '2.4lbs',
-//                 warranty: '1 year'
-//             };
-//         } else  {
-//             return null; // return null if the ID is invalid
-//         }
-        
-//     } 
-
-
-// }
 
 const tableThrows = [
-{
-    name:"select a table throw"
-},
-{   id: 108263,
+{   
+    id: 108263,
     name: "Anti Microbial",
-    item_numbers:[ 108263, 108264, 108265],
+    size: "4ft",
     print_options: "Dye Sub",
-    fit: 'drape',
-    size: "48\"/72\"/96\" x 29\" x 29.75\"",
+    fit: 'Drape, 4 sided',
+    dimensions1: "48\" x 29\" x 29.75\"",
     flat_size: "86\" x 104\"/128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
     care: 'Machine wash',
     weight: '2.4lbs',
-    warranty: '1 year'
+    warranty: '1 year',
+    type: "antiMicrobial"
 },
 {
-    // id: 108264,
-    id: "6' Anti Microbial",
+    id: 108264,
+    name: "6' Anti Microbial",
     print_options: "Dye Sub",
-    fit: 'drape',
+    fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
     flat_size: "86\" x 128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
     care: 'Machine wash',
     weight: '2.4lbs',
-    warranty: '1 year'
+    warranty: '1 year',
+    type: "antiMicrobial"
 
 },
 {
-    // id: 108265,
-    id: "8' Anti Microbial",
+    id: 108265,
+    name: "8' Anti Microbial",
     print_options: "Dye Sub",
-    fit: 'drape',
+    fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
     flat_size: "86\" x 128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
     care: 'Machine wash',
     weight: '4.8 lbs',
-    warranty: '1 year'
+    warranty: '1 year',
+    type: "antiMicrobial"
 },
 //Convertable
 {
     id: 104010,
     name: "4'/ 6' Convertable",
     print_options: "Dye Sub",
-    fit: 'convertable',
+    fit: 'Convertable Drape, 4 sided',
     size: "48\"/72\" x 29\" x 29.75\"",
     flat_size: "86\" x 104\"/128\"",
-    material: 'polyester poplin',
-    finish: 'serged',
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
     care: 'Machine wash',
     weight: '2.4lbs',
-    warranty: '1 year'
-
-}
-
+    warranty: '1 year',
+    type: "convertable"
+},
+{
+    id: 104022,
+    name: "6'/ 8' Convertable",
+    print_options: "Dye Sub",
+    fit: 'Convertable drape, 4 sided',
+    size: "72\"/96\" x 29\" x 29.75\"",
+    flat_size: "86\" x 128\"/152\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '3 lbs',
+    warranty: '1 year',
+    type: "convertable"
+},
+{
+    id: 104014,
+    name: "4'/ 6' Convertable",
+    print_options: "front only, 28 stock colors",
+    fit: 'Convertable Drape, 4 sided',
+    size: "72\"/96\" x 29\" x 29.75\"",
+    flat_size: "86\" x 128\"/152\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '2.4lbs',
+    warranty: '1 year',
+    type: "convertable"
+},
+//Eco-wise
+{
+    id: 108274,
+    name: "6' Eco-Wise",
+    print_options: "Dye Sub",
+    fit: 'Drape, 4 sided',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "86\" x 128\"",
+    material: 'Fire retardant biodegradable fabric',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '3.4lbs',
+    warranty: '1 year',
+    type: "eco"
+},
+{
+    id: 108275,
+    name: "8' Eco-Wise",
+    print_options: "Dye Sub",
+    fit: 'Drape, 4 sided',
+    size: "96\" x 29\" x 29.75\"",
+    flat_size: "86\" x 152\"",
+    material: 'Fire retardant biodegradable fabric',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '4.6lbs',
+    warranty: '1 year',
+    type: "eco"
+},
+{
+    id: 108241,
+    name: "6' Enviro Pro",
+    print_options: "Dye Sub",
+    fit: 'Drape, 4 sided',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "86\" x 128\"",
+    material: 'Fire retardant recycled PET',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '2.8 lbs',
+    warranty: '1 year',
+    type: "eco"
+},
+{
+    id: 108243,
+    name: "8' Enviro Pro",
+    print_options: "Dye Sub",
+    fit: 'Drape, 4 sided',
+    size: "96\" x 29\" x 29.75\"",
+    flat_size: "86\" x 152\"",
+    material: 'Fire retardant recycled PET',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '3.2lbs',
+    warranty: '1 year',
+    type: "eco"
+},
+{
+    id: 115002,
+    name: "4' Fitted",
+    print_options: "Front only, 28 stock colors",
+    fit: 'Fitted, 4 sided',
+    size: "48\" x 29\" x 29.75\"",
+    flat_size: "86\" x 104\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '3.2lbs',
+    warranty: '1 year',
+    type: "fitted"
+},
+{
+    id: 115009,
+    name: "4' Fitted",
+    print_options: "Dye Sub",
+    fit: 'Fitted, 4 sided',
+    size: "48\" x 29\" x 29.75\"",
+    flat_size: "86\" x 104\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '3.2lbs',
+    warranty: '1 year',
+    type: "fitted"
+},
+{
+    id: 107002,
+    name: "6' Fitted",
+    print_options: "Front only, 28 stock colors",
+    fit: 'Fitted, 4 sided',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "86\" x 128\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '3.2lbs',
+    warranty: '1 year',
+    type: "fitted"
+},
+{
+    id: 107010,
+    name: "6' Fitted",
+    print_options: "Dye Sub",
+    fit: 'Fitted, 4 sided',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "86\" x 128\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '3.2lbs',
+    warranty: '1 year',
+    type: "fitted"
+},
 ]
 
 export default tableThrows;

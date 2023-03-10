@@ -68,15 +68,16 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
           <section>
           <input 
             type="text"
-            placeholder="Enter Item Number" 
+            placeholder="Enter Primary Item" 
             className="dropdown-trigger input is-primary is-focused"
             value={input1} 
             onChange={e => setInput1(e.target.value)} 
-            list="retractors"
+            
             required 
-            name="retractors"
+            list="list"
+            name="list"
             />
-            <datalist id="retractors">
+            <datalist id="list">
               {filteredItems.map(item => (
                 <option key={item.id} value={item.id}>
                   {item.name}
@@ -88,13 +89,13 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             <input 
             type="text" 
             className="dropdown-trigger input is-info is-focused " 
-            placeholder="Item Number" 
+            placeholder="Item Number A" 
             value={input2} 
             onChange={e => setInput2(e.target.value)} 
-            list="retractors"
-            name="retractors"               
+            list="list"
+            name="list"               
             />
-            <datalist id="retractors">
+            <datalist id="list">
               {filteredItems.map(item => (
                 <option key={item.id} value={item.id}>
                   {item.name}
@@ -106,13 +107,13 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             <input 
             type="text" 
             className="dropdown-trigger input is-info is-focused" 
-            placeholder="Item Number" 
+            placeholder="Item Number B" 
             value={input3} 
             onChange={e => setInput3(e.target.value)}     
-            list="retractors"
-            name="retractors"            
+            list="list"
+            name="list"            
             />
-            <datalist id="retractors">
+            <datalist id="list">
               {filteredItems.map(item => (
                 <option key={item.id} value={item.id}>
                   {item.name}
@@ -129,7 +130,9 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
 
         </form>
         <div className="warning">
-            <p>* highlighted boxes represent the differences between inputs A/B and the primary input</p>
+          <h4>key</h4>
+            <p>* Highlighted yellow boxes denote variances between inputs A/B and the primary input.</p>
+            <p>* Highlighted teal boxes denote the differences between input B and input A.</p>
           </div>
         </div>
         </>

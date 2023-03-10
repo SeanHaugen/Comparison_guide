@@ -1,9 +1,38 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Retractors from '../../Data/Retractors/all'
+import highlight from '../Hooks/highlight';
+
 
 
 function ShowRetractors({retractor, retractor2, retractor3}) {
+    const [showColumns, setShowColumns] = useState(true);
+    const [showColumn2, setShowColumn2] = useState(true);
+    const [showColumn3, setShowColumn3] = useState(true);
 
+    useEffect(() => {
+        if(!retractor || Object.keys(retractor).length === 0) {
+            setShowColumns(false);
+
+        } else {
+            setShowColumns(true)
+        }
+    }, [retractor])
+  
+    useEffect(() => {
+      if (!retractor2 || Object.keys(retractor2).length === 0) {
+        setShowColumn2(false);
+      } else {
+        setShowColumn2(true);
+      }
+    }, [retractor2]);
+  
+    useEffect(() => {
+      if (!retractor3 || Object.keys(retractor3).length === 0) {
+        setShowColumn3(false);
+      } else {
+        setShowColumn3(true);
+      }
+    }, [retractor3]);
 
     return (
         <div className="comparison-container table-container">
@@ -11,87 +40,87 @@ function ShowRetractors({retractor, retractor2, retractor3}) {
             <table className=" table product-section table is-striped is-fullwidth is-bordered  ">
                 <thead>
                     <tr>
-                        <th scope="col">Description</th>
-                        <th scope="col">Primary Input</th>
-                        <th scope="col">Comparative Input A</th>
-                        <th scope="col">Comparative Input B</th>
+                        {showColumns && <th scope="col">Description</th>}
+                        {showColumns && <th scope="col">Primary</th>}
+                        {showColumn2 && <th scope="col">A</th>}
+                        {showColumn3 && <th scope="col">B</th>}
                     </tr>
                 </thead>
                 <tbody className='table-body'>
                     <tr>
-                        <th scope="row">Name</th>
-                        <td><strong className='name-id'>{retractor.name}</strong></td>
-                        <td><strong className='name-id'>{retractor2.name}</strong></td>
-                        <td><strong className='name-id'>{retractor3.name}</strong></td>
+                        {showColumns && (<th scope="row">Name</th>)}
+                        {showColumns && (<td><strong className='name-id'>{retractor.name}</strong></td>)}
+                        {showColumn2 && (<td><strong className='name-id'>{retractor2.name}</strong></td>)}
+                        {showColumn3 && (<td><strong className='name-id'>{retractor3.name}</strong></td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Item Number</th>
-                        <td><strong className='name-id'>{retractor.id}</strong></td>
-                        <td><strong className='name-id'>{retractor2.id}</strong></td>
-                        <td><strong className='name-id'>{retractor3.id}</strong></td>
+                        {showColumns && (<th scope="row">Item Number</th>)}
+                        {showColumns && (<td><strong className='name-id'>{retractor.id}</strong></td>)}
+                        {showColumn2 && (<td><strong className='name-id'>{retractor2.id}</strong></td>)}
+                        {showColumn3 && (<td><strong className='name-id'>{retractor3.id}</strong></td>)}
                     </tr>
                 </tbody>
                 
                 <tbody> 
                     <tr>
-                        <th  scope="row">Product Dimensions</th>
-                        <td>{retractor.size}</td>
-                        <td className={retractor2.size === retractor.size || retractor2.size === undefined ? '' : 'highlight'}  >{retractor2.size}</td>
-                        <td className={(retractor3.size === retractor.size || retractor3.size === undefined ? '' : 'highlight') }  >{retractor3.size}</td>
+                        {showColumns && (<th scope="row">Product Dimensions</th>)}
+                        {showColumns && (<td>{retractor.size}</td>)}
+                        {showColumn2 && (<td className={retractor2.size === retractor.size || retractor2.size === undefined ? '' : 'highlight'}  >{retractor2.size}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.size, retractor2.size, retractor3.size)}>{retractor3.size}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Media</th>
-                        <td>{retractor.media}</td>
-                        <td className={retractor2.media === retractor.media || retractor2.media === undefined  ? '' : 'highlight'}>{retractor2.media}</td>
-                        <td className={retractor3.media === retractor.media || retractor3.media === undefined ? '' : 'highlight'}>{retractor3.media}</td>
+                        {showColumns && (<th scope="row">Media</th>)}
+                        {showColumns && (<td>{retractor.media}</td>)}
+                        {showColumn2 && (<td className={retractor2.media === retractor.media || retractor2.media === undefined  ? '' : 'highlight'}>{retractor2.media}</td>)}
+                       {showColumn3 && (<td className={highlight(retractor.media, retractor2.media, retractor3.media)}>{retractor3.media}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">RCAT</th>
-                        <td>{retractor.RCAT}</td>
-                        <td className={retractor2.RCAT === retractor.RCAT || retractor2.RCAT === undefined  ? '' : 'highlight'}>{retractor2.RCAT}</td>
-                        <td className={retractor3.RCAT === retractor.RCAT || retractor3.RCAT === undefined ? '' : 'highlight'}>{retractor3.RCAT}</td>
+                        {showColumns && (<th scope="row">RCAT</th>)}
+                        {showColumns && (<td>{retractor.RCAT}</td>)}
+                        {showColumn2 && (<td className={retractor2.RCAT === retractor.RCAT || retractor2.RCAT === undefined  ? '' : 'highlight'}>{retractor2.RCAT}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.RCAT, retractor2.RCAT, retractor3.RCAT)}>{retractor3.RCAT}</td>)}
                     </tr>
                     <tr>
-                        <th scope="base">Base</th>
-                        <td>{retractor.base}</td>
-                        <td className={retractor2.base === retractor.base || retractor2.base === undefined  ? '' : 'highlight'}>{retractor2.base}</td>
-                        <td className={retractor3.base === retractor.base || retractor3.base === undefined ? '' : 'highlight'}>{retractor3.base}</td>
+                        {showColumns && (<th scope="base">Base</th>)}
+                        {showColumns && (<td>{retractor.base}</td>)}
+                        {showColumn2 && (<td className={retractor2.base === retractor.base || retractor2.base === undefined  ? '' : 'highlight'}>{retractor2.base}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.base, retractor2.base, retractor3.base)}>{retractor3.base}</td>)}
                     </tr>
                     <tr>
-                        <th scope="pole">Pole</th>
-                        <td>{retractor.pole}</td>
-                        <td className={retractor2.pole === retractor.pole || retractor2.pole === undefined ? '' : 'highlight'}>{retractor2.pole}</td>
-                        <td className={retractor3.pole === retractor.pole || retractor3.pole === undefined ? '' : 'highlight'}>{retractor3.pole}</td>
+                        {showColumns && (<th scope="pole">Pole</th>)}
+                        {showColumns && (<td>{retractor.pole}</td>)}
+                        {showColumn2 && (<td className={retractor2.pole === retractor.pole || retractor2.pole === undefined ? '' : 'highlight'}>{retractor2.pole}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.pole, retractor2.pole, retractor3.pole)}>{retractor3.pole}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Banner</th>
-                        <td>{retractor.banner}</td>
-                        <td className={retractor2.banner === retractor.banner || retractor2.banner === undefined ? '' : 'highlight'}>{retractor2.banner}</td>
-                        <td className={retractor3.banner === retractor.banner || retractor3.banner === undefined ? '' : 'highlight'}>{retractor3.banner}</td>
+                        {showColumns && (<th scope="row">Banner</th>)}
+                        {showColumns && (<td>{retractor.banner}</td>)}
+                        {showColumn2 && (<td className={retractor2.banner === retractor.banner || retractor2.banner === undefined ? '' : 'highlight'}>{retractor2.banner}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.banner, retractor2.banner, retractor3.banner)}>{retractor3.banner}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">attachment method</th>
-                        <td>{retractor.attachment_method}</td>
-                        <td className={retractor2.attachment_method === retractor.attachment_method || retractor2.attachment_method === undefined ? '' : 'highlight'}>{retractor2.attachment_method}</td>
-                        <td className={retractor3.attachment_method === retractor.attachment_method || retractor3.attachment_method === undefined ? '' : 'highlight'}>{retractor3.attachment_method}</td>
+                        {showColumns && (<th scope="row">attachment method</th>)}
+                        {showColumns && (<td>{retractor.attachment_method}</td>)}
+                        {showColumn2 && (<td className={retractor2.attachment_method === retractor.attachment_method || retractor2.attachment_method === undefined ? '' : 'highlight'}>{retractor2.attachment_method}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.attachment_method, retractor2.attachment_method, retractor3.attachment_method)}>{retractor3.attachment_method}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Weight</th>
-                        <td>{retractor.weight}</td>
-                        <td className={retractor2.weight === retractor.weight || retractor2.weight === undefined ? '' : 'highlight'}>{retractor2.weight}</td>
-                        <td className={retractor3.weight === retractor.weight || retractor3.weight === undefined ? '' : 'highlight'}>{retractor3.weight}</td>
+                        {showColumns && (<th scope="row">Weight</th>)}
+                        {showColumns && (<td>{retractor.weight}</td>)}
+                        {showColumn2 && (<td className={retractor2.weight === retractor.weight || retractor2.weight === undefined ? '' : 'highlight'}>{retractor2.weight}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.weight, retractor2.weight, retractor3.weight)}>{retractor3.weight}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Production Time</th>
-                        <td>{retractor.production}</td>
-                        <td className={retractor2.production === retractor.production || retractor2.production === undefined ? '' : 'highlight'}>{retractor2.production}</td>
-                        <td className={retractor3.production === retractor.production || retractor3.production === undefined ? '' : 'highlight'}>{retractor3.production}</td>
+                        {showColumns && (<th scope="row">Production Time</th>)}
+                        {showColumns && (<td>{retractor.production}</td>)}
+                        {showColumn2 && (<td className={retractor2.production === retractor.production || retractor2.production === undefined ? '' : 'highlight'}>{retractor2.production}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.production, retractor2.production, retractor3.production)}>{retractor3.production}</td>)}
                     </tr>
                     <tr>
-                        <th scope="row">Warranty</th>
-                        <td>{retractor.warranty}</td>
-                        <td className={retractor2.warranty === retractor.warranty || retractor2.warranty === undefined ? '' : 'highlight'}>{retractor2.warranty}</td>
-                        <td className={retractor3.warranty === retractor.warranty || retractor3.warranty === undefined ? '' : 'highlight'}>{retractor3.warranty}</td>
+                        {showColumns && (<th scope="row">Warranty</th>)}
+                        {showColumns && (<td>{retractor.warranty}</td>)}
+                        {showColumn2 && (<td className={retractor2.warranty === retractor.warranty || retractor2.warranty === undefined ? '' : 'highlight'}>{retractor2.warranty}</td>)}
+                        {showColumn3 && (<td className={highlight(retractor.warranty, retractor2.warranty, retractor3.warranty)}>{retractor3.warranty}</td>)}
                     </tr>
                 </tbody>
             </table >
