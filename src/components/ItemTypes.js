@@ -9,6 +9,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
 
     const [categoryFilter, setCategoryFilter] = useState([]);
     const [sizeFilter, setSizeFilter] = useState([]);
+    const [mediaFilter, setMediaFilter] = useState([])
     const location =useLocation()
 
     const handleCategoryChange = (e) => {
@@ -29,12 +30,24 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
       }
     }
 
+    const handleMediaChange = (e) => {
+      const { value, checked} = e.target;
+      if(checked) {
+        setMediaFilter([...mediaFilter, value])
+
+      } else {
+        setMediaFilter(mediaFilter.filter((type) => type !== value))
+      }
+    }
+
+
 
     
     const filteredItems = itemList.filter((item) => {
         const passCategoryFilter = categoryFilter.length === 0 || categoryFilter.includes(item.category);
         const passSizeFilter = sizeFilter.length === 0 || sizeFilter.includes(item.type);
-        return passCategoryFilter && passSizeFilter
+        const passMediaFilter = mediaFilter.length === 0 || mediaFilter.includes(item.media)
+        return passCategoryFilter && passSizeFilter && passMediaFilter;
         })
 
 
@@ -56,8 +69,10 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
               <br />
             </>
           )}
+          
           </div>
-            <div className="checkbox checkbox-container-two">
+          <br />
+            <div className="checkbox checkbox-container-one ">
             {location.pathname === '/RetractorCompare' && (
               <>
                 <input type="checkbox" value="tableTop" onChange={handleSizeChange} />
@@ -80,6 +95,28 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
                 <br />
               </>
             )}
+            </div>
+            <br />
+            <div className="checkbox checkbox-container-one">
+              
+              {location.pathname === '/RetractorCompare' && (
+                <>
+                <input type="checkbox" value="Tear-resistant Titan Polypropylene" onChange={handleMediaChange} />
+                Polypropylene
+                <br />
+                <input type="checkbox" value="Titan No-curl hybrid media" onChange={handleMediaChange} />
+                Hybrid
+                <br />
+                <input type="checkbox" value="Titan No-curl Opaque media" onChange={handleMediaChange} />
+                Opaque
+                <br />
+                <input type="checkbox" value="PVC Free silver backed media, 100% polyester" onChange={handleMediaChange} />
+                Eco
+                <br />
+                <input type="checkbox" value="13oz scrim vinyl" onChange={handleMediaChange} />
+                Vinyl
+                </>
+              )}
             </div>
  
         </label>
