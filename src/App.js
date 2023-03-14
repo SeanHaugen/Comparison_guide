@@ -45,17 +45,8 @@ function App() {
             <Router>
                 <Header setSelectedRoute={setSelectedRoute} />
 
-                <p>Thank you for testing this tool and providing feedback. Let me know any errors or typos with any of the items. Please enjoy some funky jams while you compare</p>
-                <iframe
-                    className="box container"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/_5lafJov-eU"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
+                <p>Thank you for testing this tool and providing feedback. Let me know any errors or typos with any of the items.</p>
+
                 <Routes>
                     <Route path="/" element={<About/>} />
                     <Route path='/About' element={<About />} />
