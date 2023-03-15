@@ -69,19 +69,19 @@ function App() {
                         <ShowTent tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
+                    <Route path='/tableThrowCompare' element={
+                      <div className="container">
+                        <h1 className="title tableThrows">Table Throws</h1>
+                        <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
+                        <ShowTableThrows tableThrow={item} throw2={item2} throw3={item3} />
+                      </div>
+                    } />
                     <Route path='/mediaCompare' element={
                       <div>
                         <h1 className="title media">Media</h1>
                         <ShowMedia tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
-                    <Route path='/tableThrowCompare' element={
-                      <div className="container">
-                        <h1 className="title tableThrows">Table Throws Under Construction</h1>
-                        <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
-                        <ShowTableThrows tableThrow={item} throw2={item2} throw3={item3} />
-                      </div>
-                    } />
                 </Routes>
             </Router>
           <Footer />

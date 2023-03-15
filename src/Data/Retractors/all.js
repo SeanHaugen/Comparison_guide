@@ -1351,7 +1351,7 @@ const allRetractors = [
 },
 ]
 
-const retractorJSON = JSON.stringify(allRetractors)
-console.log(retractorJSON)
+// const retractorJSON = JSON.stringify(allRetractors)
+
 
 export default allRetractors

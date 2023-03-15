@@ -78,8 +78,8 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             name="list"
             />
             <datalist id="list">
-              {filteredItems.map(item => (
-                <option key={item.id} value={item.id}>
+              {filteredItems.map((item, index) => (
+                <option key={index} value={item.id}>
                   {item.name}
                 </option>
               ))}
@@ -96,8 +96,8 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             name="list"               
             />
             <datalist id="list">
-              {filteredItems.map(item => (
-                <option key={item.id} value={item.id}>
+              {filteredItems.map((item, index) => (
+                <option key={index} value={item.id}>
                   {item.name}
                 </option>
               ))}
@@ -114,8 +114,8 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             name="list"            
             />
             <datalist id="list">
-              {filteredItems.map(item => (
-                <option key={item.id} value={item.id}>
+              {filteredItems.map((item,index) => (
+                <option key={index} value={item.id}>
                   {item.name}
                 </option>
               ))}

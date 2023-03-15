@@ -48,15 +48,15 @@ function ShowTableThrows({tableThrow, throw2, throw3,}) {
                 <tbody className='table-body'>
                     <tr>
                         {showColumns && (<th scope="row">Name</th>)}
+                        {showColumns && (<td><strong className='name-id'>{tableThrow.name}</strong></td>)}
+                        {showColumn2 && (<td><strong className='name-id'>{throw2.name}</strong></td>)}
+                        {showColumn3 && (<td><strong className='name-id'>{throw3.name}</strong></td>)}
+                    </tr>
+                    <tr>
+                        {showColumns && (<th scope="row">Item Number</th>)}
                         {showColumns && (<td><strong className='name-id'>{tableThrow.id}</strong></td>)}
                         {showColumn2 && (<td><strong className='name-id'>{throw2.id}</strong></td>)}
                         {showColumn3 && (<td><strong className='name-id'>{throw3.id}</strong></td>)}
-                    </tr>
-                    <tr>
-                        {showColumns && (<th scope="row">Item Numbers</th>)}
-                        {showColumns && (<td><strong className='name-id'>{tableThrow.item_numbers}</strong></td>)}
-                        {showColumn2 && (<td><strong className='name-id'>{throw2.item_numbers}</strong></td>)}
-                        {showColumn3 && (<td><strong className='name-id'>{throw3.item_numbers}</strong></td>)}
                     </tr>
                 </tbody>
                                       

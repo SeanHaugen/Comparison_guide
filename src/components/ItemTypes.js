@@ -10,7 +10,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
     const [categoryFilter, setCategoryFilter] = useState([]);
     const [sizeFilter, setSizeFilter] = useState([]);
     const [mediaFilter, setMediaFilter] = useState([])
-    const location =useLocation()
+    const location = useLocation()
 
     const handleCategoryChange = (e) => {
         const { value, checked } = e.target;
@@ -115,6 +115,30 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
                 <br />
                 <input type="checkbox" value="13oz scrim vinyl" onChange={handleMediaChange} />
                 Vinyl
+                </>
+              )}
+            </div>
+            <div className="checkbox checkbox-container-one">
+              
+              {location.pathname === '/tableThrowCompare' && (
+                <>
+                <input type="checkbox" value="antiMicrobial" onChange={handleMediaChange} />
+                antiMicrobial
+                <br />
+                <input type="checkbox" value="convertable" onChange={handleMediaChange} />
+                convertable
+                <br />
+                <input type="checkbox" value="eco" onChange={handleMediaChange} />
+                Eco
+                <br />
+                <input type="checkbox" value="fitted" onChange={handleMediaChange} />
+                Fitted
+                <br />
+                <input type="checkbox" value="lazerline" onChange={handleMediaChange} />
+                Lazerline
+                <br />
+                <input type="checkbox" value="runner" onChange={handleMediaChange} />
+                Runner
                 </>
               )}
             </div>

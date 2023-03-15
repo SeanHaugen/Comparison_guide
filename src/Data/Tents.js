@@ -249,8 +249,8 @@ const tents = [
 ]
 
 
-const tentJsonData = JSON.stringify(tents)
-console.log(tentJsonData)
+// const tentJsonData = JSON.stringify(tents)
+
 
 
 export default tents;

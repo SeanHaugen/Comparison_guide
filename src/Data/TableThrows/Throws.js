@@ -10,10 +10,10 @@ const tableThrows = [
     flat_size: "86\" x 104\"/128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '2.4lbs',
     warranty: '1 year',
-    type: "antiMicrobial"
+    media: "antiMicrobial"
 },
 {
     id: 108264,
@@ -24,10 +24,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '2.4lbs',
     warranty: '1 year',
-    type: "antiMicrobial"
+    media: "antiMicrobial"
 
 },
 {
@@ -39,10 +39,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '4.8 lbs',
     warranty: '1 year',
-    type: "antiMicrobial"
+    media: "antiMicrobial"
 },
 {   
     id: 108260,
@@ -53,10 +53,10 @@ const tableThrows = [
     flat_size: "67\" x 104\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '2.4lbs',
     warranty: '1 year',
-    type: "antiMicrobial"
+    media: "antiMicrobial"
 },
 {
     id: 108261,
@@ -67,10 +67,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '2.4lbs',
     warranty: '1 year',
-    type: "antiMicrobial"
+    media: "antiMicrobial"
 
 },
 {
@@ -82,10 +82,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Anti Microbial polyester',
     finish: 'Hemmed',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '4.8 lbs',
     warranty: '1 year',
-    type: "antiMicrobial"
+    media: "antiMicrobial"
 },
 //Convertable
 {
@@ -97,10 +97,10 @@ const tableThrows = [
     flat_size: "86\" x 104\"/128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '2.4lbs',
     warranty: '1 year',
-    type: "convertable"
+    media: "convertable"
 },
 {
     id: 104022,
@@ -111,10 +111,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"/152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '3 lbs',
     warranty: '1 year',
-    type: "convertable"
+    media: "convertable"
 },
 {
     id: 104014,
@@ -125,10 +125,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"/152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '2.4lbs',
     warranty: '1 year',
-    type: "convertable"
+    media: "convertable"
 },
 //Eco-wise
 {
@@ -140,10 +140,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant biodegradable fabric',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '3.4lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 108275,
@@ -154,10 +154,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant biodegradable fabric',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '4.6 lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 108271,
@@ -168,10 +168,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant biodegradable fabric',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '3.4lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 108272,
@@ -182,10 +182,10 @@ const tableThrows = [
     flat_size: "67\" x 152\"",
     material: 'Fire retardant biodegradable fabric',
     finish: 'Serged',
-    care: 'Machine wash',
+    care: 'Machine wash wash',
     weight: '4.6 lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 108241,
@@ -199,7 +199,7 @@ const tableThrows = [
     care: 'Spot clean',
     weight: '2.8 lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 108240,
@@ -213,7 +213,7 @@ const tableThrows = [
     care: 'Spot clean',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 108242,
@@ -227,7 +227,7 @@ const tableThrows = [
     care: 'Spot clean',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "eco"
+    media: "eco"
 },
 {
     id: 115002,
@@ -238,10 +238,10 @@ const tableThrows = [
     flat_size: "86\" x 104\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "fitted"
+    media: "fitted"
 },
 {
     id: 115009,
@@ -252,10 +252,10 @@ const tableThrows = [
     flat_size: "86\" x 104\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "fitted"
+    media: "fitted"
 },
 {
     id: 107002,
@@ -266,10 +266,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "fitted"
+    media: "fitted"
 },
 {
     id: 107010,
@@ -280,10 +280,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "fitted"
+    media: "fitted"
 },
 {
     id: 107022,
@@ -294,10 +294,38 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "fitted"
+    media: "fitted"
+},
+{
+    id: 107040,
+    name: "31.5\" bar height",
+    print_options: "Front only, 28 options",
+    fit: 'fitted, round',
+    size: "43\" x 31.5\"",
+    flat_size: "N/A",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "fitted"
+},
+{
+    id: 107047,
+    name: "31.5\" bar height Round",
+    print_options: "Dye Sub",
+    fit: 'fitted, round',
+    size: "43\" x 31.5\"",
+    flat_size: "N/A",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "fitted"
 },
 {
     id: 108201,
@@ -308,10 +336,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '2.5 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108202,
@@ -322,10 +350,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108204,
@@ -336,10 +364,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '2.5 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108205,
@@ -350,10 +378,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108213,
@@ -364,10 +392,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '2.5 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108214,
@@ -378,10 +406,10 @@ const tableThrows = [
     flat_size: "67\" x 152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108216,
@@ -392,10 +420,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '2.5 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 108217,
@@ -406,10 +434,10 @@ const tableThrows = [
     flat_size: "67\" x 152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Laser cut',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3 lbs',
     warranty: '1 year',
-    type: "lazerline"
+    media: "lazerline"
 },
 {
     id: 107060,
@@ -420,10 +448,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant 400 denier polyester',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.2 lbs',
     warranty: '1 year',
-    type: "outdoorFitted"
+    media: "outdoorFitted"
 },
 {
     id: 107061,
@@ -434,10 +462,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant 400 denier polyester',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '4.2 lbs',
     warranty: '1 year',
-    type: "outdoorFitted"
+    media: "outdoorFitted"
 },
 {
     id: 109060,
@@ -451,7 +479,7 @@ const tableThrows = [
     care: 'Spot clean',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "premium"
+    media: "premium"
 },
 {
     id: 109071,
@@ -465,7 +493,7 @@ const tableThrows = [
     care: 'Spot clean',
     weight: '4.75 lbs',
     warranty: '1 year',
-    type: "premium"
+    media: "premium"
 },
 {
     id: 114121,
@@ -476,10 +504,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant stain-resistant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "stainResistant"
+    media: "stainResistant"
 },
 {
     id: 224234,
@@ -490,10 +518,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant stain-resistant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "stainResistant"
+    media: "stainResistant"
 },
 {
     id: 114120,
@@ -504,10 +532,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant stain-resistant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "stainResistant"
+    media: "stainResistant"
 },
 {
     id: 114122,
@@ -518,10 +546,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant stain-resistant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "stainResistant"
+    media: "stainResistant"
 },
 {
     id: 114125,
@@ -532,10 +560,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant stain-resistant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "stainResistant"
+    media: "stainResistant"
 },
 {
     id: 114127,
@@ -546,39 +574,12 @@ const tableThrows = [
     flat_size: "67\" x 152\"",
     material: 'Fire retardant stain-resistant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "stainResistant"
+    media: "stainResistant"
 },
-{
-    id: 114120,
-    name: "6' Stain Resistant",
-    print_options: "Blank, 15 options",
-    fit: 'Drape, 4 sided',
-    size: "72\" x 29\" x 29.75\"",
-    flat_size: "86\" x 128\"",
-    material: 'Fire retardant stain-resistant polyester poplin',
-    finish: 'Serged',
-    care: 'Machine',
-    weight: '3.5 lbs',
-    warranty: '1 year',
-    type: "stainResistant"
-},
-{
-    id: 114122,
-    name: "8' Stain Resistant",
-    print_options: "Blank, 15 options",
-    fit: 'Drape, 4 sided',
-    size: "96\" x 29\" x 29.75\"",
-    flat_size: "86\" x 152\"",
-    material: 'Fire retardant stain-resistant polyester poplin',
-    finish: 'Serged',
-    care: 'Machine',
-    weight: '3.5 lbs',
-    warranty: '1 year',
-    type: "stainResistant"
-},
+
 {
     id: 109105,
     name: "4' Standard",
@@ -588,10 +589,10 @@ const tableThrows = [
     flat_size: "86\" x 104\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109002,
@@ -602,10 +603,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109014,
@@ -616,10 +617,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109100,
@@ -630,10 +631,10 @@ const tableThrows = [
     flat_size: "86\" x 200\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '4 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109102,
@@ -644,13 +645,13 @@ const tableThrows = [
     flat_size: "86\" x 248\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
-    id: 109105,
+    id: 109106,
     name: "4' Standard",
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -658,10 +659,10 @@ const tableThrows = [
     flat_size: "86\" x 104\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109010,
@@ -672,10 +673,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109022,
@@ -686,10 +687,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 109101,
@@ -700,10 +701,80 @@ const tableThrows = [
     flat_size: "86\" x 200\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '4 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
+},
+{
+    id: 114041,
+    name: "33.25\" Bar Height",
+    print_options: "Dye Sub",
+    fit: 'Drape, round',
+    size: "28\" x 31.5\"",
+    flat_size: "98\" Diameter",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '4 lbs',
+    warranty: '1 year',
+    media: "standard"
+},
+{
+    id: 114040,
+    name: "Cafe'",
+    print_options: "Dye Sub",
+    fit: 'Drape, round',
+    size: "43\" x 31.5\"",
+    flat_size: "85.5\" Diameter",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '4 lbs',
+    warranty: '1 year',
+    media: "standard"
+},
+{
+    id: 114042,
+    name: "3 foot'",
+    print_options: "Dye Sub",
+    fit: 'Drape, round',
+    size: "28\" x 36\"",
+    flat_size: "90\" Diameter",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '4 lbs',
+    warranty: '1 year',
+    media: "standard"
+},
+{
+    id: 114043,
+    name: "4 foot'",
+    print_options: "Dye Sub",
+    fit: 'Drape, round',
+    size: "28\" x 48\"",
+    flat_size: "98\" Diameter",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '4 lbs',
+    warranty: '1 year',
+    media: "standard"
+},
+{
+    id: 114044,
+    name: "5 foot'",
+    print_options: "Dye Sub",
+    fit: 'Drape, round',
+    size: "28\" x 60\"",
+    flat_size: "98\" Diameter",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '4 lbs',
+    warranty: '1 year',
+    media: "standard"
 },
 {
     id: 109103,
@@ -714,10 +785,10 @@ const tableThrows = [
     flat_size: "86\" x 248\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "standard"
 },
 {
     id: 106045,
@@ -728,10 +799,10 @@ const tableThrows = [
     flat_size: "67\" x 104\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106002,
@@ -742,10 +813,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106014,
@@ -756,10 +827,10 @@ const tableThrows = [
     flat_size: "67\" x 152\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106051,
@@ -770,10 +841,10 @@ const tableThrows = [
     flat_size: "67\" x 200\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '4 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106053,
@@ -784,10 +855,10 @@ const tableThrows = [
     flat_size: "67\" x 248\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106042,
@@ -798,10 +869,10 @@ const tableThrows = [
     flat_size: "67\" x 104\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106010,
@@ -812,10 +883,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106022,
@@ -826,10 +897,10 @@ const tableThrows = [
     flat_size: "67\" x 128\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '3.5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106052,
@@ -840,10 +911,10 @@ const tableThrows = [
     flat_size: "67\" x 200\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '4 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 {
     id: 106054,
@@ -854,10 +925,10 @@ const tableThrows = [
     flat_size: "67\" x 248\"",
     material: 'Fire retardant polyester poplin',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Economy"
 },
 
 {
@@ -869,10 +940,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant Premium Woven Polyester',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Glo"
 },
 {
     id: 108256,
@@ -883,24 +954,24 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant Premium Woven Polyester',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "standard"
+    media: "Glo"
 },
 {
-    id: 114099,
+    id: 114034,
     name: "4' Ultrafit Classic",
-    print_options: "Front only, White BG",
+    print_options: "Dye Sub",
     fit: 'Snug fit, 4 sided',
     size: "48\" x 29\" x 29.75\"",
     flat_size: "86\" x 104\"",
     material: 'Fire retardant 2-way stretch fabric',
     finish: 'Hemmed',
-    care: 'Machine',
-    weight: '5 lbs',
+    care: 'Machine wash',
+    weight: '1.75 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
     id: 114001,
@@ -911,10 +982,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant 2-way stretch fabric',
     finish: 'Hemmed',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
     id: 114004,
@@ -925,10 +996,10 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant 2-way stretch fabric',
     finish: 'Hemmed',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
     id: 114099,
@@ -939,13 +1010,13 @@ const tableThrows = [
     flat_size: "86\" x 104\"",
     material: 'Fire retardant 2-way stretch fabric',
     finish: 'Hemmed',
-    care: 'Machine',
-    weight: '5 lbs',
+    care: 'Machine wash',
+    weight: '1.75 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
-    id: 114001,
+    id: 114002,
     name: "6' Ultrafit Classic",
     print_options: "Dye Sub",
     fit: 'Snug fit, 4 sided',
@@ -953,13 +1024,13 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant 2-way stretch fabric',
     finish: 'Hemmed',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
-    id: 114004,
+    id: 114005,
     name: "8' Ultrafit Classic",
     print_options: "Dye Sub",
     fit: 'Snug fit, 4 sided',
@@ -967,11 +1038,82 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant 2-way stretch fabric',
     finish: 'Hemmed',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
+{
+    id: 114014,
+    name: "6' Ultrafit Curve",
+    print_options: "Front only, White BG",
+    fit: 'Snug fit, 3 sided',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "67\" x 128\"",
+    material: 'Fire retardant 2-way stretch fabric',
+    finish: 'Hemmed',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "ultrafit"
+},
+{
+    id: 114017,
+    name: "8' Ultrafit Curve",
+    print_options: "Front only, White BG",
+    fit: 'Snug fit, 3 sided',
+    size: "96\" x 29\" x 29.75\"",
+    flat_size: "67\" x 152\"",
+    material: 'Fire retardant 2-way stretch fabric',
+    finish: 'Hemmed',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "ultrafit"
+},
+{
+    id: 114015,
+    name: "6' Ultrafit Curve",
+    print_options: "Dye Sub",
+    fit: 'Snug fit, 3 sided',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "67\" x 128\"",
+    material: 'Fire retardant 2-way stretch fabric',
+    finish: 'Hemmed',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "ultrafit"
+},
+{
+    id: 114018,
+    name: "8' Ultrafit Curve",
+    print_options: "Dye Sub",
+    fit: 'Snug fit, 3 sided',
+    size: "96\" x 29\" x 29.75\"",
+    flat_size: "67\" x 152\"",
+    material: 'Fire retardant 2-way stretch fabric',
+    finish: 'Hemmed',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "ultrafit"
+},
+{
+    id: 114012,
+    name: "8' Ultrafit Curve",
+    print_options: "Dye Sub",
+    fit: 'Snug fit, round',
+    size: "43\"x 31.5\"",
+    flat_size: "N/A",
+    material: 'Fire retardant 2-way stretch fabric',
+    finish: 'Hemmed',
+    care: 'Machine wash',
+    weight: '5 lbs',
+    warranty: '1 year',
+    media: "ultrafit"
+},
+
 {
     id: 116005,
     name: "6' Value Lite",
@@ -981,10 +1123,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester pongee',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
     id: 116008,
@@ -995,11 +1137,12 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant polyester pongee',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
+
 {
     id: 116001,
     name: "6' Value Lite",
@@ -1009,10 +1152,10 @@ const tableThrows = [
     flat_size: "86\" x 128\"",
     material: 'Fire retardant polyester pongee',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
 },
 {
     id: 116007,
@@ -1023,10 +1166,276 @@ const tableThrows = [
     flat_size: "86\" x 152\"",
     material: 'Fire retardant polyester pongee',
     finish: 'Serged',
-    care: 'Machine',
+    care: 'Machine wash',
     weight: '5 lbs',
     warranty: '1 year',
-    type: "ultrafit"
+    media: "ultrafit"
+},
+{
+    id: 105110,
+    name: "Lateral Runner",
+    print_options: "Blank, 5 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "125\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105111,
+    name: "Lateral Runner",
+    print_options: "Top, 5 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "125\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105113,
+    name: "Lateral Runner",
+    print_options: "Top & Side, 5 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "125\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105114,
+    name: "Lateral Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "125\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105115,
+    name: "Lateral Runner",
+    print_options: "Blank, 5 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "149\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105116,
+    name: "Lateral Runner",
+    print_options: "Top, 5 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "149\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105118,
+    name: "Lateral Runner",
+    print_options: "Top & Side, 5 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "149\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 105119,
+    name: "Lateral Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "149\" x 28\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 108224,
+    name: "LazerLine Runner",
+    print_options: "Front only, 28 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "28\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Laser cut',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 108225,
+    name: "LazerLine Runner",
+    print_options: "Front only, 28 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "57\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Laser cut',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 271272,
+    name: "LazerLine Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "12\" x 72\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Laser cut',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 271273,
+    name: "LazerLine Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "36\" x 72\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Laser cut',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 108226,
+    name: "LazerLine Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "28\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Laser cut',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 108227,
+    name: "LazerLine Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "57\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Laser cut',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 102002,
+    name: "Standard Runner",
+    print_options: "Front only, 28 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "28\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 102014,
+    name: "Standard Runner",
+    print_options: "Front only, 28 color options",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "57\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 102010,
+    name: "Standard Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "28\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 102022,
+    name: "Standard Runner",
+    print_options: "Dye Sub",
+    fit: 'Drape',
+    size: "N/A",
+    flat_size: "57\" x 80\"",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "runner"
+},
+{
+    id: 109090,
+    name: "Ultrafit Crossover",
+    print_options: "Dye Sub",
+    fit: 'Snug fit',
+    size: "72\" x 29\" x 29.75\"",
+    flat_size: "6 foot",
+    material: 'Fire retardant polyester poplin',
+    finish: 'Serged',
+    care: 'Machine wash',
+    weight: '0.8 lbs',
+    warranty: '1 year',
+    media: "ultrafit"
 },
 
 ]
