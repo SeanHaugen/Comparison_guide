@@ -79,6 +79,7 @@ function App() {
                     <Route path='/mediaCompare' element={
                       <div>
                         <h1 className="title media">Media</h1>
+                        <h2>Coming soon: Square Foot Item number lookup</h2>
                         <ShowMedia tent={item} tent2={item2} tent3={item3} />
                       </div>
                     }/>
