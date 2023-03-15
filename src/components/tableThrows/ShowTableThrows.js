@@ -81,17 +81,17 @@ function ShowTableThrows({tableThrow, throw2, throw3,}) {
                         {showColumn3 && (<td className={highlight(tableThrow.flat_size, throw2.flat_size, throw3.flat_size)}  >{throw3.flat_size}</td>)}
                     </tr>
                     <tr>
-                        {showColumns && (<th  scope="row">Size</th>)}
+                        {showColumns && (<th  scope="row">Table Size</th>)}
                         {showColumns && (<td>{tableThrow.size}</td>)}
                         {showColumn2 && (<td className={throw2.size === tableThrow.size || throw2.size === undefined ? '' : 'highlight'}  >{throw2.size}</td>)}
                         {showColumn3 && (<td className={highlight(tableThrow.size, throw2.size, throw3.size)}  >{throw3.size}</td>)}
                     </tr>
-                    <tr>
+                    {/* <tr>
                         {showColumns && (<th  scope="row">Table Size</th>)}
                         {showColumns && (<td>{tableThrow.dimensions1}</td>)}
                         {showColumn2 && (<td className={throw2.dimensions1 === tableThrow.dimensions1 || throw2.dimensions1 === undefined ? '' : 'highlight'}  >{throw2.dimensions1}</td>)}
                         {showColumn3 && (<td className={highlight(tableThrow.dimensions1, throw2.dimensions1, throw3.dimensions1)}  >{throw3.dimensions1}</td>)}
-                    </tr>
+                    </tr> */}
                     <tr>
                         {showColumns && (<th  scope="row">Material</th>)}
                         {showColumns && (<td>{tableThrow.material}</td>)}
