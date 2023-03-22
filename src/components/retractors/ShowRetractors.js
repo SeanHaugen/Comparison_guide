@@ -2,8 +2,6 @@ import React, {useState, useEffect} from 'react'
 import Retractors from '../../Data/Retractors/all'
 import highlight from '../Hooks/highlight';
 
-
-
 function ShowRetractors({retractor, retractor2, retractor3}) {
     const [showColumns, setShowColumns] = useState(true);
     const [showColumn2, setShowColumn2] = useState(true);

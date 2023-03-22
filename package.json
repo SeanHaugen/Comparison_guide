@@ -2,6 +2,7 @@
   "name": "comparison_guide",
   "version": "0.1.0",
   "private": true,
+  "main": "src/electron.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
@@ -26,11 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
-    "electron:start": "wait-on tcp:3000 && electron ."
+    "package": "react-scripts package",
+    "electron":"electron ."
   },
-  "main": "main.js",
   "build": {
   "appId": "your.app.id",
   "files": [

@@ -45,7 +45,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
     
     const filteredItems = itemList.filter((item) => {
         const passCategoryFilter = categoryFilter.length === 0 || categoryFilter.includes(item.category);
-        const passSizeFilter = sizeFilter.length === 0 || sizeFilter.includes(item.type);
+        const passSizeFilter = sizeFilter.length === 0 || sizeFilter.includes(item.type || item.size);
         const passMediaFilter = mediaFilter.length === 0 || mediaFilter.includes(item.media)
         return passCategoryFilter && passSizeFilter && passMediaFilter;
         })
@@ -122,6 +122,9 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
               
               {location.pathname === '/tableThrowCompare' && (
                 <>
+                <input type="checkbox" value="standard" onChange={handleMediaChange} />
+                Standard
+                <br />
                 <input type="checkbox" value="antiMicrobial" onChange={handleMediaChange} />
                 antiMicrobial
                 <br />
@@ -139,6 +142,21 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
                 <br />
                 <input type="checkbox" value="runner" onChange={handleMediaChange} />
                 Runner
+                </>
+              )}
+            </div>
+            <div className="checkbox checkbox-container-one">
+              
+              {location.pathname === '/tableThrowCompare' && (
+                <>
+                <input type="checkbox" value='4ft' onChange={handleSizeChange} />
+                4ft
+                <br />
+                <input type="checkbox" value='6ft' onChange={handleSizeChange} />
+                6ft
+                <br />
+                <input type="checkbox" value='8ft' onChange={handleSizeChange} />
+                8ft
                 </>
               )}
             </div>

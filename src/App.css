@@ -61,11 +61,10 @@
 .container {
   display: flex;
   flex-flow: column wrap;
-  
   align-items: center;
 }
 
-.tents, .warning, .retractors  {
+.tents, .warning, .retractors, .tableThrows, .media  {
   font-family:'Tilt Neon',Arial, Helvetica, sans-serif;
   position: relative;
   /* right: 8em; */
@@ -102,12 +101,15 @@
 
 }
 
+
+
 .checkbox-container-one {
   display: flex;
   justify-content: center;
   margin-bottom: .2em;
   gap: .2em;
   /* border: 1px solid brown; */
+  /* accent-color: rgba(254, 254, 89, 0.714); */
 }
 
 .checkbox-container-two {
@@ -234,4 +236,51 @@ img {
 
 th {
   max-width: max-content;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.media .card {
+  width: 50%;
+  position: relative;
+  left: 25%;
 }

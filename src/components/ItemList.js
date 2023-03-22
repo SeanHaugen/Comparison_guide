@@ -60,7 +60,7 @@ function ItemList({filteredItems,}) {
                         
                     }).map((item, index) => {
                         return(
-                          <option key={item.id} value={item.id} >
+                          <option key={item.id} value={item.id || item.name} >
                           {item.name}
                           {item.id}
                         </option>

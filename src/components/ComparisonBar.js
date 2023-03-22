@@ -1,9 +1,10 @@
 import { warning } from "@remix-run/router";
 import React, { useState, useEffect} from "react";
+import { useLocation } from "react-router-dom";
 
 
 function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
-    
+  const location = useLocation();
   //Assign state to each input
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
@@ -23,10 +24,11 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     e.preventDefault();
     //returns the first item to satisfy the testing function. function looks for id or name else it will return undefined, using validate input to make input1 required
     if(validateInput(input1)){
-      const selectedItem = itemList.find(r => (r.id === parseInt(input1)));
-      const selectedItem2 = itemList.find(r => (r.id === parseInt(input2)));
-      const selectedItem3 = itemList.find(r => (r.id === parseInt(input3)));
+      const selectedItem = itemList.find(r =>  (r.id === parseInt(input1)) || (r.name === input1)) ;
+      const selectedItem2 = itemList.find(r => (r.id === parseInt(input2)) || (r.name === input2));
+      const selectedItem3 = itemList.find(r => (r.id === parseInt(input3)) || (r.name === input3));
       //sets the item to the correct selected item input or will return an empty object
+
       setItem(selectedItem || {});
       setItem2(selectedItem2 || {});
       setItem3(selectedItem3 || {} );
@@ -34,6 +36,7 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
       warning('enter primary input')
     }
   };
+  
   //Clears each input and table item
   const clearInputs = () => {
       setInput1('');
@@ -44,7 +47,6 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
       setItem3([]);
   };
 
-  
 
   useEffect(() => {
     setInput1('');
@@ -54,7 +56,7 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
     setItem2([]);
     setItem3([]);
 
-  }, [setItem, setItem2, setItem3])
+  }, [location.pathname])
 
 
     return (
@@ -72,11 +74,10 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
             className="dropdown-trigger input is-primary is-focused"
             value={input1} 
             onChange={e => setInput1(e.target.value)} 
-            
             required 
             list="list"
             name="list"
-            />
+          />
             <datalist id="list">
               {filteredItems.map((item, index) => (
                 <option key={index} value={item.id}>
@@ -87,13 +88,13 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
           </section>
           <section>
             <input 
-            type="text" 
-            className="dropdown-trigger input is-info is-focused " 
-            placeholder="Item Number A" 
-            value={input2} 
-            onChange={e => setInput2(e.target.value)} 
-            list="list"
-            name="list"               
+              type="text" 
+              className="dropdown-trigger input is-info is-focused " 
+              placeholder="Item Number A" 
+              value={input2} 
+              onChange={e => setInput2(e.target.value)} 
+              list="list"
+              name="list"               
             />
             <datalist id="list">
               {filteredItems.map((item, index) => (
@@ -105,13 +106,13 @@ function CompareBar({itemList, filteredItems,  setItem, setItem2, setItem3}) {
           </section>
           <section >
             <input 
-            type="text" 
-            className="dropdown-trigger input is-info is-focused" 
-            placeholder="Item Number B" 
-            value={input3} 
-            onChange={e => setInput3(e.target.value)}     
-            list="list"
-            name="list"            
+              type="text" 
+              className="dropdown-trigger input is-info is-focused" 
+              placeholder="Item Number B" 
+              value={input3} 
+              onChange={e => setInput3(e.target.value)}     
+              list="list"
+              name="list"            
             />
             <datalist id="list">
               {filteredItems.map((item,index) => (

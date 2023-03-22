@@ -3,7 +3,8 @@ import { BrowserRouter as Router,  Routes,  Route  } from 'react-router-dom';
 //component imports
 import ShowRetractors from "./components/retractors/ShowRetractors";
 import ShowTent from "./components/tents/ShowTents";
-import ShowMedia from "./components/media/ShowMedia";
+// import ShowMedia from "./components/media/ShowMedia";
+import CompareMedia from "./components/media/CompareMedia";
 import ShowTableThrows from "./components/tableThrows/ShowTableThrows";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -16,6 +17,7 @@ import './App.css';
 import allRetractors from "./Data/Retractors/all";
 import tents from "./Data/Tents";
 import tableThrows from "./Data/TableThrows/Throws";
+import media from './Data/media/media.js';
 
 function App() {
   //The three items here are to handle each of the inputs on the form
@@ -34,11 +36,13 @@ function App() {
           setItemList(tents);
         } else if (selectedRoute === "tableThrows") {
           setItemList(tableThrows);
+        } else if (selectedRoute === "media") {
+          setItemList(media);
         } else {
           setItemList([{category: null}])
         }
       }, [selectedRoute]);
-      
+
     return (
         <div className="app-container">
           
@@ -77,12 +81,12 @@ function App() {
                       </div>
                     } />
                     <Route path='/mediaCompare' element={
-                      <div>
+                      <div className="container">
                         <h1 className="title media">Media</h1>
-                        <h2>Coming soon: Square Foot Item number lookup</h2>
-                        <ShowMedia tent={item} tent2={item2} tent3={item3} />
+                        <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
+                        <CompareMedia media1={item} media2={item2} media3={item3} />
                       </div>
-                    }/>
+                    } />
                 </Routes>
             </Router>
           <Footer />
