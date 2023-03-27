@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header({setSelectedRoute}) {
 
-    const [isOpen, setOpen] = useState(true)
+    const [isOpen, setOpen] = useState(false)
 
     const handleToggleMenu = () => {
         setOpen(!isOpen);
@@ -15,7 +15,7 @@ function Header({setSelectedRoute}) {
     return (
         <div className='hero'>
         <h1 className='title hero-head'>Showdown Displays Product Comparison Guide </h1>
-        {/* <button className='nav-button' onClick={handleToggleMenu} aria-controls="primary-navigation" aria-expanded={isOpen} >
+        <button className='nav-button' onClick={handleToggleMenu} aria-controls="primary-navigation" aria-expanded={isOpen} >
             <svg className='hamburger' fill="#FFCC00" viewBox="0 0 100 100" width="50" >
                 <rect className='line top' 
                         width="76" 
@@ -33,7 +33,7 @@ function Header({setSelectedRoute}) {
                         x="10" y="65" rx="5">
                 </rect>
             </svg>
-        </button> */}
+        </button>
         <nav className={`navbar ${isOpen ? 'is-active' : ''}`} role="navigation" aria-label="main navigation" style={{display: isOpen ? 'block' : 'none'}}>
             <div className='navbar-brand '>
                 <NavLink to='/About' className="navbar-item">About</NavLink>
