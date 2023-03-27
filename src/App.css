@@ -312,7 +312,6 @@ th {
 }
 
 .nav-button.active :is(.top, .bottom) {
-  /* y: 45; */
   y: 45;
 }
 
