@@ -36,7 +36,7 @@ const media = [
     {
         
         name: '13oz Smooth Vinyl',
-        description: "durable, smooth, polished with slight sheen when light catches it, strong though not as heavy as 18oz. When touched, it may feel durable and strong, with a smooth surface that is resistant to moisture, abrasion, and tearing. Depending on the specific vinyl and its intended use, it may also have a slightly glossy or matte finish, adding to its aesthetic appeal.Overall, the feel of a 13oz vinyl material can be described as sturdy, durable, and practical, with a texture that is designed to withstand wear and tear. ",
+        description: "The 13oz weight indicates that the vinyl is relatively thick and heavy, which means it can withstand strong winds, rain, and other harsh weather conditions. The material is typically made from a high-quality vinyl polymer, which is known for its durability and resistance to fading, cracking, and peeling. The smooth texture of the vinyl indicates an absence of scrim, displaying a uniform surface without any noticeable bumps or ridges. This creates a clean and polished look that is ideal for printing high-quality graphics and images. The smooth surface also makes it easy to clean and maintain",
         duty: "Average duty",
         wind: "Strong breeze, large tree branches in motion, umbrella use is difficult, wind @ 25-31 mph",
         indoor: "Indoor use is best",
@@ -79,7 +79,7 @@ const media = [
     },
     {
         name: '9oz PVC Free',
-        description: "lightweight, breathable, and flexible. Unlike solid vinyl materials, a mesh vinyl material has small perforations that allow air through the material. This gives it a lighter and more airy feel, with a slight stretchiness and give to the touch. The material may also feel slightly rough or textured, with a more matte finish compared to a glossy vinyl material. Overall, a 9oz mesh vinyl material feels more flexible and breathable, making it suitable for applications where ventilation is important, such as outdoors on a fence",
+        description: "Our most eco friendly media. Compared to traditional PVC vinyl, a PVC-free vinyl may feel softer and more pliable. It may also feel slightly more lightweight due to the absence of PVC. The 9oz weight of the vinyl may provide a moderate level of thickness and durability, which could make it feel sturdy and resilient.",
         duty: "Average duty",
         wind: "Strong breeze, large tree branches in motion, umbrella use is difficult, wind @ 25-31 mph",
         indoor: "Best used in doors",
