@@ -19,6 +19,9 @@ import tents from "./Data/Tents";
 import tableThrows from "./Data/TableThrows/Throws";
 import media from './Data/media/media.js';
 
+
+
+
 function App() {
   //The three items here are to handle each of the inputs on the form
     const [item, setItem] = useState({});

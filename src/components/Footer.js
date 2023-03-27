@@ -1,17 +1,50 @@
 import React from 'react';
-import footerImg from '../images/sd-logo.png'
+import footerImg from '../images/sd-logo.png';
+import retractorIMG1 from '../images/261340_0.jpg';
+import retractorIMG2 from '../images/210240_0.jpg';
+import retractorIMG4 from '../images/261118_0.jpg';
+import tableThrowIMG1 from '../images/114121_0.jpg';
+import retractorIMG3 from '../images/261270_0.jpg';
+import tentIMG1 from '../images/240619_0.jpeg';
+import bannerIMG from '../images/14_0.jpg';
+import retractorIMG5 from '../images/262138_0.jpg'
 
 function Footer() {
 
     return (
         <footer className="footer">
+            <div className='footer-body'>
+                <div class="marquee">
+                <div class="marquee__group">
+                    <img src='' alt=''/>
+                    <img src={retractorIMG1} alt='retractor'/>
+                    <img src={retractorIMG2} alt='mini retractor'/>
+                    <img src={tableThrowIMG1} alt='table throw'/>
+                    <img src={retractorIMG3} alt='retractable banner'/>
+                </div>
+
+                <div aria-hidden="true" class="marquee__group">
+                    <img src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ3MzQ&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
+                    <img src={tentIMG1} alt='dye sublimated tent'/>
+                    <img src={retractorIMG4} alt='retractable banner'/>
+                    <img src={bannerIMG} alt='banner'/>
+                    <img src={retractorIMG5} alt='jumbo wide retractor'/>
+                </div>
+                </div>
+            </div>
+            
             <div className="content has-centered-text is-small">
-                <p>Created by Sean Haugen. Source code can be found on <a href="https://github.com/SeanHaugen/Comparison_guide">GitHub</a> and hosted on <a href="https://app.netlify.com/sites/sd-comparison-guide/overview">Netlify</a></p>
+                
+
+                <img src={footerImg} alt='logo footer' />
                 <div className='copy-write'>
                     <p>2023 Showdown Displays</p>
                 </div>
-                <img src={footerImg} alt='logo footer' />
+                <p>Created by Sean Haugen. Source code can be found on <a href="https://github.com/SeanHaugen/Comparison_guide">GitHub</a> and hosted on <a href="https://app.netlify.com/sites/sd-comparison-guide/overview">Netlify</a></p>
             </div>
+
+
+
         </footer>
     )
 }
