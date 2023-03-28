@@ -374,7 +374,7 @@ th {
   line-height: 1.5;
 }
 
-.marquee {
+.image {
   --duration: 60s;
   --gap: var(--space);
 
@@ -386,7 +386,7 @@ th {
   
 }
 
-.marquee__group {
+.image__group {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -398,12 +398,12 @@ th {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee__group {
+  .image__group {
     animation-play-state: paused;
   }
 }
 
-.marquee__group img {
+.image__group img {
   max-width: clamp(10rem, 1rem + 28vmin, 20rem);
   aspect-ratio: 1;
   object-fit: cover;
@@ -412,11 +412,11 @@ th {
 }
 
 
-.marquee--borders {
+.image--borders {
   padding-block: 0.75rem;
 }
 
-.marquee--reverse .marquee__group {
+.image--reverse .image__group {
   animation-direction: reverse;
   animation-delay: calc(var(--duration) / -2);
 }
