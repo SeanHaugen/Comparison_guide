@@ -14,15 +14,15 @@ function Footer() {
     return (
         <footer className="footer">
             <div className='footer-body'>
-                <div class="image">
-                <div class="image__group">
+                <div className="image">
+                <div className="image__group">
                     <img src={retractorIMG1} alt='retractor'/>
                     <img src={retractorIMG2} alt='mini retractor'/>
                     <img src={tableThrowIMG1} alt='table throw'/>
                     <img src={retractorIMG3} alt='retractable banner'/>
                 </div>
 
-                <div aria-hidden="true" class="image__group">
+                <div aria-hidden="true" className="image__group">
                     <img src={tentIMG1} alt='dye sublimated tent'/>
                     <img src={retractorIMG4} alt='retractable banner'/>
                     <img src={bannerIMG} alt='banner'/>
