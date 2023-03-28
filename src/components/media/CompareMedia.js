@@ -31,10 +31,8 @@ function CompareMedia({media1, media2, media3}) {
       setShowColumn3(true);
     }
   }, [media3]);
-
-
-    return (
-      <>
+  
+  return (
       <div className="comparison-container table-container">
       {Object.keys(Media).length > 0 && (
             <table className=" table product-section table is-striped is-fullwidth is-bordered  ">
@@ -125,7 +123,7 @@ function CompareMedia({media1, media2, media3}) {
             </table>
           )}
         </div>
-        </>
+
     )
 }
 

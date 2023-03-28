@@ -40,7 +40,7 @@ function Header({setSelectedRoute}) {
                 <NavLink to='/RetractorCompare' className="navbar-item" onClick={() => setSelectedRoute('retractors')} >Compare Retractors</NavLink>
                 <NavLink to='/TentsCompare' className="navbar-item" onClick={() => setSelectedRoute('tents')}>Compare Tents</NavLink>
                 <NavLink to='/tableThrowCompare' className="navbar-item" onClick={() => setSelectedRoute('tableThrows')}>Compare Table Throws</NavLink>
-                <NavLink to='/mediaCompare' className="navbar-item" onClick={() => setSelectedRoute('media')}>Media Lookup</NavLink>
+                <NavLink to='/mediaCompare' className="navbar-item" onClick={() => setSelectedRoute('media')}>Compare Media</NavLink>
                 
             </div>
         </nav>
