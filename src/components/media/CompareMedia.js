@@ -7,8 +7,6 @@ function CompareMedia({media1, media2, media3}) {
   const [showColumn2, setShowColumn2] = useState(true);
   const [showColumn3, setShowColumn3] = useState(true);
 
-
-
   useEffect(() => {
       if(!media1 || Object.keys(media1).length === 0) {
           setShowColumns(false);
@@ -37,6 +35,7 @@ function CompareMedia({media1, media2, media3}) {
 
     return (
       <>
+      <div className="comparison-container table-container">
       {Object.keys(Media).length > 0 && (
             <table className=" table product-section table is-striped is-fullwidth is-bordered  ">
               <thead>
@@ -125,6 +124,7 @@ function CompareMedia({media1, media2, media3}) {
               </tbody>
             </table>
           )}
+        </div>
         </>
     )
 }
