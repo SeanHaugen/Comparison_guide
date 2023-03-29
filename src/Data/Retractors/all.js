@@ -117,7 +117,7 @@ const allRetractors = [
     
 },
 {
-    id,
+    id: 262240,
     name: "31.5\" Value Retractor Kit (poly)",
     media: "Tear-resistant Titan Polypropylene",
     size: "33.87\"W x 81.87\"H x 15\"D",
@@ -459,8 +459,8 @@ const allRetractors = [
 },
 {
     id: 261138,
-    name: "36\" Economy Retractor kit (Opaque)",
-    media: "Titan No-curl Opaque media",
+    name: "36\" Economy Retractor kit (hybrid)",
+    media: "Titan No-curl hybrid media",
     size: "36\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
     base: "Aluminum. Two swivel feet. Available in black or silver ",
@@ -510,8 +510,8 @@ const allRetractors = [
 },
 {
     id: 261140,
-    name: "48\" Economy Retractor kit (Opaque)",
-    media: "Titan No-curl Opaque media",
+    name: "48\" Economy Retractor kit (Hybrid)",
+    media: "Titan No-curl Hybrid media",
     size: "48\"W x 83.5\"H x 15\"D ",
     weight: "8.5 lbs",
     base: "Aluminum. Two swivel feet.Available in black or silver ",
@@ -1216,7 +1216,7 @@ const allRetractors = [
 },
 {
     id: 262138,
-    name: "5' Jumbo Wide Retractor Kit",
+    name: "5' Jumbo Wide Retractor Kit (hybrid)",
     media: "Titan No-curl fabric",
     size: "60.5\"W x 83\"H x 15.75\"D",
     base: "Heavy Duty Aluminum. Two swivel feet. High-tension springs. Silver only",
@@ -1232,7 +1232,7 @@ const allRetractors = [
 },
 {
     id: 261080,
-    name: "5' Jumbo Wide Retractor Kit",
+    name: "5' Jumbo Wide Retractor Kit (vinyl)",
     media: "13oz smooth scrim vinyl",
     size: "60.5\"W x 83\"H x 15.75\"D",
     base: "Heavy Duty Aluminum. Two swivel feet. High-tension springs. Silver only",
@@ -1248,7 +1248,7 @@ const allRetractors = [
 },
 {
     id: 262139,
-    name: "6' Jumbo Wide Retractor Kit",
+    name: "6' Jumbo Wide Retractor Kit (hybrid)",
     media: "Titan No-curl fabric",
     size: "72.5\"W x 83\"H x 15.75\"D",
     base: "Heavy Duty Aluminum. Two swivel feet.",
@@ -1264,7 +1264,7 @@ const allRetractors = [
 },
 {
     id: 261082,
-    name: "6' Jumbo Wide Retractor Kit",
+    name: "6' Jumbo Wide Retractor Kit (vinyl)",
     media: "13oz smooth scrim vinyl",
     size: "72.5\"W x 83\"H x 15.75\"D",
     base: "Heavy Duty Aluminum. Two swivel feet. High-tension springs. Silver only",
@@ -1280,7 +1280,7 @@ const allRetractors = [
 },
 {
     id: 262140,
-    name: "8' Jumbo Wide Retractor Kit",
+    name: "8' Jumbo Wide Retractor Kit (hybrid)",
     media: "Titan No-curl fabric",
     size: "95.5\"W x 83\"H x 15.75\"D",
     base: "Heavy Duty Aluminum. Two swivel feet.",
@@ -1296,7 +1296,7 @@ const allRetractors = [
 },
 {
     id: 261018,
-    name: "8' Jumbo Wide Retractor Kit",
+    name: "8' Jumbo Wide Retractor Kit (vinyl)",
     media: "13oz smooth scrim vinyl",
     size: "95.5\"W x 83\"H x 15.75\"D",
     base: "Heavy Duty Aluminum. Two swivel feet.",
@@ -1312,7 +1312,7 @@ const allRetractors = [
 },
 {
     id: 261280,
-    name: "4' Outdoor A-Frame Retractor Kit",
+    name: "4' Outdoor A-Frame Retractor Kit (vinyl)",
     media: "13oz scrim vinyl",
     size: "50\"W x 43.5\"H x 29.37\"D",
     base: "Aluminum.",
