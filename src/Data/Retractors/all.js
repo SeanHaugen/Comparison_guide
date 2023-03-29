@@ -1,3 +1,11 @@
+import smallMini from './pricing/smallMini.png';
+import largeMini from './pricing/largeMini.png';
+import deluxeMini from './pricing/deluxeMini.png';
+
+
+
+
+
 const allRetractors = [
 {
     id: [],
@@ -7,6 +15,7 @@ const allRetractors = [
     id: 210240,
     name: "Small Mini Promo Retractor Kit",
     media: "Tear-resistant Titan Polypropylene",
+    price: smallMini,
     size: "9.63\"W x 13.25\"H x 3\"D",
     base: "Aluminum. Silver only",
     pole: "Two piece pole",
@@ -24,6 +33,7 @@ const allRetractors = [
     id: 210242,
     name: "Large Mini Promo Retractor Kit",
     media: "Tear-resistant Titan Polypropylene",
+    price: largeMini,
     size: "13.13\"W x 17.88\"H x 3\"D",
     base: "Aluminum. Silver only",
     pole: "Two piece pole",
@@ -41,6 +51,7 @@ const allRetractors = [
     id: 262014,
     name: "Deluxe Mini Retractor Kit",
     media: "Tear-resistant Titan Polypropylene",
+    price: deluxeMini,
     size: "9.38\"W x 17.75\"H x 4\"D",
     base: "Aluminum. Silver only",
     pole: "Shock cord pole. folds down into base for storage",
@@ -86,8 +97,6 @@ const allRetractors = [
     warranty: "60 day",
     category: 'good',
     type: "33.5"
-
-    
 },
 //value
 {
@@ -108,7 +117,7 @@ const allRetractors = [
     
 },
 {
-    id: 262240,
+    id,
     name: "31.5\" Value Retractor Kit (poly)",
     media: "Tear-resistant Titan Polypropylene",
     size: "33.87\"W x 81.87\"H x 15\"D",

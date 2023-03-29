@@ -109,8 +109,9 @@ body {
   justify-content: center;
   margin-bottom: .2em;
   gap: .2em;
-
 }
+
+
 
 .checkbox-container-two {
   display: flex;
@@ -221,7 +222,7 @@ img {
 }
 
 .warning {
-  font-size: small;
+  font-size: 1.25rem;
   display: flex;
   flex-flow: column wrap;
 }
@@ -234,6 +235,7 @@ img {
 
 th {
   max-width: max-content;
+  min-width: 20rem;
 }
 
 .modal {
@@ -283,9 +285,9 @@ th {
 }
 
 .nav-button {
-  background: transparent;
+  background: #ccc;
   border-radius: .75rem;
-  width: 0;
+  width: fit-content;
   
 }
 

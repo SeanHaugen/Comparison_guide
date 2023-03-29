@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import footerImg from '../images/sd-logo.png';
 import retractorIMG1 from '../images/261340_0.jpg';
 import retractorIMG2 from '../images/210240_0.jpg';
@@ -9,11 +9,20 @@ import tentIMG1 from '../images/240619_0.jpeg';
 import bannerIMG from '../images/14_0.jpg';
 import retractorIMG5 from '../images/262138_0.jpg'
 
+
 function Footer() {
+
+    const [isOpen, setIsOpen] = useState(true)
+
+    const handleIsOpen = () => {
+        setIsOpen(!isOpen)
+    }
+
 
     return (
         <footer className="footer">
-            <div className='footer-body'>
+            <div className={`footer-body ${isOpen ? 'is-active' : ''}`} role="navigation" aria-label="main navigation" style={{display: isOpen ? 'block' : 'none'}}>
+                <button className='nav-button' onClick={handleIsOpen} aria-controls="primary-navigation" aria-expanded={isOpen}>Close Carousel</button>
                 <div className="image">
                 <div className="image__group">
                     <img src={retractorIMG1} alt='retractor'/>
@@ -29,23 +38,7 @@ function Footer() {
                     <img src={retractorIMG5} alt='jumbo wide retractor'/>
                 </div>
                 </div>
-                {/* <div class="image image--reverse">
-                <div class="image__group">
-                    <img src='https://images.unsplash.com/photo-1546421845-6471bdcf3edf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1518378188025-22bd89516ee2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1571772805064-207c8435df79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDUyMTM&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1508948956644-0017e845d797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDUyMTM&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                </div>
 
-                <div aria-hidden="true" class="image__group">
-                    <img src='https://images.unsplash.com/photo-1546421845-6471bdcf3edf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1518378188025-22bd89516ee2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1571772805064-207c8435df79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDQ4MDE&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDUyMTM&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                    <img src='https://images.unsplash.com/photo-1508948956644-0017e845d797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk0MDUyMTM&ixlib=rb-1.2.1&q=80&w=400' alt=''/>
-                </div>
-                </div> */}
             </div>
             
             <div className="content has-centered-text is-small">
