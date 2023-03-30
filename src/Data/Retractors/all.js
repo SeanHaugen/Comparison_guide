@@ -290,7 +290,7 @@ const allRetractors = [
 {
     id: 261381,
     name: "18\" Economy Tabletop Retractor Kit (opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: econ1,
     size: "19\"W x 28\"H x 11\"D",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
@@ -707,7 +707,7 @@ const allRetractors = [
 {
     id: 262181,
     name: "33.5\" Economy Plus Retractor (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: ePlus5,
     size: "34\"W x 83\"H x 15\"D",
     base: "Heavy-duty Aluminum Base. Singled Footed. ",
@@ -765,7 +765,7 @@ const allRetractors = [
 {
     id: 262150,
     name: "24\" Stratus Retractor (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: stratus2,
     size: "25.25\"W x 81.63\"H x 7.12\"D",
     base: "Aluminum Base with chrome end caps. Low center of gravity",
@@ -821,7 +821,7 @@ const allRetractors = [
 {
     id: 262151,
     name: "31.5\" stratus Retractor Kit (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: stratus5,
     size: "33\"W x 81.63\"H x 7.12\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -875,7 +875,7 @@ const allRetractors = [
 {
     id: 262152,
     name: "33.5\" stratus Retractor Kit (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: stratus8,
     size: "34.25\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -929,7 +929,7 @@ const allRetractors = [
 {
     id: 262153,
     name: "36\" stratus Retractor Kit (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: stratus11,
     size: "37.25\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -983,7 +983,7 @@ const allRetractors = [
 {
     id: 262154,
     name: "48\" stratus Retractor Kit (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: stratus14,
     size: "49.5\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
@@ -1021,7 +1021,7 @@ const allRetractors = [
 {
     id: 262250,
     name: "33.5\" Deluxe Pro Retractor (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: dlxPro1,
     size: "34.75\"W x 83.25\"H x 8.5\"D",
     base: " Aluminum base. Durable for frequent use",
@@ -1055,7 +1055,7 @@ const allRetractors = [
 {
     id: 262251,
     name: "33.5\" Deluxe Pro Double Banner Retractor (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: dlxPro3,
     size: "34.75\"W x 83.25\"H x 8.5\"D",
     base: " Aluminum base. Durable for frequent use",
@@ -1090,7 +1090,7 @@ const allRetractors = [
 {
     id: 262254,
     name: "46.5\" Deluxe Pro Retractor (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: dlxPro5,
     size: "48.5\"W x 83.25\"H x 8.5\"D",
     base: " Aluminum base. Durable for frequent use",
@@ -1107,7 +1107,7 @@ const allRetractors = [
 {
     id: 262255,
     name: "46.5\" Deluxe Pro Double Banner Retractor (Opaque)",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: dlxPro6,
     size: "48\"W x 83.25\"H x 8.5\"D",
     base: " Aluminum base. Durable for frequent use",
@@ -1243,7 +1243,7 @@ const allRetractors = [
 {
     id: 261340,
     name: "33.5\" InstaChange Retractor Kit",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: insta1,
     size: "35.12\"W x 88.25\"H x 8.62\"D",
     base: "Footless aluminum. Available in black or white.",
@@ -1260,7 +1260,7 @@ const allRetractors = [
 {
     id: 261343,
     name: "40\" InstaChange Retractor Kit",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: insta2,
     size: "35.12\"W x 88.25\"H x 8.62\"D",
     base: "Footless aluminum. Available in black or white",
@@ -1277,7 +1277,7 @@ const allRetractors = [
 {
     id: 261346,
     name: "48\" InstaChange Retractor Kit",
-    media: "Titan No-curl Opaque fabric",
+    media: "Titan No-curl Opaque media",
     price: insta3,
     size: "49\"W x 88.25\"H x 8.62\"D",
     base: "Footless aluminum. Available in black or white",
@@ -1481,7 +1481,7 @@ const allRetractors = [
 {
     id: 261281,
     name: "4' Outdoor A-Frame Retractor Kit (Opaque)",
-    media: "Titan No-curl Opaque fabric ",
+    media: "Titan No-curl Opaque media ",
     price: aFrame1,
     size: "50\"W x 43.5\"H x 29.37\"D",
     base: "Aluminum.",
