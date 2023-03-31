@@ -6,6 +6,14 @@ function ShowTableThrows({tableThrow, throw2, throw3,}) {
     const [showColumns, setShowColumns] = useState(true);
     const [showColumn2, setShowColumn2] = useState(true);
     const [showColumn3, setShowColumn3] = useState(true);
+    const [isOpen, setIsOpen] = useState(false)
+
+
+
+    const handleIsOpen = () => {
+        setIsOpen(!isOpen)
+      }
+
 
     useEffect(() => {
         if(!tableThrow || Object.keys(tableThrow).length === 0) {
@@ -58,6 +66,32 @@ function ShowTableThrows({tableThrow, throw2, throw3,}) {
                         {showColumn2 && (<td><strong className='name-id'>{throw2.id}</strong></td>)}
                         {showColumn3 && (<td><strong className='name-id'>{throw3.id}</strong></td>)}
                     </tr>
+                    
+                    
+                    {isOpen && ( 
+                    <tr>
+                    
+                        {showColumns && (<th scope="row"><button className='button is-danger' onClick={handleIsOpen}>Close Pricing</button></th>)}
+                        
+                        {showColumns && (<td><strong className='price-table'><img src={tableThrow.price} alt='pricing table'></img></strong></td>)}
+                        {showColumn2 && (<td><strong className='price-table'><img src={throw2.price} alt='pricing table'></img></strong></td>)}
+                        {showColumn3 && (<td><strong className='price-table'><img src={throw3.price} alt='pricing table'></img></strong></td>)}
+                        
+                    </tr>
+                    )}
+
+                    {!isOpen && (
+                            <tr>
+                            {showColumns && (
+                                <th scope="row">
+                                <button className="button is-primary" onClick={handleIsOpen}>
+                                    Show Pricing
+                                </button>
+                                </th>
+                            )}
+                            </tr>
+                        )}
+                    
                 </tbody>
                                       
                 <tbody> 

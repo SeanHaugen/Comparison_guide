@@ -70,7 +70,7 @@ function App() {
                       <div>
                         <div className="container">
                         <h1 className="tents title">Tents</h1>
-                        <p className="warning">For simplicity, only item numbers for the dye sub variety of tents are used for each type of tent</p>
+                        <p className="warning">Note: Only item numbers for the dye sub variety of tents are used for the comparison of each type of tent</p>
                         <ItemTypeList itemList={itemList} setItem={setItem} setItem2={setItem2} setItem3={setItem3}  />
                         </div>
                         <ShowTent tent={item} tent2={item2} tent3={item3} />

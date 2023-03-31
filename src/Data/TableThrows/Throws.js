@@ -1,9 +1,28 @@
+import anti4_4 from './pricing/4_antiMicrobial_4.png';
+import anti6_4 from './pricing/6_antiMicrobial_4.png';
+import anti8_4 from './pricing/8_antiMicrobial_4.png';
+import anti4_3 from './pricing/4_antiMicrobial_3_dye.png';
+import anti6_3 from './pricing/6_antiMicrobial_3.png';
+import anti8_3 from './pricing/8_antiMicrobial_3.png';
+import cnvrt_4_6_dye from './pricing/4:6_convertable_4.png';
+import cnvrt_6_8_fo from './pricing/4:6_convertable_4sd_fo.png';
+import cnvrt_6_8_dye from './pricing/6:8_convertable_4sd_dye.png';
+import eco_6_4_dye from './pricing/6_eco_4sd_dye.png';
+import eco_8_4_dye from './pricing/8_eco_4sd_dye.png';
+import eco_6_3_dye from './pricing/6_eco_3sd_dye.png';
+import eco_8_3_dye from './pricing/8_eco_3sd_dye.png';
+import env_6_4_dye from './pricing/6_enviro_4sd_dye.png';
+import env_6_3_dye from './pricing/6_enviro_4sd_dye.png';
+
+
+
 
 
 const tableThrows = [
 {   
     id: 108263,
     name: "4' Anti Microbial",
+    price: anti4_4,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -20,6 +39,7 @@ const tableThrows = [
 {
     id: 108264,
     name: "6' Anti Microbial",
+    price: anti6_4,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -36,6 +56,7 @@ const tableThrows = [
 {
     id: 108265,
     name: "8' Anti Microbial",
+    price: anti8_4,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -51,6 +72,7 @@ const tableThrows = [
 {   
     id: 108260,
     name: "4' Anti Microbial",
+    price: anti4_3,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -66,6 +88,7 @@ const tableThrows = [
 {
     id: 108261,
     name: "6' Anti Microbial",
+    price: anti6_3,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -82,6 +105,7 @@ const tableThrows = [
 {
     id: 108262,
     name: "8' Anti Microbial",
+    price: anti8_3,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -98,6 +122,7 @@ const tableThrows = [
 {
     id: 104010,
     name: "4'/ 6' Convertable",
+    price: cnvrt_4_6_dye,
     print_options: "Dye Sub",
     fit: 'Convertable Drape, 4 sided',
     size: "48\"/72\" x 29\" x 29.75\"",
@@ -111,7 +136,8 @@ const tableThrows = [
 },
 {
     id: 104022,
-    name: "6'/ 8' Convertable",
+    name: "6'/ 8' Convertable Dye Sub",
+    price: cnvrt_6_8_dye,
     print_options: "Dye Sub",
     fit: 'Convertable drape, 4 sided',
     size: "72\"/96\" x 29\" x 29.75\"",
@@ -125,7 +151,8 @@ const tableThrows = [
 },
 {
     id: 104014,
-    name: "4'/ 6' Convertable",
+    name: "6'/ 8' Convertable front only",
+    price: cnvrt_6_8_fo,
     print_options: "front only, 28 stock colors",
     fit: 'Convertable Drape, 4 sided',
     size: "72\"/96\" x 29\" x 29.75\"",
@@ -141,6 +168,7 @@ const tableThrows = [
 {
     id: 108274,
     name: "6' Eco-Wise",
+    price: eco_6_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -156,6 +184,7 @@ const tableThrows = [
 {
     id: 108275,
     name: "8' Eco-Wise",
+    price: eco_8_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -171,6 +200,7 @@ const tableThrows = [
 {
     id: 108271,
     name: "6' Eco-Wise",
+    price: eco_6_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -186,6 +216,7 @@ const tableThrows = [
 {
     id: 108272,
     name: "8' Eco-Wise",
+    price: eco_8_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -201,6 +232,7 @@ const tableThrows = [
 {
     id: 108241,
     name: "6' Enviro Pro",
+    price: env_6_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -215,7 +247,8 @@ const tableThrows = [
 },
 {
     id: 108240,
-    name: "8' Enviro Pro",
+    name: "6' Enviro Pro",
+    price: env_6_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
