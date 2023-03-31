@@ -937,7 +937,7 @@ const tableThrows = [
 },
 {
     id: 114040,
-    name: "Cafe'",
+    name: "Cafe' height Round with 27\" overhang",
     price: cafe,
     print_options: "Dye Sub",
     fit: 'Drape, round',
