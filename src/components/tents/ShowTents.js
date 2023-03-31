@@ -6,6 +6,13 @@ function ShowTent({tent, tent2, tent3}) {
     const [showColumns, setShowColumns] = useState(true);
     const [showColumn2, setShowColumn2] = useState(true);
     const [showColumn3, setShowColumn3] = useState(true);
+    const [isOpen, setIsOpen] = useState(false)
+
+
+
+    const handleIsOpen = () => {
+        setIsOpen(!isOpen)
+      }
 
     useEffect(() => {
         if(!tent || Object.keys(tent).length === 0) {
@@ -57,6 +64,29 @@ function ShowTent({tent, tent2, tent3}) {
                         {showColumn2 && (<td>{tent2.id}</td>)}
                         {showColumn3 && (<td>{tent3.id}</td>)}
                     </tr>
+                    {isOpen && ( 
+                    <tr>
+                    
+                        {showColumns && (<th scope="row"><button className='button is-danger' onClick={handleIsOpen}>Close Pricing</button></th>)}
+                        
+                        {showColumns && (<td><strong className='price-table'><img src={tent.price} alt='pricing table'></img></strong></td>)}
+                        {showColumn2 && (<td><strong className='price-table'><img src={tent2.price} alt='pricing table'></img></strong></td>)}
+                        {showColumn3 && (<td><strong className='price-table'><img src={tent3.price} alt='pricing table'></img></strong></td>)}
+                        
+                    </tr>
+                    )}
+
+                    {!isOpen && (
+                            <tr>
+                            {showColumns && (
+                                <th scope="row">
+                                <button className="button is-primary" onClick={handleIsOpen}>
+                                    Show Pricing
+                                </button>
+                                </th>
+                            )}
+                            </tr>
+                        )}
                 </tbody>
                 <tbody>
                     <tr>
