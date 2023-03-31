@@ -78,10 +78,29 @@ import curve_8_fo from './pricing/114017.png';
 import curve_6_dye from './pricing/114015.png';
 import curve_8_dye from './pricing/114018.png';
 import barCurve from './pricing/114012.png';
-
-
-
-
+import value_6_4_fo from './pricing/116005.png';
+import value_8_4_fo from './pricing/116008.png';
+import value_6_4_blank from './pricing/116001.png';
+import value_8_4_blank from './pricing/116007.png';
+import lateralRunner125_blank from './pricing/105110.png';
+import lateralRunner125_fo from './pricing/105111.png';
+import lateralRunner125_top_side from './pricing/105113.png';
+import lateralRunner125_dye from './pricing/105114.png';
+import lateralRunner149_blank from './pricing/105115.png';
+import lateralRunner149_top from './pricing/105116.png';
+import lateralRunner149_top_side from './pricing/105118.png';
+import lateralRunner149_dye from './pricing/105119.png';
+import LazerRunner1_fo from './pricing/108224.png';
+import lazerRunner2_fo from './pricing/108225.png';
+import lazerRunner3_dye from './pricing/271272.png';
+import lazerRunner4_dye from './pricing/271273.png';
+import lazerRunner5_dye from './pricing/108226.png';
+import lazerRunner6_dye from './pricing/108227.png';
+import runner1_fo from './pricing/102002.png';
+import runner2_fo from './pricing/102014.png';
+import runner3_dye from './pricing/102010.png';
+import runner4_dye from './pricing/102022.png';
+import crossOver from './pricing/109090.png';
 
 const tableThrows = [
 {   
@@ -1357,6 +1376,7 @@ const tableThrows = [
 {
     id: 116005,
     name: "6' Value Lite",
+    price: value_6_4_fo,
     print_options: "Front only, 5 options",
     fit: 'Drape fit, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -1372,6 +1392,7 @@ const tableThrows = [
 {
     id: 116008,
     name: "8' Value Lite",
+    price: value_8_4_fo,
     print_options: "Front only, 5 options",
     fit: 'Drape fit, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1388,6 +1409,7 @@ const tableThrows = [
 {
     id: 116001,
     name: "6' Value Lite",
+    price: value_6_4_blank,
     print_options: "Blank, 5 options",
     fit: 'Drape fit, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -1403,6 +1425,7 @@ const tableThrows = [
 {
     id: 116007,
     name: "8' Value Lite",
+    price: value_8_4_blank,
     print_options: "Blank, 5 options",
     fit: 'Drape fit, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1418,6 +1441,7 @@ const tableThrows = [
 {
     id: 105110,
     name: " 125\" Lateral Runner",
+    price: lateralRunner125_blank,
     print_options: "Blank, 5 color options",
     fit: 'Drape',
     size: "125\"",
@@ -1432,6 +1456,7 @@ const tableThrows = [
 {
     id: 105111,
     name: " 125\" Top only Lateral Runner",
+    price: lateralRunner125_fo,
     print_options: "Top, 5 color options",
     fit: 'Drape',
     size: "125\"",
@@ -1446,6 +1471,7 @@ const tableThrows = [
 {
     id: 105113,
     name: " 125\" Top & Side Lateral Runner",
+    price: lateralRunner125_top_side,
     print_options: "Top & Side, 5 color options",
     fit: 'Drape',
     size: "125\"",
@@ -1460,6 +1486,7 @@ const tableThrows = [
 {
     id: 105114,
     name: "125\" Dye Sub Lateral Runner",
+    price: lateralRunner125_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "125\"",
@@ -1473,7 +1500,8 @@ const tableThrows = [
 },
 {
     id: 105115,
-    name: "125\" Blank Lateral Runner",
+    name: "149\" Blank Lateral Runner",
+    price: lateralRunner149_blank,
     print_options: "Blank, 5 color options",
     fit: 'Drape',
     size: "149\"",
@@ -1488,6 +1516,7 @@ const tableThrows = [
 {
     id: 105116,
     name: "149\" Top only Lateral Runner",
+    price: lateralRunner149_top,
     print_options: "Top, 5 color options",
     fit: 'Drape',
     size: "149\"",
@@ -1502,6 +1531,7 @@ const tableThrows = [
 {
     id: 105118,
     name: "149\" Top & Side Lateral Runner",
+    price: lateralRunner149_top_side,
     print_options: "Top & Side, 5 color options",
     fit: 'Drape',
     size: "149\"",
@@ -1516,6 +1546,7 @@ const tableThrows = [
 {
     id: 105119,
     name: "149\" Dye Sub Lateral Runner",
+    price: lateralRunner149_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "149\"",
@@ -1530,6 +1561,7 @@ const tableThrows = [
 {
     id: 108224,
     name: "28\" Front only LazerLine Runner",
+    price: LazerRunner1_fo,
     print_options: "Front only, 28 color options",
     fit: 'Drape',
     size: "28\"",
@@ -1544,6 +1576,7 @@ const tableThrows = [
 {
     id: 108225,
     name: "57\" Front only LazerLine Runner",
+    price: lazerRunner2_fo,
     print_options: "Front only, 28 color options",
     fit: 'Drape',
     size: "57\"",
@@ -1558,6 +1591,7 @@ const tableThrows = [
 {
     id: 271272,
     name: "12\" Dye Sub LazerLine Runner",
+    price: lazerRunner3_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "12\"",
@@ -1572,6 +1606,7 @@ const tableThrows = [
 {
     id: 271273,
     name: "36\" Dye Sub LazerLine Runner",
+    price: lazerRunner4_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "36\"",
@@ -1586,6 +1621,7 @@ const tableThrows = [
 {
     id: 108226,
     name: "28\" Dye Sub LazerLine Runner",
+    price: lazerRunner5_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "28\"",
@@ -1600,6 +1636,7 @@ const tableThrows = [
 {
     id: 108227,
     name: "57\" Dye Sub LazerLine Runner",
+    price: lazerRunner6_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "57\"",
@@ -1614,6 +1651,7 @@ const tableThrows = [
 {
     id: 102002,
     name: "28\" Front only Standard Runner",
+    price: runner1_fo,
     print_options: "Front only, 28 color options",
     fit: 'Drape',
     size: "28\"",
@@ -1628,6 +1666,7 @@ const tableThrows = [
 {
     id: 102014,
     name: "57\" Front only Standard Runner",
+    price: runner2_fo,
     print_options: "Front only, 28 color options",
     fit: 'Drape',
     size: "57\"",
@@ -1642,6 +1681,7 @@ const tableThrows = [
 {
     id: 102010,
     name: "28\" Dye Sub Standard Runner",
+    price: runner3_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "28\"",
@@ -1656,6 +1696,7 @@ const tableThrows = [
 {
     id: 102022,
     name: "57\" Dye Sub Standard Runner",
+    price: runner4_dye,
     print_options: "Dye Sub",
     fit: 'Drape',
     size: "57\"",
@@ -1670,6 +1711,7 @@ const tableThrows = [
 {
     id: 109090,
     name: "Ultrafit Crossover",
+    price: crossOver,
     print_options: "Dye Sub",
     fit: 'Snug fit',
     size: "72\" x 29\" x 29.75\"",
