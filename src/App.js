@@ -52,8 +52,6 @@ function App() {
             <Router>
                 <Header setSelectedRoute={setSelectedRoute} />
 
-                <p>Thank you for testing this tool and providing feedback. Let me know any errors or typos with any of the items.</p>
-
                 <Routes>
                     <Route path="/" element={<About/>} />
                     <Route path='/About' element={<About />} />
