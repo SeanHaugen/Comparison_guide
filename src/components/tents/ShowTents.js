@@ -51,7 +51,7 @@ function ShowTent({tent, tent2, tent3}) {
                         {showColumn3 && (<th scope="col">B</th>)}
                     </tr>
                 </thead>
-                <tbody className="table-body ">
+                <tbody>
                     <tr>
                         {showColumns && (<th scope="row">Name</th>)}
                         {showColumns && (<td>{tent.name}</td>)}

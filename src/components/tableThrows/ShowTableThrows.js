@@ -94,7 +94,7 @@ function ShowTableThrows({tableThrow, throw2, throw3,}) {
                     
                 </tbody>
                                       
-                <tbody> 
+                <tbody > 
 
                     <tr>
                         {showColumns && (<th  scope="row">Print Option</th>)}
