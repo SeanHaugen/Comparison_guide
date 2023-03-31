@@ -13,6 +13,71 @@ import eco_6_3_dye from './pricing/6_eco_3sd_dye.png';
 import eco_8_3_dye from './pricing/8_eco_3sd_dye.png';
 import env_6_4_dye from './pricing/6_enviro_4sd_dye.png';
 import env_6_3_dye from './pricing/6_enviro_4sd_dye.png';
+import env_8_3_dye from './pricing/8_enviro_3sd_dye.png';
+import env_8_4_dye from './pricing/8_enviro_4sd_dye.png';
+import fitted_4_4_fo from './pricing/115002.png';
+import fitted_4_4_dye from './pricing/115009.png';
+import fitted_6_4_fo from './pricing/107002.png';
+import fitted_6_4_dye from './pricing/107010.png';
+import fitted_8_4_dye from './pricing/107022.png';
+import bar_fo from './pricing/107040.png';
+import bar_dye from './pricing/107047.png';
+import lazer_6_4_fo from './pricing/108201.png';
+import lazer_8_4_fo from './pricing/108202.png';
+import lazer_6_4_dye from './pricing/108204.png';
+import lazer_8_4_dye from './pricing/108205.png';
+import lazer_6_3_fo from './pricing/108213.png';
+import lazer_8_3_fo from './pricing/108214.png';
+import lazer_6_3_dye from './pricing/108216.png';
+import lazer_8_3_dye from './pricing/108217.png';
+import outDoor_fit_6 from './pricing/107060.png';
+import outDoor_fit_8 from './pricing/107061.png';
+import premium_6 from './pricing/109070.png';
+import premium_8 from './pricing/109071.png';
+import stain_6_4_fo from './pricing/114121.png';
+import stain_8_4_fo from './pricing/114123.png';
+import stain_6_blank from './pricing/114120.png';
+import stain_8_blank from './pricing/114122.png';
+import stain_6_3 from './pricing/114125.png';
+import stain_8_3 from './pricing/114127.png';
+import standard_4_fo from './pricing/109105.png';
+import standard_6_fo from './pricing/109002.png';
+import standard_8_fo from './pricing/109014.png';
+import standard_12_fo from './pricing/109100.png';
+import standard_16_fo from './pricing/109102.png';
+import standard_4_dye from './pricing/109106.png';
+import standard_6_dye from './pricing/109010.png';
+import standard_8_dye from './pricing/109022.png';
+import standard_12_dye from './pricing/109101.png';
+import standard_16_dye from './pricing/109103.png';
+import barHeightRound_dye from './pricing/114041.png';
+import cafe from './pricing/114040.png';
+import round_3 from './pricing/114042.png';
+import round_4 from './pricing/114043.png';
+import round_5 from './pricing/114044.png';
+import econ_4_fo from './pricing/106045.png';
+import econ_6_fo from './pricing/106002.png';
+import econ_8_fo from './pricing/106014.png';
+import econ_12_fo from './pricing/106051.png';
+import econ_16_fo from './pricing/106053.png';
+import econ_4_dye from './pricing/106042.png';
+import econ_6_dye from './pricing/106010.png';
+import econ_8_dye from './pricing/106022.png';
+import econ_12_dye from './pricing/106052.png';
+import econ_16_dye from './pricing/106054.png';
+import glo_6 from './pricing/108253.png';
+import glo_8 from './pricing/108256.png';
+import classic_4_dye from './pricing/114034.png';
+import classic_6_dye from './pricing/114002.png';
+import classic_8_dye from './pricing/114005.png';
+import classic_6_fo from './pricing/114001.png';
+import classic_8_fo from './pricing/114004.png';
+import classic_4_fo from './pricing/114099.png';
+import curve_6_fo from './pricing/114014.png';
+import curve_8_fo from './pricing/114017.png';
+import curve_6_dye from './pricing/114015.png';
+import curve_8_dye from './pricing/114018.png';
+import barCurve from './pricing/114012.png';
 
 
 
@@ -21,7 +86,7 @@ import env_6_3_dye from './pricing/6_enviro_4sd_dye.png';
 const tableThrows = [
 {   
     id: 108263,
-    name: "4' Anti Microbial",
+    name: "4' Anti Microbial 4 sided",
     price: anti4_4,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -38,7 +103,7 @@ const tableThrows = [
 },
 {
     id: 108264,
-    name: "6' Anti Microbial",
+    name: "6' Anti Microbial 4 sided",
     price: anti6_4,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -55,7 +120,7 @@ const tableThrows = [
 },
 {
     id: 108265,
-    name: "8' Anti Microbial",
+    name: "8' Anti Microbial 4 sided",
     price: anti8_4,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -71,7 +136,7 @@ const tableThrows = [
 },
 {   
     id: 108260,
-    name: "4' Anti Microbial",
+    name: "4' Anti Microbial 3 sided",
     price: anti4_3,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
@@ -87,7 +152,7 @@ const tableThrows = [
 },
 {
     id: 108261,
-    name: "6' Anti Microbial",
+    name: "6' Anti Microbial 3 sided",
     price: anti6_3,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
@@ -104,7 +169,7 @@ const tableThrows = [
 },
 {
     id: 108262,
-    name: "8' Anti Microbial",
+    name: "8' Anti Microbial 3 sided",
     price: anti8_3,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
@@ -167,7 +232,7 @@ const tableThrows = [
 //Eco-wise
 {
     id: 108274,
-    name: "6' Eco-Wise",
+    name: "6' Eco-Wise 4 sided",
     price: eco_6_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -183,7 +248,7 @@ const tableThrows = [
 },
 {
     id: 108275,
-    name: "8' Eco-Wise",
+    name: "8' Eco-Wise 4 sided",
     price: eco_8_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -199,7 +264,7 @@ const tableThrows = [
 },
 {
     id: 108271,
-    name: "6' Eco-Wise",
+    name: "6' Eco-Wise 3 sided",
     price: eco_6_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
@@ -215,7 +280,7 @@ const tableThrows = [
 },
 {
     id: 108272,
-    name: "8' Eco-Wise",
+    name: "8' Eco-Wise 3 sided",
     price: eco_8_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
@@ -231,7 +296,7 @@ const tableThrows = [
 },
 {
     id: 108241,
-    name: "6' Enviro Pro",
+    name: "6' Enviro Pro 4 sided",
     price: env_6_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
@@ -247,7 +312,7 @@ const tableThrows = [
 },
 {
     id: 108240,
-    name: "6' Enviro Pro",
+    name: "6' Enviro Pro 3 sided",
     price: env_6_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
@@ -263,7 +328,8 @@ const tableThrows = [
 },
 {
     id: 108242,
-    name: "8' Enviro Pro",
+    name: "8' Enviro Pro 3 sided",
+    price: env_8_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -277,8 +343,28 @@ const tableThrows = [
     media: "eco"
 },
 {
+    id: 108243,
+    name: "8' Enviro Pro 4 sided",
+    price: env_8_4_dye,
+    print_options: "Dye Sub",
+    fit: 'Drape, 4 sided',
+    size: "96\" x 29\" x 29.75\"",
+    type: '8ft',
+    flat_size: "67\" x 152\"",
+    material: 'Fire retardant recycled PET',
+    finish: 'Serged',
+    care: 'Spot clean',
+    weight: '3.2 lbs',
+    warranty: '1 year',
+    media: "eco"
+},
+
+//fitted
+
+{
     id: 115002,
-    name: "4' Fitted",
+    name: "4' Fitted 4 sided front only",
+    price: fitted_4_4_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Fitted, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -293,7 +379,8 @@ const tableThrows = [
 },
 {
     id: 115009,
-    name: "4' Fitted",
+    name: "4' Fitted 4 sided front dye sub",
+    price: fitted_4_4_dye,
     print_options: "Dye Sub",
     fit: 'Fitted, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -308,7 +395,8 @@ const tableThrows = [
 },
 {
     id: 107002,
-    name: "6' Fitted",
+    name: "6' Fitted 4 sided front only",
+    price: fitted_6_4_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Fitted, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -323,7 +411,8 @@ const tableThrows = [
 },
 {
     id: 107010,
-    name: "6' Fitted",
+    name: "6' Fitted 4 sided dye sub",
+    price: fitted_6_4_dye,
     print_options: "Dye Sub",
     fit: 'Fitted, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -338,7 +427,8 @@ const tableThrows = [
 },
 {
     id: 107022,
-    name: "8' Fitted",
+    name: "8' Fitted 4 sided dye sub",
+    price: fitted_8_4_dye,
     print_options: "Dye Sub",
     fit: 'Fitted, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -354,6 +444,7 @@ const tableThrows = [
 {
     id: 107040,
     name: "31.5\" bar height Round",
+    price: bar_fo,
     print_options: "Front only, 28 options",
     fit: 'fitted, round',
     size: "43\" x 31.5\"",
@@ -368,6 +459,7 @@ const tableThrows = [
 {
     id: 107047,
     name: "31.5\" bar height Round",
+    price: bar_dye,
     print_options: "Dye Sub",
     fit: 'fitted, round',
     size: "43\" x 31.5\"",
@@ -381,7 +473,8 @@ const tableThrows = [
 },
 {
     id: 108201,
-    name: "6' Lazerline",
+    name: "6' Lazerline 4 sided front only",
+    price: lazer_6_4_fo,
     print_options: "front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -396,7 +489,8 @@ const tableThrows = [
 },
 {
     id: 108202,
-    name: "8' Lazerline",
+    name: "8' Lazerline 4 sided front only",
+    price: lazer_8_4_fo,
     print_options: "front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -411,7 +505,8 @@ const tableThrows = [
 },
 {
     id: 108204,
-    name: "6' Lazerline",
+    name: "6' Lazerline 4 sided dye sub",
+    price: lazer_6_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -426,7 +521,8 @@ const tableThrows = [
 },
 {
     id: 108205,
-    name: "8' Lazerline",
+    name: "8' Lazerline 4 sided dye sub",
+    price: lazer_8_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -441,7 +537,8 @@ const tableThrows = [
 },
 {
     id: 108213,
-    name: "6' Lazerline",
+    name: "6' Lazerline 3 sided front only",
+    price: lazer_6_3_fo,
     print_options: "front only, 28 stock colors",
     fit: 'Drape, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -456,7 +553,8 @@ const tableThrows = [
 },
 {
     id: 108214,
-    name: "8' Lazerline",
+    name: "8' Lazerline 3 sided front only",
+    price: lazer_8_3_fo,
     print_options: "front only, 28 stock colors",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -471,7 +569,8 @@ const tableThrows = [
 },
 {
     id: 108216,
-    name: "6' Lazerline",
+    name: "6' Lazerline 3 sided dye sub",
+    price: lazer_6_3_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -486,7 +585,8 @@ const tableThrows = [
 },
 {
     id: 108217,
-    name: "8' Lazerline",
+    name: "8' Lazerline 3 sided dye sub",
+    price: lazer_8_3_dye, 
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -502,6 +602,7 @@ const tableThrows = [
 {
     id: 107060,
     name: "6' Outdoor Fitted",
+    price: outDoor_fit_6,
     print_options: "Dye Sub",
     fit: 'Fitted, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -517,6 +618,7 @@ const tableThrows = [
 {
     id: 107061,
     name: "8' Outdoor Fitted",
+    price: outDoor_fit_8,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -530,8 +632,9 @@ const tableThrows = [
     media: "outdoorFitted"
 },
 {
-    id: 109060,
+    id: 109070,
     name: "6' Premium",
+    price: premium_6,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -547,6 +650,7 @@ const tableThrows = [
 {
     id: 109071,
     name: "8' Premium",
+    price: premium_8,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -561,7 +665,8 @@ const tableThrows = [
 },
 {
     id: 114121,
-    name: "6' Stain Resistant",
+    name: "6' Stain Resistant 4 sided front only",
+    price: stain_6_4_fo,
     print_options: "front only, 15 stock colors",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -575,8 +680,9 @@ const tableThrows = [
     media: "stainResistant"
 },
 {
-    id: 224234,
-    name: "8' Stain Resistant",
+    id: 114123,
+    name: "8' Stain Resistant 4 sided front only",
+    price: stain_8_4_fo,
     print_options: "front only, 15 stock colors",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -591,7 +697,8 @@ const tableThrows = [
 },
 {
     id: 114120,
-    name: "6' Stain Resistant",
+    name: "6' Stain Resistant 4 sided blank",
+    price: stain_6_blank,
     print_options: "Blank, 15 options",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -606,7 +713,8 @@ const tableThrows = [
 },
 {
     id: 114122,
-    name: "8' Stain Resistant",
+    name: "8' Stain Resistant 4 sided blank",
+    price: stain_8_blank,
     print_options: "Blank, 15 options",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -621,7 +729,8 @@ const tableThrows = [
 },
 {
     id: 114125,
-    name: "6' Stain Resistant",
+    name: "6' Stain Resistant 3 sided front only",
+    price: stain_6_3, 
     print_options: "front only, 15 stock colors",
     fit: 'Drape, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -636,7 +745,8 @@ const tableThrows = [
 },
 {
     id: 114127,
-    name: "8' Stain Resistant",
+    name: "8' Stain Resistant 3 sided front only",
+    price: stain_8_3,
     print_options: "front only, 15 stock colors",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -652,7 +762,8 @@ const tableThrows = [
 
 {
     id: 109105,
-    name: "4' Standard",
+    name: "4' Standard front only",
+    price: standard_4_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -667,7 +778,8 @@ const tableThrows = [
 },
 {
     id: 109002,
-    name: "6' Standard",
+    name: "6' Standard front only",
+    price: standard_6_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -682,7 +794,8 @@ const tableThrows = [
 },
 {
     id: 109014,
-    name: "8' Standard",
+    name: "8' Standard front only",
+    price: standard_8_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -697,7 +810,8 @@ const tableThrows = [
 },
 {
     id: 109100,
-    name: "12' Standard",
+    name: "12' Standard front only",
+    price: standard_12_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "144\" x 29\" x 29.75\"",
@@ -711,7 +825,8 @@ const tableThrows = [
 },
 {
     id: 109102,
-    name: "16' Standard",
+    name: "16' Standard front only",
+    price: standard_16_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "192\" x 29\" x 29.75\"",
@@ -725,7 +840,8 @@ const tableThrows = [
 },
 {
     id: 109106,
-    name: "4' Standard",
+    name: "4' Standard dye sub",
+    price: standard_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -740,8 +856,9 @@ const tableThrows = [
 },
 {
     id: 109010,
-    name: "6' Standard",
-    print_options: "Front only, 28 stock colors",
+    name: "6' Standard dye sub",
+    price: standard_6_dye,
+    print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
     type: "6ft",
@@ -755,7 +872,8 @@ const tableThrows = [
 },
 {
     id: 109022,
-    name: "8' Standard",
+    name: "8' Standard dye sub",
+    price: standard_8_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -770,7 +888,8 @@ const tableThrows = [
 },
 {
     id: 109101,
-    name: "12' Standard",
+    name: "12' Standard dye sub",
+    price: standard_12_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "144\" x 29\" x 29.75\"",
@@ -785,6 +904,7 @@ const tableThrows = [
 {
     id: 114041,
     name: "33.25\" Bar Height Round",
+    price: barHeightRound_dye,
     print_options: "Dye Sub",
     fit: 'Drape, round',
     size: "28\" x 31.5\"",
@@ -799,6 +919,7 @@ const tableThrows = [
 {
     id: 114040,
     name: "Cafe'",
+    price: cafe,
     print_options: "Dye Sub",
     fit: 'Drape, round',
     size: "43\" x 31.5\"",
@@ -813,6 +934,7 @@ const tableThrows = [
 {
     id: 114042, 
     name: "3 foot' Round",
+    price: round_3,
     print_options: "Dye Sub",
     fit: 'Drape, round',
     size: "28\" x 36\"",
@@ -827,6 +949,7 @@ const tableThrows = [
 {
     id: 114043,
     name: "4 foot' Round",
+    price: round_4,
     print_options: "Dye Sub",
     fit: 'Drape, round',
     size: "28\" x 48\"",
@@ -841,6 +964,7 @@ const tableThrows = [
 {
     id: 114044,
     name: "5 foot' Round",
+    price: round_5,
     print_options: "Dye Sub",
     fit: 'Drape, round',
     size: "28\" x 60\"",
@@ -854,7 +978,8 @@ const tableThrows = [
 },
 {
     id: 109103,
-    name: "16' Standard",
+    name: "16' Standard dye sub",
+    price: standard_16_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 4 sided',
     size: "192\" x 29\" x 29.75\"",
@@ -868,7 +993,8 @@ const tableThrows = [
 },
 {
     id: 106045,
-    name: "4' Economy",
+    name: "4' Economy front only",
+    price: econ_4_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 3 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -883,7 +1009,8 @@ const tableThrows = [
 },
 {
     id: 106002,
-    name: "6' Economy",
+    name: "6' Economy front only",
+    price: econ_6_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -898,7 +1025,8 @@ const tableThrows = [
 },
 {
     id: 106014,
-    name: "8' Economy",
+    name: "8' Economy front only",
+    price: econ_8_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -913,7 +1041,8 @@ const tableThrows = [
 },
 {
     id: 106051,
-    name: "12' Economy",
+    name: "12' Economy front only",
+    price: econ_12_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 3 sided',
     size: "144\" x 29\" x 29.75\"",
@@ -928,6 +1057,7 @@ const tableThrows = [
 {
     id: 106053,
     name: "16' Economy",
+    price: econ_16_fo,
     print_options: "Front only, 28 stock colors",
     fit: 'Drape, 3 sided',
     size: "192\" x 29\" x 29.75\"",
@@ -941,7 +1071,8 @@ const tableThrows = [
 },
 {
     id: 106042,
-    name: "4' Economy",
+    name: "4' Economy dye sub",
+    price: econ_4_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -957,6 +1088,7 @@ const tableThrows = [
 {
     id: 106010,
     name: "6' Economy",
+    price: econ_6_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -972,6 +1104,7 @@ const tableThrows = [
 {
     id: 106022,
     name: "8' Economy",
+    price: econ_8_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -987,6 +1120,7 @@ const tableThrows = [
 {
     id: 106052,
     name: "12' Economy",
+    price: econ_12_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "144\" x 29\" x 29.75\"",
@@ -1001,6 +1135,7 @@ const tableThrows = [
 {
     id: 106054,
     name: "16' Economy",
+    price: econ_16_dye,
     print_options: "Dye Sub",
     fit: 'Drape, 3 sided',
     size: "192\" x 29\" x 29.75\"",
@@ -1016,6 +1151,7 @@ const tableThrows = [
 {
     id: 108253,
     name: "6' Throw Glo",
+    price: glo_6,
     print_options: "Dye Sub",
     fit: 'Fitted, 4 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -1031,6 +1167,7 @@ const tableThrows = [
 {
     id: 108256,
     name: "8' Throw Glo",
+    price: glo_8,
     print_options: "Dye Sub",
     fit: 'Fitted, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1046,6 +1183,7 @@ const tableThrows = [
 {
     id: 114034,
     name: "4' Ultrafit Classic",
+    price: classic_4_dye,
     print_options: "Dye Sub",
     fit: 'Snug fit, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -1061,6 +1199,7 @@ const tableThrows = [
 {
     id: 114001,
     name: "6' Ultrafit Classic",
+    price: classic_6_fo,
     print_options: "Front only, White BG",
     fit: 'Snug fit, 4 sided',
     size: "86\" x 29\" x 29.75\"",
@@ -1075,6 +1214,7 @@ const tableThrows = [
 {
     id: 114004,
     name: "8' Ultrafit Classic",
+    price: classic_8_fo,
     print_options: "Front only, White BG",
     fit: 'Snug fit, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1090,6 +1230,7 @@ const tableThrows = [
 {
     id: 114099,
     name: "4' Ultrafit Classic",
+    price: classic_4_fo,
     print_options: "Front only, White BG",
     fit: 'Snug fit, 4 sided',
     size: "48\" x 29\" x 29.75\"",
@@ -1105,6 +1246,7 @@ const tableThrows = [
 {
     id: 114002,
     name: "6' Ultrafit Classic",
+    price: classic_6_dye,
     print_options: "Dye Sub",
     fit: 'Snug fit, 4 sided',
     size: "86\" x 29\" x 29.75\"",
@@ -1119,6 +1261,7 @@ const tableThrows = [
 {
     id: 114005,
     name: "8' Ultrafit Classic",
+    price: classic_8_dye,
     print_options: "Dye Sub",
     fit: 'Snug fit, 4 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1134,6 +1277,7 @@ const tableThrows = [
 {
     id: 114014,
     name: "6' Ultrafit Curve",
+    price: curve_6_fo,
     print_options: "Front only, White BG",
     fit: 'Snug fit, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -1149,6 +1293,7 @@ const tableThrows = [
 {
     id: 114017,
     name: "8' Ultrafit Curve",
+    price: curve_8_fo,
     print_options: "Front only, White BG",
     fit: 'Snug fit, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1164,6 +1309,7 @@ const tableThrows = [
 {
     id: 114015,
     name: "6' Ultrafit Curve",
+    price: curve_6_dye,
     print_options: "Dye Sub",
     fit: 'Snug fit, 3 sided',
     size: "72\" x 29\" x 29.75\"",
@@ -1179,6 +1325,7 @@ const tableThrows = [
 {
     id: 114018,
     name: "8' Ultrafit Curve",
+    price: curve_8_dye,
     print_options: "Dye Sub",
     fit: 'Snug fit, 3 sided',
     size: "96\" x 29\" x 29.75\"",
@@ -1194,6 +1341,7 @@ const tableThrows = [
 {
     id: 114012,
     name: "8' Ultrafit Curve Round",
+    price: barCurve,
     print_options: "Dye Sub",
     fit: 'Snug fit, round',
     size: "43\"x 31.5\"",
