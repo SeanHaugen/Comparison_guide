@@ -151,6 +151,20 @@ const media = [
         warranty: "90 days outdoor, 1-year indoor. Color fading is the condition, media integrity should not be an issue",
         note: ""
     },
+    {
+        name: "Titan no-curl hybrid media",
+        description: "It is called 'hybrid' because it combines the best features of two different types of materials: fabric and vinyl. The fabric component of the media gives it a soft and pliable feel, making it easier to handle and install. It also allows the media to be folded or rolled without cracking or creasing, and it can be reused multiple times. The vinyl component of the media gives it a durable and waterproof surface that is resistant to tearing, scratching, and fading. One of the key features of Titan no-curl hybrid fabric media is that it is designed to prevent curling at the edges. This is achieved through a special coating that is applied to the back of the media, which prevents it from curling when exposed to changes in temperature or humidity.",
+        duty: "medium duty",
+        wind: "No wind rating",
+        indoor: "Indoor use is best",
+        outdoor: "Can be used outdoors",
+        application: "Retractors",
+        singleSided: "Printed on single piece of media",
+        doubleSided: "Double sided imprint not available",
+        default: "Default finish, welded ",
+        warranty: "See Retractors",
+        note: ""
+    }
 
 ]
 
