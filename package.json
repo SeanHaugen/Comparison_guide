@@ -11,9 +11,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bulma": "^0.9.4",
-    "electron": "^16.0.5",
-    "electron-packager": "^15.3.0",
     "electron-is-dev": "^1.2.0",
+    "electron-packager": "^15.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
@@ -21,25 +20,24 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start .",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "package": "react-scripts package",
-    "electron":"electron ."
+    "electron": "electron ."
   },
   "build": {
-  "appId": "your.app.id",
-  "files": [
-    "build/**/*",
-    "node_modules/**/*"
-  ],
-  "directories": {
-    "buildResources": "assets"
-  }
-},
+    "appId": "your.app.id",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -59,6 +57,6 @@
     ]
   },
   "devDependencies": {
-    "electron": "^23.1.0"
+    "electron": "^23.2.4"
   }
 }

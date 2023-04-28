@@ -113,7 +113,7 @@ function ItemTypeList({itemList, setItem, setItem2, setItem3}) {
                 <input type="checkbox" value="Titan No-curl Opaque media" onChange={handleMediaChange} style={{width: "1rem", height: "1rem"}}  />
                 <label htmlFor="tableTop">Opaque</label>
                 <br />
-                <input type="checkbox" value="PVC Free silver backed media, 100% polyester" onChange={handleMediaChange} style={{width: "1rem", height: "1rem"}}  />
+                <input type="checkbox" value="PVC-free silver backed media" onChange={handleMediaChange} style={{width: "1rem", height: "1rem"}}  />
                 <label htmlFor="PVC Free">PVC Free</label>
                 <br />
                 <input type="checkbox" value="13oz scrim vinyl" onChange={handleMediaChange} style={{width: "1rem", height: "1rem"}}  />

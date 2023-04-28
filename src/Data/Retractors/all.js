@@ -49,6 +49,11 @@ import stratus12 from './pricing/36_stratus_dryErase.png';
 import stratus13 from './pricing/48_stratus_hybrid.png';
 import stratus14 from './pricing/48_stratus_opaque.png';
 import stratus15 from './pricing/48_stratus_dryErase.png';
+import stratus16 from './pricing/261460.png';
+import stratus17 from './pricing/261461.png';
+import stratus18 from './pricing/261462.png';
+import stratus19 from './pricing/261463.png';
+import stratus20 from './pricing/261464.png';
 import dlxPro1 from './pricing/33.5_deluxePro_opaque.png';
 import dlxPro2 from './pricing/33.5_deluxePro_dryErase.png';
 import dlxPro3 from './pricing/33.5_dlxPro_opaque_doubleSided.png';
@@ -309,7 +314,7 @@ const allRetractors = [
 {
     id: 261382,
     name: "18\" Economy Tabletop Retractor Kit (eco)",
-    media: "PVC Free silver backed media, 100% polyester",
+    media: "PVC-free silver backed media",
     price: econ2, 
     size: "19\"W x 28\"H x 11\"D",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
@@ -363,7 +368,7 @@ const allRetractors = [
 {
     id: 261360,
     name: "24\" Economy Tabletop Retractor Kit (eco)",
-    media: "PVC Free silver backed media, 100% polyester",
+    media: "PVC-free silver backed media",
     price: econ5,
     size: "24.74\"W x 39\"H x 11\"D",
     base: "Aluminum. Two swivel feet. Base available in black or silver",
@@ -417,7 +422,7 @@ const allRetractors = [
 {
     id: 261362,
     name: "24\" Economy Retractor (eco)",
-    media: "PVC Free silver backed media, 100% polyester",
+    media: "PVC-free silver backed media",
     price: econ8,
     size: "24.75\"W x 83.5\"H x 11\"D ",
     weight: "6 lbs",
@@ -489,7 +494,7 @@ const allRetractors = [
 {
     id: 261364,
     name: "31.5\" Economy Retractor (eco) ",
-    media: "PVC Free silver backed media, 100% polyester",
+    media: "PVC-free silver backed media",
     price: econ12,
     size: "32\"W x 83.5\"H x 15\"D ",
     weight: "7 lbs",
@@ -542,7 +547,7 @@ const allRetractors = [
 {
     id: 261366,
     name: "33.5\" Economy Retractor (Eco)",
-    media: "PVC Free silver backed media, 100% polyester",
+    media: "PVC-free silver backed media",
     price: econ15,
     size: "34\"W x 83.5\"H x 15\"D ",
     weight: "7.25 lbs",
@@ -801,6 +806,24 @@ const allRetractors = [
 
 },
 {
+    id: 261460,
+    name: "24\" Stratus Retractor (Eco)",
+    media: "PVC-free silver backed media",
+    price: stratus16,
+    size: "25.25\"W x 81.63\"H x 7.12\"D",
+    base: "Aluminum Base with chrome end caps. Low center of gravity",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "8.75lbs",
+    banner: "Replaceable. Adjustable from 64.375\" to 78.5\"",
+    attachment_method: "Hook-and-loop fasteners",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: "16-24",
+    warranty: "Hardware: 2 year, Graphic: 1 year"
+
+},
+{
     id: 262072,
     name: "31.5\" stratus Retractor Kit (hybrid)",
     media: "Titan No-curl hybrid media",
@@ -852,7 +875,23 @@ const allRetractors = [
     category: 'better',
     type: "31.5",
     warranty: "Hardware: 2 year, Graphic: 1 year"
-
+},
+{
+    id: 261461,
+    name: "31.5\" stratus Retractor Kit (Eco)",
+    media: "PVC-free silver backed media",
+    price: stratus17,
+    size: "33\"W x 81.62\"H x 7.12\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "11.25lbs",
+    banner: "Replaceable. Adjustable from 64.375\" to 78.5\"",
+    attachment_method: "Hook-and-loop fasteners",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: "31.5",
+    warranty: "Hardware: 2 year, Graphic: 1 year"
 },
 {
     id: 262074,
@@ -895,6 +934,24 @@ const allRetractors = [
     name: "33.5\" stratus Retractor Kit (Dry-erase)",
     media: "Dry-erase media. Glossy surface",
     price: stratus9,
+    size: "34.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12lbs",
+    banner: "Replaceable. Adjustable from 64.375\" to 78.5\"",
+    attachment_method: "Hook-and-loop fasteners",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: "33.5",
+    warranty: "Hardware: 2 year, Graphic: 1 year"
+
+},
+{
+    id: 261462,
+    name: "33.5\" stratus Retractor Kit (Eco)",
+    media: "PVC-free silver backed media",
+    price: stratus18,
     size: "34.25\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
     pole: "Shock cord pole with telescoping flip-lever extension",
@@ -963,6 +1020,24 @@ const allRetractors = [
 
 },
 {
+    id: 261463,
+    name: "36\" stratus Retractor Kit (Eco)",
+    media: "PVC-free silver backed media",
+    price: stratus19,
+    size: "37.25\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Replaceable. Adjustable from 64.375\" to 78.5\"",
+    attachment_method: "Hook-and-loop fasteners",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: '36-48',
+    warranty: "Hardware: 2 year, Graphic: 1 year"
+
+},
+{
     id: 262078,
     name: "48\" stratus Retractor Kit (hybrid)",
     media: "Titan No-curl Hybrid media",
@@ -1003,6 +1078,24 @@ const allRetractors = [
     name: "48\" stratus Retractor Kit (Dry-erase)",
     media: "Dry-erase media. Glossy surface",
     price: stratus15,
+    size: "49.5\"W x 81.63\"H x 7.13\"D",
+    base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
+    pole: "Shock cord pole with telescoping flip-lever extension",
+    weight: "12.5lbs",
+    banner: "Replaceable. Adjustable from 64.375\" to 78.5\"",
+    attachment_method: "Hook-and-loop fasteners",
+    RCAT: 200,
+    production: '2 business days',
+    category: 'better',
+    type: '36 - 48',
+    warranty: "Hardware: 2 year, Graphic: 1 year"
+
+},
+{
+    id: 261464,
+    name: "48\" stratus Retractor Kit (Eco)",
+    media: "PVC-free silver backed media",
+    price: stratus20,
     size: "49.5\"W x 81.63\"H x 7.13\"D",
     base: " Aluminum base. Features chrome end caps and has a low center of gravity. ",
     pole: "Shock cord pole with telescoping flip-lever extension",
