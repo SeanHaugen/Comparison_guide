@@ -141,7 +141,7 @@ const allRetractors = [
     attachment_method: "N/A",
     weight: "1.5 lbs",
     RCAT: "not rated",
-    production: '1 business day',
+    production: '2 business day',
     warranty: "6 month",
     category: 'good',
     type: "tableTop"
